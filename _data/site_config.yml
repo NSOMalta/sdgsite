@@ -1,11 +1,10 @@
-﻿analytics:
+analytics:
   ua: ''
   gtag: ''
   gtm: ''
   ga_prod: ''
 breadcrumbs:
-
-  goal: 
+  goal:
     - path: /
       label: general.home
     - path: /goals
@@ -21,10 +20,10 @@ breadcrumbs:
     - path: /news
       label: menu.updates
 cookie_consent_form:
-  enabled: false
+  enabled: true
 country:
-  name: Australia
-  adjective: Australian
+  name: Malta
+  adjective: Maltese
 create_goals:
   previous_next_links: false
   goal_content_heading: ''
@@ -57,9 +56,9 @@ disclaimer:
   message: ''
   hidden: false
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: international.nso@gov.mt
+  suggestions: international.nso@gov.mt
+  functional: it.nso@gov.mt
 empty_metadata_placeholder: ''
 empty_metadata_placeholder_sources: ''
 environment: staging
@@ -67,9 +66,9 @@ footer_language_toggle: none
 footer_menu:
   - path: /contact-us
     translation_key: menu.contact_us
-  - path: 'https://twitter.com/MyTwitterAccount'
+  - path: 'https://twitter.com/NSOMALTA'
     translation_key: general.twitter
-  - path: 'https://facebook.com/MyFacebookAccount'
+  - path: 'https://www.facebook.com/nsomalta/'
     translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
@@ -144,7 +143,7 @@ indicator_tabs:
   tab_4: ''
 languages:
   - en
-  - es
+  - mt
 languages_public: []
 logos: []
 map_layers: []
