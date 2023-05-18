@@ -4,6 +4,7 @@
   gtm: ''
   ga_prod: ''
 breadcrumbs:
+
   goal: 
     - path: /
       label: general.home
