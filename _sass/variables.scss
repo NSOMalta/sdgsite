@@ -12,3 +12,24 @@
 //$link-color: #337ab7;
 //$footer-text-color: #000000;
 $indicatorContent-horizontalRule-color: transparent;
+
+//------------C U S T O M-------------------
+//the values below are custom values:
+$fontSize: 18px !default;
+// Font size t-shirt sizes.
+$fontSize-extraLarge: 38px !default;
+$fontSize-large: 29px !default;
+$fontSize-medium: 26px !default;
+$fontSize-small: 16px !default;
+
+$h4-fontSize: 20px !default;
+$leadCopy-fontSize: 24px !default;
+$breadcrumbs-fontSize: 18px !default;
+$button-fontSize: 16px !default;
+$tag-fontSize: 14px !default;
+
+// Component-level typography variables.
+$searchBar-input-fontSize: 18px !default;
+$menu-link-fontSize: 21px !default;
+$search-result-fontSize: 20px !default;
+$indicator-chartTitle-fontSize: 22px !default;
