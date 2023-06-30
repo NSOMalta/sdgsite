@@ -1447,11 +1447,11 @@ body.contrast-high .proxy-pill {
   .status.complete {
     color: white;
     border: 1px solid transparent;
-    background-color: #2B2B2B;
-    background: #2B2B2B; }
+    background-color: #32BCAD;
+    background: #32BCAD; }
     .status.complete .status-inner {
-      background-color: #2B2B2B;
-      background: #2B2B2B; }
+      background-color: #32BCAD;
+      background: #32BCAD; }
   .status.inprogress {
     color: white;
     border: 1px solid transparent;
@@ -1762,11 +1762,11 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
     .layout-reportingstatus #main-content .statuses > div .status.complete {
       color: white;
       border: 1px solid transparent;
-      background-color: #2B2B2B;
-      background: #2B2B2B; }
+      background-color: #32BCAD;
+      background: #32BCAD; }
       .layout-reportingstatus #main-content .statuses > div .status.complete .status-inner {
-        background-color: #2B2B2B;
-        background: #2B2B2B; }
+        background-color: #32BCAD;
+        background: #32BCAD; }
     .layout-reportingstatus #main-content .statuses > div .status.inprogress {
       color: white;
       border: 1px solid transparent;
@@ -1820,8 +1820,8 @@ body.contrast-high .indicator.goal-banner .goal-tiles img {
     background-color: #757575;
     background: #757575; }
   .layout-reportingstatus #main-content .goal-stats .complete {
-    background-color: #2B2B2B;
-    background: #2B2B2B; }
+    background-color: #32BCAD;
+    background: #32BCAD; }
 .layout-reportingstatus #main-content .divider {
   height: 15px; }
 .layout-reportingstatus #main-content .goal {
