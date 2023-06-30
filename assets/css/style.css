@@ -2635,3 +2635,6 @@ body.contrast-high #search-bar-on-page button:hover {
 
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
+
+.indicator.goal-banner .goal-tiles a {
+  width: calc(110% - 3px) !important; }
