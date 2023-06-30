@@ -1,1 +1,8 @@
 // Enter any custom Sass in this file.
+.indicator.goal-banner {
+    .goal-tiles {
+        a {
+            width: calc(110% - #{$goal-tile-gutter}) !important;            
+        }
+  }
+}
