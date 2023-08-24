@@ -89,7 +89,7 @@ frontpage_cards:
     rule_color: ''
   - title: Nam vestibulum
     content: |
-      Nam vestibulum, purus quis https://meae.gov.mt/en/Public_Consultations/MSDEC/Documents/Malta's%20Sustainable%20Development%20Vision%20for%202050.pdf
+      Nam vestibulum, purus quis <a href="https://meae.gov.mt/en/Public_Consultations/MSDEC/Documents/Malta's%20Sustainable%20Development%20Vision%20for%202050.pdf">Doc</a>
       interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
     include: ''
     button_label: Transport Statistics
