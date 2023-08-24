@@ -98,6 +98,8 @@ frontpage_cards:
     include: ''
     button_label: Transport Statistics
     button_link: 'https://nso.gov.mt/themes_publications/transport-statistics-2021-3/'
+    button_label: Read more
+    button_link: 'https://nso.gov.mt/published-publications/'
     rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
