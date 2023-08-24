@@ -94,8 +94,6 @@ frontpage_cards:
     include: ''
     button_label: Transport Statistics
     button_link: 'https://nso.gov.mt/themes_publications/transport-statistics-2021-3/'
-    button_label: Malta's Sustainable Development Vision
-    button_link: 'https://meae.gov.mt/en/Public_Consultations/MSDEC/Documents/Malta's%20Sustainable%20Development%20Vision%20for%202050.pdf'
     rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
