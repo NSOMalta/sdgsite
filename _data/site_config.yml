@@ -81,7 +81,7 @@ frontpage_cards:
     rule_color: ''
   - title: SDGs in Malta
     content: |
-      <a href="https://nso.gov.mt/themes_publications/transport-statistics-2021-3/">Transport Statistics</a>      
+      <a href="https://nso.gov.mt/themes_publications/transport-statistics-2021-3/">Sustainable Development in Malta</a>      
       <a href="https://meae.gov.mt/en/Public_Consultations/MSDEC/Documents/Malta's%20Sustainable%20Development%20Vision%20for%202050.pdf">Malta's Sustainable Development Vision</a>    
       <a href="https://meae.gov.mt/en/Public_Consultations/MEW/Pages/Consultations/MaltasSustainableDevelopmentStrategyfor2050.aspx">Malta's Sustainable Development Strategy</a>      
     include: ''
@@ -96,8 +96,6 @@ frontpage_cards:
       <a href="https://ec.europa.eu/eurostat/en/web/products-flagship-publications/w/ks-04-23-184">Sustainable development in the European Union</a>
 
     include: ''
-    button_label: Transport Statistics
-    button_link: 'https://nso.gov.mt/themes_publications/transport-statistics-2021-3/'
     button_label: Read more
     button_link: 'https://nso.gov.mt/published-publications/'
     rule_color: ''
