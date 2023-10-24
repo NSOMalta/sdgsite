@@ -29,7 +29,7 @@ create_goals:
   goal_content_heading: ''
   goals: []
 create_indicators:
-  previous_next_links: false
+  previous_next_links: true
 create_pages:
   - filename: ''
     folder: /goals
