@@ -14,6 +14,7 @@
 #
 # See also _config_prod.yml in the root of this repository.
 
+
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
 remote_data_prefix: "https://my-github-org.github.io/open-sdg-data-starter"
