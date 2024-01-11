@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "webrick"
-gem "jekyll", "4.3.3"
+gem "jekyll", "3.8.4"
 gem "html-proofer", "3.19.4"
 gem "jekyll-remote-theme"
 gem "deep_merge"
