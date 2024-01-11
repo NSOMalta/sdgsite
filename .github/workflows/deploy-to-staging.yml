@@ -33,6 +33,7 @@ jobs:
         bundle config path vendor/bundle
         bundle install
         bundle add webrick
+        bundle exec jekyll serve
         bundle exec jekyll build --baseurl=/${{ env.GITHUB_REPOSITORY_NAME_PART }}
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
