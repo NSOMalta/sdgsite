@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20240318144906">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20240322071730">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -427,7 +427,7 @@ data-event-label="high"
   data-charttitles="[]"
   data-measurementunit=""
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -439,14 +439,1056 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Freight volume (aviation) in tonne kilometres (millions)&quot;,&quot;Passenger volume (aviation) in passenger kilometres (millions)&quot;,&quot;Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)&quot;,&quot;Unloaded local cargo (maritime transport) in millions of tonnes&quot;,&quot;Loaded local cargo (maritime transport) in millions of tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
   data-proxyseries="null"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdgsite/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://nsomalta.github.io/sdgdata/en/headline/9-1-2.csv" class="btn btn-primary btn-download" download="indicator_9-1-2.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
+    <a href="https://nsomalta.github.io/sdgdata/en/data/9-1-2.csv" class="btn btn-primary btn-download" download='indicator_9-1-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
+
+    
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Passenger and freight volumes, by mode of transport</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>2.636</td>
+          
+          
+          
+          <td class="table-value">Freight volume (aviation) in tonne kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>4.815</td>
+          
+          
+          
+          <td class="table-value">Freight volume (aviation) in tonne kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>6.727</td>
+          
+          
+          
+          <td class="table-value">Freight volume (aviation) in tonne kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>2.904</td>
+          
+          
+          
+          <td class="table-value">Freight volume (aviation) in tonne kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>2.751</td>
+          
+          
+          
+          <td class="table-value">Freight volume (aviation) in tonne kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>2264.761</td>
+          
+          
+          
+          <td class="table-value">Passenger volume (aviation) in passenger kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>3336.935</td>
+          
+          
+          
+          <td class="table-value">Passenger volume (aviation) in passenger kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>3372.515</td>
+          
+          
+          
+          <td class="table-value">Passenger volume (aviation) in passenger kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>816.241</td>
+          
+          
+          
+          <td class="table-value">Passenger volume (aviation) in passenger kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>909.973</td>
+          
+          
+          
+          <td class="table-value">Passenger volume (aviation) in passenger kilometres (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>2.414</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>2.407</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>2.59</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>2.794</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>2.924</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>3.121</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>3.152</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>3.246</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>3.414</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>2.813</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>2.539</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>3.076</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>2.994</td>
+          
+          
+          
+          <td class="table-value">Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>8.562</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>7.523</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>6.957</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>6.666</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>7.455</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>7.164</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>7.64</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>7.07</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>6.886</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>8.342</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>6.209</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>5.698</td>
+          
+          
+          
+          <td class="table-value">Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>4.348</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>3.784</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>3.214</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>2.925</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>3.815</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>3.043</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>3.715</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>3.21</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>2.413</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>2.382</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>3.418</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>3.932</td>
+          
+          
+          
+          <td class="table-value">Loaded local cargo (maritime transport) in millions of tonnes</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdgsite/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Chart</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Table</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            Passenger and freight volumes, by mode of transport
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Download chart image as PNG"
+          aria-label="Download chart image as PNG"
+          class='btn btn-primary btn-download'>
+          Download chart image (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Click to sort by this column</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
@@ -1049,10 +2091,117 @@ data-event-label="Change to indicator.sources tab"
         <div role="tabpanel" class="tab-pane " id="sources_alt">
             <article>
                 
-
                 
 
-    
+
+
+
+
+<div class="row">
+
+    <div class="col-md-6">
+        
+        <h4>Source 1</h4>
+        
+        <table class="table indicator-source-table">
+            
+            
+            
+            <tr>
+                <th scope="row">Organisation</th>
+                <td>International Civil Aviation Organisation (ICAO)</td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </table>
+    </div>
+
+    <div class="col-md-6">
+        
+        <h4>Source 2</h4>
+        
+        <table class="table indicator-source-table">
+            
+            
+            
+            <tr>
+                <th scope="row">Organisation</th>
+                <td>United Nations Conference on Trade and Development (UNCTAD)</td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </table>
+    </div>
+
+    <div class="col-md-6">
+        
+        <h4>Source 3</h4>
+        
+        <table class="table indicator-source-table">
+            
+            
+            
+            <tr>
+                <th scope="row">Organisation</th>
+                <td>National Statistics Office (NSO) Malta</td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </table>
+    </div>
+
+</div>
 
 
             </article>
@@ -1324,12 +2473,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20240318144906'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20240322071730'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20240318144906"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20240322071730"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

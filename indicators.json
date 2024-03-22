@@ -995,7 +995,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/9-1-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-2-1",
@@ -1003,7 +1003,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/9-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-2-2",
@@ -1011,7 +1011,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/9-2-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-3-1",
@@ -1035,7 +1035,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/9-4-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-5-1",
@@ -1043,7 +1043,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/9-5-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-5-2",
@@ -1051,7 +1051,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/9-5-2/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "9-a-1",
@@ -1075,7 +1075,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/9-c-1/",
-          "status": "notstarted"
+          "status": "complete"
         }]
     }
   },
