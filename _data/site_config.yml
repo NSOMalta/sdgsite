@@ -199,7 +199,16 @@ menu:
     translation_key: menu.about
     dropdown: []
 metadata_edit_url: metadata
-metadata_tabs: []
+metadata_tabs:
+  - scope: national
+    title: indicator.national_metadata
+    description: indicator.national_metadata_blurb
+  - scope: global
+    title: indicator.global_metadata
+    description: indicator.global_metadata_blurb
+  - scope: sources_alt
+    title: indicator.sources
+    description: ''
 meta_tags: []
 news:
   category_links: false
