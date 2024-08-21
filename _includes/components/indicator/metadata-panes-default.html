@@ -22,6 +22,8 @@
         </article>
     </div>
 </div>
+
+{% if page.indicator.reporting_status != 'notstarted' %}
 <div role="tabpanel" class="tab-pane" id="sources">
     {% include components/indicator/sources.html %}
 </div>
