@@ -2635,9 +2635,3 @@ body.contrast-high #search-bar-on-page button:hover {
 
 body.contrast-high.layout-search form input, body.contrast-high.layout-search form label {
   color: black; }
-
-iframe {
-  margin: 0 auto;
-  width: 800px;
-  height: 600px;
-  display: block; }
