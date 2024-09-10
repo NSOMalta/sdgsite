@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20240910103255">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20240910110228">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -424,15 +424,15 @@ data-event-label="high"
   data-id="4-5-1"
   data-country="Malta"
   data-charttitle="Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated"
-  data-charttitles="[]"
+  data-charttitles="[{&quot;series&quot;:&quot;Adjusted gender parity index for completion rate, by location, wealth quintile and education level&quot;,&quot;title&quot;:&quot;Adjusted gender parity index for completion rate, by location, wealth quintile and education level&quot;},{&quot;series&quot;:&quot;Gender parity index for youth/adults with information and communications technology (ICT) skills, by type of skill (ratio)&quot;,&quot;title&quot;:&quot;Gender parity index for youth/adults with information and communications technology (ICT) skills, by type of skill (ratio)&quot;},{&quot;series&quot;:&quot;Adjusted gender parity index for participation rate in formal and non-formal education and training (ratio)&quot;,&quot;title&quot;:&quot;Adjusted gender parity index for participation rate in formal and non-formal education and training (ratio)&quot;},{&quot;series&quot;:&quot;Adjusted gender parity index for participation rate in organized learning (one year before the official Primary entry age), (ratio)&quot;,&quot;title&quot;:&quot;Adjusted gender parity index for participation rate in organized learning (one year before the official Primary entry age), (ratio)&quot;},{&quot;series&quot;:&quot;Adjusted language test parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;,&quot;title&quot;:&quot;Adjusted language test parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;series&quot;:&quot;Adjusted immigration status parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;,&quot;title&quot;:&quot;Adjusted immigration status parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;series&quot;:&quot;Adjusted gender parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;,&quot;title&quot;:&quot;Adjusted gender parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;series&quot;:&quot;Adjusted rural to urban parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;,&quot;title&quot;:&quot;Adjusted rural to urban parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;series&quot;:&quot;Adjusted low to high socio-economic parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;,&quot;title&quot;:&quot;Adjusted low to high socio-economic parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="null"
+  data-graphtypes="[{&quot;type&quot;:&quot;line&quot;,&quot;series&quot;:&quot;Adjusted gender parity index for completion rate, by location, wealth quintile and education level&quot;},{&quot;type&quot;:&quot;line&quot;,&quot;series&quot;:&quot;Gender parity index for youth/adults with information and communications technology (ICT) skills, by type of skill (ratio)&quot;},{&quot;type&quot;:&quot;line&quot;,&quot;series&quot;:&quot;Adjusted gender parity index for participation rate in formal and non-formal education and training (ratio)&quot;},{&quot;type&quot;:&quot;line&quot;,&quot;series&quot;:&quot;Adjusted gender parity index for participation rate in organized learning (one year before the official Primary entry age), (ratio)&quot;},{&quot;type&quot;:&quot;bar&quot;,&quot;series&quot;:&quot;Adjusted language test parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;type&quot;:&quot;bar&quot;,&quot;series&quot;:&quot;Adjusted immigration status parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;type&quot;:&quot;bar&quot;,&quot;series&quot;:&quot;Adjusted gender parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;type&quot;:&quot;bar&quot;,&quot;series&quot;:&quot;Adjusted rural to urban parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;},{&quot;type&quot;:&quot;bar&quot;,&quot;series&quot;:&quot;Adjusted low to high socio-economic parity index for achieving a minimum proficiency level in reading and mathematics (ratio)&quot;}]"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[]"
+  data-startvalues="[{&quot;field&quot;:&quot;Education level&quot;,&quot;value&quot;:&quot;Primary&quot;},{&quot;field&quot;:&quot;Type of Skill&quot;,&quot;value&quot;:&quot;All Skills&quot;},{&quot;field&quot;:&quot;Age&quot;,&quot;value&quot;:&quot;All Ages&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
@@ -564,7 +564,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated
+            Adjusted gender parity index for completion rate, by location, wealth quintile and education level
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -583,6 +583,9 @@ data-event-label="Change to Table tab"
 <div id="selectionChartFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
+        
+        <dt>Source:</dt>
+        <dd>UNESCO Institute for Statistics (For the series reporting on Adjusted gender parity index for participation rate in organised learning (one year before the official primary entry age)), Eurostat and National Statistics Office Malta (For the series reporting on Gender parity index for youth/adults with information and communications technology (ICT) skills, by type of skill), Trends in International Mathematics and Science Study and Programme for International Student Assessment (For the series reporting on Adjusted immigration status parity index for achieving a minimum proficiency level in reading and mathematics), Trends in International Mathematics and Science Study, Programme for International Student Assessment and Progress in International Reading Literacy Study (For the four series reporting on Adjusted language test, gender, low to high socio-economic and rural to urban parity index for achieving a minimum proficiency level in reading and mathematics), International Labour Organisation, EU-Labour Force Survey (For the series reporting on Adjusted gender parity index for participation rate in formal and non-formal education and training), UNESCO Global Education Monitoring Report (For the series reporting on Adjusted gender parity index for completion rate, by location, wealth quintile and education level)</dd>
         
 
         
@@ -652,6 +655,9 @@ data-event-label="Change to Table tab"
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
+        
+        <dt>Source:</dt>
+        <dd>UNESCO Institute for Statistics (For the series reporting on Adjusted gender parity index for participation rate in organised learning (one year before the official primary entry age)), Eurostat and National Statistics Office Malta (For the series reporting on Gender parity index for youth/adults with information and communications technology (ICT) skills, by type of skill), Trends in International Mathematics and Science Study and Programme for International Student Assessment (For the series reporting on Adjusted immigration status parity index for achieving a minimum proficiency level in reading and mathematics), Trends in International Mathematics and Science Study, Programme for International Student Assessment and Progress in International Reading Literacy Study (For the four series reporting on Adjusted language test, gender, low to high socio-economic and rural to urban parity index for achieving a minimum proficiency level in reading and mathematics), International Labour Organisation, EU-Labour Force Survey (For the series reporting on Adjusted gender parity index for participation rate in formal and non-formal education and training), UNESCO Global Education Monitoring Report (For the series reporting on Adjusted gender parity index for completion rate, by location, wealth quintile and education level)</dd>
         
 
         
@@ -953,6 +959,1138 @@ data-event-label="Change to Sources tab"
 
 
 
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 1</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>UNESCO Institute for Statistics (For the series reporting on Adjusted gender parity index for participation rate in organised learning (one year before the official primary entry age))</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Eurostat and National Statistics Office Malta (For the series reporting on Gender parity index for youth/adults with information and communications technology (ICT) skills, by type of skill)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 3</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Trends in International Mathematics and Science Study and Programme for International Student Assessment (For the series reporting on Adjusted immigration status parity index for achieving a minimum proficiency level in reading and mathematics)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 4</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Trends in International Mathematics and Science Study, Programme for International Student Assessment and Progress in International Reading Literacy Study (For the four series reporting on Adjusted language test, gender, low to high socio-economic and rural to urban parity index for achieving a minimum proficiency level in reading and mathematics)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 5</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>International Labour Organisation, EU-Labour Force Survey (For the series reporting on Adjusted gender parity index for participation rate in formal and non-formal education and training)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 6</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>UNESCO Global Education Monitoring Report (For the series reporting on Adjusted gender parity index for completion rate, by location, wealth quintile and education level)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
+
 
 </div>
 
@@ -1223,12 +2361,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20240910103255'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20240910110228'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20240910103255"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20240910110228"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
