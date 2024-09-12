@@ -1,0 +1,34 @@
+.eu-pill {
+    padding: 4px;
+    font-size: $eu-fontSize;
+    color: $eu-color;
+    border: $eu-border;
+    background: $eu-backgroundColor;
+    white-space: nowrap;
+}
+
+#serieses {
+    .eu-pill {
+        font-size: $eu-fontSize-small;
+        float: right;
+        margin: 5px;
+    }
+}
+
+#chart-heading, #selectionsTable, #map-heading {
+    .eu-pill {
+        margin-left: 10px;
+        line-height: 3em;
+    }
+}
+
+.eu-banner {
+    border-left: solid 10px $color-medium-highContrast;
+}
+
+body.contrast-high {
+    .eu-pill {
+        background: $color-highlight-highContrast;
+        color: $color-dark-highContrast;
+    }
+}
