@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20240920073426">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20240920081339">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -408,6 +408,18 @@ data-event-label="high"
   
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
+
 
   
 
@@ -424,7 +436,7 @@ data-event-label="high"
   data-id="2-a-1"
   data-country="Malta"
   data-charttitle="The agriculture orientation index for government expenditures"
-  data-charttitles="[{&quot;series&quot;:&quot;Agriculture value added share of GDP (%)&quot;,&quot;title&quot;:&quot;Agriculture value added share of GDP (%)&quot;},{&quot;series&quot;:&quot;Agriculture orientation index for government expenditures&quot;,&quot;title&quot;:&quot;Agriculture orientation index for government expenditures&quot;},{&quot;series&quot;:&quot;Agriculture share of Government Expenditure (%)&quot;,&quot;title&quot;:&quot;Agriculture share of Government Expenditure (%)&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;Agriculture value added share of GDP (%)&quot;,&quot;title&quot;:&quot;Agriculture value added share of GDP (%)&quot;},{&quot;series&quot;:&quot;Agriculture orientation index for government expenditures&quot;,&quot;title&quot;:&quot;Agriculture orientation index for government expenditures&quot;},{&quot;series&quot;:&quot;Agriculture share of Government Expenditure (%)&quot;,&quot;title&quot;:&quot;Agriculture share of Government Expenditure (%)&quot;},{&quot;series&quot;:&quot;Government support to agricultural research and development&quot;,&quot;title&quot;:&quot;Government support to agricultural research and development&quot;}]"
   data-measurementunit="Percent (%)"
   data-xaxislabel=""
   data-showdata="true"
@@ -439,11 +451,11 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Agriculture value added share of GDP (%)&quot;,&quot;Agriculture orientation index for government expenditures&quot;,&quot;Agriculture share of Government Expenditure (%)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Agriculture value added share of GDP (%)&quot;,&quot;Agriculture orientation index for government expenditures&quot;,&quot;Agriculture share of Government Expenditure (%)&quot;,&quot;Government support to agricultural research and development&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Unit&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Percent (%)&quot;,&quot;Index&quot;,&quot;Million euro (€)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Unit&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
-  data-proxyseries="null"
+  data-proxy="both"
+  data-proxyseries="[&quot;Government support to agricultural research and development&quot;]"
 >
   
   <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
@@ -472,629 +484,15 @@ data-event-label="high"
   <div id="datatables">
 
     
-    <a href="https://nsomalta.github.io/sdgdata/en/headline/2-a-1.csv" class="btn btn-primary btn-download" download="indicator_2-a-1.csv" tabindex="0" role="button">Download headline data (.csv)</a>
-    
     <a href="https://nsomalta.github.io/sdgdata/en/data/2-a-1.csv" class="btn btn-primary btn-download" download='indicator_2-a-1.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>The agriculture orientation index for government expenditures</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col">Value</th>
-        
-        
-        
-        <th scope="col" class="table-value">Series</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td>1.27</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td>0.99</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td>1.06</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td>1.07</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>1.0</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td>0.92</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>0.93</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>0.67</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>0.65</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>0.47</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>0.77</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>0.89</td>
-          
-          
-          
-          <td class="table-value">Agriculture value added share of GDP (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td>1.36</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td>1.52</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td>1.36</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td>1.25</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>1.17</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td>1.43</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>1.35</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>1.62</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>2.01</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>2.2</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>1.21</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>1.04</td>
-          
-          
-          
-          <td class="table-value">Agriculture orientation index for government expenditures</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2010</td>
-          
-          
-          
-          <td>1.72</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td>1.51</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td>1.44</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2013</td>
-          
-          
-          
-          <td>1.34</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2014</td>
-          
-          
-          
-          <td>1.18</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td>1.32</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td>1.25</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2017</td>
-          
-          
-          
-          <td>1.08</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2018</td>
-          
-          
-          
-          <td>1.31</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2019</td>
-          
-          
-          
-          <td>1.02</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2020</td>
-          
-          
-          
-          <td>0.93</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2021</td>
-          
-          
-          
-          <td>0.92</td>
-          
-          
-          
-          <td class="table-value">Agriculture share of Government Expenditure (%)</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
+    <h3>No headline data available</h3>
     
   </div>
 
-  
-  <div id="datatableFooter">
-    
-    <p>Source: National Statistics Office (NSO) Malta - Government Expenditure on Agriculture and Related Categories questionnaire</p>
-    
-    
-    <p>Geographical Area: </p>
-    
-    
-    <p>Unit of Measurement: Percent (%)</p>
-    
-    
-    <p>Footnote: </p>
-    
-  </div>
   
 
 </div>
@@ -1199,7 +597,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd>National Statistics Office (NSO) Malta - Government Expenditure on Agriculture and Related Categories questionnaire</dd>
+        <dd>National Statistics Office (NSO) Malta - Government Expenditure on Agriculture and Related Categories questionnaire, Eurostat</dd>
         
 
         
@@ -1271,7 +669,7 @@ data-event-label="Change to Table tab"
     <dl>
         
         <dt>Source:</dt>
-        <dd>National Statistics Office (NSO) Malta - Government Expenditure on Agriculture and Related Categories questionnaire</dd>
+        <dd>National Statistics Office (NSO) Malta - Government Expenditure on Agriculture and Related Categories questionnaire, Eurostat</dd>
         
 
         
@@ -1326,6 +724,14 @@ data-event-label="Change to Table tab"
 <ul class="nav nav-tabs" role="tablist">
     
         
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>National Metadata</button>
+  </li>
+
 
   <li role="presentation" class="nav-item">
     <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
@@ -1353,6 +759,308 @@ data-event-label="Change to Sources tab"
 <div class="tab-content">
     
         
+<div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                This table provides metadata for the actual indicator available from Malta statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Maltese statistics, this table should be consulted for information on national methodology and other Maltese-specific metadata information.
+            </p>
+            <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
+</div>
+
 <div role="tabpanel" class="tab-pane" id="global">
     <!-- Global Metadata -->
     <div>
@@ -1579,6 +1287,8 @@ data-event-label="Change to Sources tab"
     
     <div class="col-md-6">
       
+        <h4>Source 1</h4>
+      
       <table class="table metadata-content">
   <tbody>
   
@@ -1707,6 +1417,194 @@ data-event-label="Change to Sources tab"
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Eurostat</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
   
   
   
@@ -2033,12 +1931,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20240920073426'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20240920081339'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20240920073426"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20240920081339"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
