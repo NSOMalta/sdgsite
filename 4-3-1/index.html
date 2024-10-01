@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241001110836">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241001111400">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -576,10 +576,18 @@ data-event-label="Change to Table tab"
 
           </div>
           <div id="plotLegend"></div>
-          <div id="selectionChartFooter" class="table-footer-text">
+          
+
+
+
+<div id="selectionChartFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
+        <dt>Source:</dt>
+        <dd>EU Labour Force Survey, International Labour Organisation, Eurostat</dd>
+        
+
         
 
         <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
@@ -592,11 +600,11 @@ data-event-label="Change to Table tab"
         
         
         <dt
-         
+          data-for-series="Participation rate in education and training (last 4 weeks) by sex and age"
           data-for-unit=""
         >Footer:</dt>
         <dd
-         
+          data-for-series="Participation rate in education and training (last 4 weeks) by sex and age"
           data-for-unit=""
         >Please note that the following data points have low reliability: [2014, Male, 55-64, 2.7], [2022, Male, 55-64, 4.0,], [2023, Male, 55-64, 5.6], [2023, Female, 55-64, 8.5]</dd>
         
@@ -624,7 +632,6 @@ data-event-label="Change to Table tab"
         
         
     </dl>
-    
 </div>
 
         </div>
@@ -652,10 +659,18 @@ data-event-label="Change to Table tab"
           </div>
           <div id="selectionsTable"></div>
 <dl id="tableTargetLines" class="clearfix"></dl>
+
+
+
+
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
         
+        <dt>Source:</dt>
+        <dd>EU Labour Force Survey, International Labour Organisation, Eurostat</dd>
+        
+
         
 
         <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
@@ -668,11 +683,11 @@ data-event-label="Change to Table tab"
         
         
         <dt
-         
+          data-for-series="Participation rate in education and training (last 4 weeks) by sex and age"
           data-for-unit=""
         >Footer:</dt>
         <dd
-         
+          data-for-series="Participation rate in education and training (last 4 weeks) by sex and age"
           data-for-unit=""
         >Please note that the following data points have low reliability: [2014, Male, 55-64, 2.7], [2022, Male, 55-64, 4.0,], [2023, Male, 55-64, 5.6], [2023, Female, 55-64, 8.5]</dd>
         
@@ -700,7 +715,6 @@ data-event-label="Change to Table tab"
         
         
     </dl>
-    
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
@@ -1617,12 +1631,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20241001110836'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20241001111400'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20241001110836"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20241001111400"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
