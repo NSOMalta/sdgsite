@@ -231,7 +231,7 @@ reporting_status:
       label: status.not_applicable
       hide_on_goal_pages: false
     - value: inprogress
-      label: status.statistics_in_progress
+      label: In Progress
       hide_on_goal_pages: false
 repository_url_data: 'https://github.com/NSOMalta/sdgdata'
 repository_url_site: 'https://github.com/NSOMalta/sdgsite'
