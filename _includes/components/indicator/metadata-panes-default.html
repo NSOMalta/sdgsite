@@ -23,7 +23,7 @@
     </div>
 </div>
 
-{% if page.indicator.reporting_status != 'notstarted' %}
+{% if page.indicator.reporting_status != 'notstarted' && if page.indicator.reporting_status != 'inprogress' %}
 <div role="tabpanel" class="tab-pane" id="sources">
     {% include components/indicator/sources.html %}
 </div>
