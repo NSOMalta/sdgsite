@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241107113803">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241107115611">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -415,14 +415,18 @@ data-event-label="high"
 
 <div class="row" id="page-content">
   <div class="col-xs-12">
-    <p>The population directly covered by at least one social protection benefit includes:
-  (i)	Number of persons currently contributing to the social security system, being those employed (FT + PT as a primary job)
-  (ii)	Number of persons in receipt of a Contributory pension (Retirement, Invalidity, Widows) over the statutory retirement age
-  (iii)	Number of persons in receipt of a Non-Contributory Benefit (coverage independent of contributions paid)</p>
+    <p>The population directly covered by at least one social protection benefit includes:</p>
+<ul>
+  <li>Number of persons currently contributing to the social security system, being those employed (FT + PT as a primary job)</li>
+  <li>Number of persons in receipt of a Contributory pension (Retirement, Invalidity, Widows) over the statutory retirement age</li>
+  <li>Number of persons in receipt of a Non-Contributory Benefit (coverage independent of contributions paid)</li>
+</ul>
 
-<p>In addition, the population not directly covered are:
-  (i)	Children—despite being excluded from the population covered, these are indirectly covered through Children’s Allowance, although it’s the parents/legal guardians obtaining the benefit
-  (ii)	Individuals below retirement age who are neither employed nor receiving a benefit—these are also excluded, however, they would still be covered through the Age Pension scheme upon reaching the age of 60</p>
+<p>In addition, the population not directly covered are:</p>
+<ul>
+  <li>Children—despite being excluded from the population covered, these are indirectly covered through Children’s Allowance, although it’s the parents/legal guardians obtaining the benefit</li>
+  <li>Individuals below retirement age who are neither employed nor receiving a benefit—these are also excluded, however, they would still be covered through the Age Pension scheme upon reaching the age of 60</li>
+</ul>
 
 <p>Therefore, for Malta, the whole population is being covered (directly or indirectly) through the social security system.</p>
 
@@ -734,18 +738,9 @@ data-event-label="Change to Table tab"
 
           </div>
           <div id="plotLegend"></div>
-          
-
-
-
-<div id="selectionChartFooter" class="table-footer-text">
+          <div id="selectionChartFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>Source:</dt>
-        <dd>Jobsplus, The System for the Administration of Social Benefits (SABS) Database, Eurostat, National Statistics Office (NSO) Malta</dd>
-        
-
         
 
         <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
@@ -779,6 +774,7 @@ data-event-label="Change to Table tab"
         
         
     </dl>
+    
 </div>
 
         </div>
@@ -806,18 +802,9 @@ data-event-label="Change to Table tab"
           </div>
           <div id="selectionsTable"></div>
 <dl id="tableTargetLines" class="clearfix"></dl>
-
-
-
-
 <div id="selectionTableFooter" class="table-footer-text">
   <h5 class="sr-only">Chart details</h5>
     <dl>
-        
-        <dt>Source:</dt>
-        <dd>Jobsplus, The System for the Administration of Social Benefits (SABS) Database, Eurostat, National Statistics Office (NSO) Malta</dd>
-        
-
         
 
         <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
@@ -851,6 +838,7 @@ data-event-label="Change to Table tab"
         
         
     </dl>
+    
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
@@ -2143,12 +2131,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20241107113803'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20241107115611'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20241107113803"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20241107115611"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
