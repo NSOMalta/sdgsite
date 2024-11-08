@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241108085230">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241108092050">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -408,6 +408,18 @@ data-event-label="high"
   
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
+
 
   
 
@@ -424,7 +436,7 @@ data-event-label="high"
   data-id="3-8-1"
   data-country="Malta"
   data-charttitle="Coverage of essential health services"
-  data-charttitles="[{&quot;series&quot;:&quot;Coverage of essential health services&quot;,&quot;title&quot;:&quot;Coverage of essential health services&quot;},{&quot;series&quot;:&quot;Life expectancy at birth by sex&quot;,&quot;title&quot;:&quot;Life expectancy at birth by sex&quot;},{&quot;series&quot;:&quot;Healthy life years at age 65 by sex&quot;,&quot;title&quot;:&quot;Healthy life years at age 65 by sex&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Coverage of essential health services&quot;,&quot;title&quot;:&quot;1. Coverage of essential health services&quot;},{&quot;series&quot;:&quot;2. Life expectancy at birth by sex&quot;,&quot;title&quot;:&quot;2. Life expectancy at birth by sex&quot;},{&quot;series&quot;:&quot;3. Healthy life years at age 65 by sex&quot;,&quot;title&quot;:&quot;3. Healthy life years at age 65 by sex&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -439,11 +451,11 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Coverage of essential health services&quot;,&quot;Life expectancy at birth by sex&quot;,&quot;Healthy life years at age 65 by sex&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;All Sexes&quot;,&quot;Males&quot;,&quot;Females&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Index&quot;,&quot;Year&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Coverage of essential health services&quot;,&quot;2. Life expectancy at birth by sex&quot;,&quot;3. Healthy life years at age 65 by sex&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;All Sexes&quot;,&quot;Males&quot;,&quot;Females&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Index&quot;,&quot;Year&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
-  data-proxyseries="null"
+  data-proxy="both"
+  data-proxyseries="[&quot;2. Life expectancy at birth by sex&quot;,&quot;3. Healthy life years at age 65 by sex&quot;]"
 >
   
   <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
@@ -518,7 +530,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Coverage of essential health services</td>
+          <td class="table-value">1. Coverage of essential health services</td>
           
           
         </tr>
@@ -538,7 +550,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Coverage of essential health services</td>
+          <td class="table-value">1. Coverage of essential health services</td>
           
           
         </tr>
@@ -558,7 +570,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Coverage of essential health services</td>
+          <td class="table-value">1. Coverage of essential health services</td>
           
           
         </tr>
@@ -578,7 +590,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Coverage of essential health services</td>
+          <td class="table-value">1. Coverage of essential health services</td>
           
           
         </tr>
@@ -598,7 +610,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Coverage of essential health services</td>
+          <td class="table-value">1. Coverage of essential health services</td>
           
           
         </tr>
@@ -618,7 +630,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -638,7 +650,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -658,7 +670,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -678,7 +690,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -698,7 +710,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -718,7 +730,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -738,7 +750,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -758,7 +770,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -778,7 +790,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -798,7 +810,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -818,7 +830,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -838,7 +850,7 @@ data-event-label="high"
           
           
           
-          <td class="table-value">Life expectancy at birth by sex</td>
+          <td class="table-value">2. Life expectancy at birth by sex</td>
           
           
         </tr>
@@ -946,7 +958,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Coverage of essential health services
+            1. Coverage of essential health services
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1078,6 +1090,14 @@ data-event-label="Change to Table tab"
 <ul class="nav nav-tabs" role="tablist">
     
         
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>National Metadata</button>
+  </li>
+
 
   <li role="presentation" class="nav-item">
     <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
@@ -1105,6 +1125,319 @@ data-event-label="Change to Sources tab"
 <div class="tab-content">
     
         
+<div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                This table provides metadata for the actual indicator available from Malta statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Maltese statistics, this table should be consulted for information on national methodology and other Maltese-specific metadata information.
+            </p>
+            <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
+</div>
+
 <div role="tabpanel" class="tab-pane" id="global">
     <!-- Global Metadata -->
     <div>
@@ -1339,6 +1672,8 @@ data-event-label="Change to Sources tab"
     
     <div class="col-md-6">
       
+        <h4>Source 1</h4>
+      
       <table class="table metadata-content">
   <tbody>
   
@@ -1459,20 +1794,241 @@ data-event-label="Change to Sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Eurostat</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>2,3</p>
+
+          
+        </td>
+        </tr>
+        
+      
   
   
   
@@ -1804,12 +2360,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20241108085230'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20241108092050'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20241108085230"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20241108092050"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
