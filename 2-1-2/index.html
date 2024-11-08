@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241107154419">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241108070307">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -439,7 +439,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Prevalence of moderate or severe food insecurity (%)&quot;,&quot;Prevalence of severe food insecurity (%)&quot;,&quot;Population in moderate or severe food insecurity (thousands of people)&quot;,&quot;Population in severe food insecurity (thousands of people)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Percent (%)&quot;,&quot;Thousands of People&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Male (15+)&quot;,&quot;All Sexes&quot;,&quot;Female (15+)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Prevalence of moderate or severe food insecurity (%)&quot;,&quot;Prevalence of severe food insecurity (%)&quot;,&quot;Population in moderate or severe food insecurity (thousands of people)&quot;,&quot;Population in severe food insecurity (thousands of people)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Percent (%)&quot;,&quot;Thousands of People&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Male (15+)&quot;,&quot;All Sexes&quot;,&quot;Female (15+)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -597,7 +597,25 @@ data-event-label="Change to Table tab"
         <dd
           data-for-series="Prevalence of severe food insecurity (%)"
           data-for-unit=""
-        >Please note that data point 0.5 in Male (15+), 2018 represents <0.5.</dd>
+        >Please note that data point 0.5 in Male (15+), 2018 represents a value below 0.5.</dd>
+        
+        <dt
+          data-for-series="Population in moderate or severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Footer:</dt>
+        <dd
+          data-for-series="Population in moderate or severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Data showing as 100 signifies a value of below 100 (thousands of people)</dd>
+        
+        <dt
+          data-for-series="Population in severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Footer:</dt>
+        <dd
+          data-for-series="Population in severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Data showing as 100 signifies a value of below 100 (thousands of people)</dd>
         
         
 
@@ -672,7 +690,25 @@ data-event-label="Change to Table tab"
         <dd
           data-for-series="Prevalence of severe food insecurity (%)"
           data-for-unit=""
-        >Please note that data point 0.5 in Male (15+), 2018 represents <0.5.</dd>
+        >Please note that data point 0.5 in Male (15+), 2018 represents a value below 0.5.</dd>
+        
+        <dt
+          data-for-series="Population in moderate or severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Footer:</dt>
+        <dd
+          data-for-series="Population in moderate or severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Data showing as 100 signifies a value of below 100 (thousands of people)</dd>
+        
+        <dt
+          data-for-series="Population in severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Footer:</dt>
+        <dd
+          data-for-series="Population in severe food insecurity (thousands of people)"
+          data-for-unit=""
+        >Data showing as 100 signifies a value of below 100 (thousands of people)</dd>
         
         
 
@@ -949,6 +985,12 @@ data-event-label="Change to Sources tab"
   
   
   
+  
+  
+  
+  
+  
+  
       
       
       
@@ -1091,6 +1133,16 @@ data-event-label="Change to Sources tab"
       
         
           
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
   
   
   
@@ -1429,12 +1481,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20241107154419'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20241108070307'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20241107154419"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20241108070307"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
