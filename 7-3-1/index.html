@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241125110705">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241125120212">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -408,6 +408,18 @@ data-event-label="high"
   
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
+
 
   
 
@@ -424,7 +436,7 @@ data-event-label="high"
   data-id="7-3-1"
   data-country="Malta"
   data-charttitle="Energy intensity measured in terms of primary energy and GDP"
-  data-charttitles="[]"
+  data-charttitles="[{&quot;series&quot;:&quot;Energy productivity in Euro per kilogram of oil equivalent (KGOE)&quot;,&quot;title&quot;:&quot;Energy productivity in Euro per kilogram of oil equivalent (KGOE)&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -439,10 +451,10 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)&quot;,&quot;Energy productivity in Euro per kilogram of oil equivalent (KGOE)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;KGOE per thousand euro&quot;,&quot;Euro per KGOE&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
+  data-proxy="proxy"
   data-proxyseries="null"
 >
   
@@ -489,7 +501,15 @@ data-event-label="high"
         
         
         
-        <th scope="col" class="table-value">Value</th>
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
         
         
       </thead>
@@ -498,47 +518,19 @@ data-event-label="high"
         <tr>
           
           
-          <td>2010</td>
-          
-          
-          
-          <td class="table-value">2.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2011</td>
-          
-          
-          
-          <td class="table-value">2.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2012</td>
-          
-          
-          
-          <td class="table-value">2.6</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
           <td>2013</td>
           
           
           
-          <td class="table-value">2.2</td>
+          <td>275.11</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
           
           
         </tr>
@@ -550,7 +542,15 @@ data-event-label="high"
           
           
           
-          <td class="table-value">2.0</td>
+          <td>261.39</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
           
           
         </tr>
@@ -562,7 +562,15 @@ data-event-label="high"
           
           
           
-          <td class="table-value">1.5</td>
+          <td>258.64</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
           
           
         </tr>
@@ -574,7 +582,15 @@ data-event-label="high"
           
           
           
-          <td class="table-value">1.4</td>
+          <td>269.36</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
           
           
         </tr>
@@ -586,7 +602,15 @@ data-event-label="high"
           
           
           
-          <td class="table-value">1.4</td>
+          <td>291.03</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
           
           
         </tr>
@@ -598,7 +622,15 @@ data-event-label="high"
           
           
           
-          <td class="table-value">1.3</td>
+          <td>279.59</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
           
           
         </tr>
@@ -610,7 +642,15 @@ data-event-label="high"
           
           
           
-          <td class="table-value">1.3</td>
+          <td>270.38</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
           
           
         </tr>
@@ -622,7 +662,315 @@ data-event-label="high"
           
           
           
-          <td class="table-value">1.4</td>
+          <td>274.22</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>226.41</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>232.71</td>
+          
+          
+          
+          <td>KGOE per thousand euro</td>
+          
+          
+          
+          <td class="table-value">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>2.85</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>3.02</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>3.29</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>3.64</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>3.83</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>3.87</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>3.71</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>3.44</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>3.58</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>3.7</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>3.65</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>4.42</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>4.3</td>
+          
+          
+          
+          <td>Euro per KGOE</td>
+          
+          
+          
+          <td class="table-value">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</td>
           
           
         </tr>
@@ -634,6 +982,8 @@ data-event-label="high"
 
   
   <div id="datatableFooter">
+    
+    <p>Source: Eurostat</p>
     
     
     <p>Geographical Area: </p>
@@ -728,7 +1078,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Energy intensity measured in terms of primary energy and GDP
+            Energy productivity in Euro per kilogram of oil equivalent (KGOE)
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -860,6 +1210,14 @@ data-event-label="Change to Table tab"
 <ul class="nav nav-tabs" role="tablist">
     
         
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>National Metadata</button>
+  </li>
+
 
   <li role="presentation" class="nav-item">
     <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
@@ -887,6 +1245,355 @@ data-event-label="Change to Sources tab"
 <div class="tab-content">
     
         
+<div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                This table provides metadata for the actual indicator available from Malta statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Maltese statistics, this table should be consulted for information on national methodology and other Maltese-specific metadata information.
+            </p>
+            <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to proxy metadata </th>
+        <td>
+          
+            <p>The National Metadata is in line with the EU Methodology:</p>
+<ul>
+  <li><a href="https://ec.europa.eu/eurostat/cache/metadata/en/nrg_ind_ei_esmsip2.htm">Energy intensity (Kilograms of oil equivalent (KGOE) per thousand euro)</a></li>
+  <li><a href="https://ec.europa.eu/eurostat/cache/metadata/en/sdg_07_30_esmsip2.htm">Energy productivity in Euro per kilogram of oil equivalent (KGOE)</a></li>
+</ul>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
+          
+            Nov 25, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata last updated </th>
+        <td>
+          
+            Nov 25, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
+</div>
+
 <div role="tabpanel" class="tab-pane" id="global">
     <!-- Global Metadata -->
     <div>
@@ -1117,6 +1824,212 @@ data-event-label="Change to Sources tab"
 
 
 
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Eurostat</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
 
 
 </div>
@@ -1388,12 +2301,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20241125110705'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20241125120212'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20241125110705"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20241125120212"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
