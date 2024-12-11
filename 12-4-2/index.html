@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241210130200">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241211075517">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -408,6 +408,18 @@ data-event-label="high"
   
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
+
 
   
 
@@ -424,10 +436,10 @@ data-event-label="high"
   data-id="12-4-2"
   data-country="Malta"
   data-charttitle="(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment"
-  data-charttitles="[]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Electronic waste collected, per capita&quot;,&quot;title&quot;:&quot;1. Electronic waste collected, per capita&quot;},{&quot;series&quot;:&quot;2. Electronic waste collected&quot;,&quot;title&quot;:&quot;2. Electronic waste collected&quot;},{&quot;series&quot;:&quot;3. Hazardous waste exported&quot;,&quot;title&quot;:&quot;3. Hazardous waste exported&quot;},{&quot;series&quot;:&quot;4. Hazardous waste generated&quot;,&quot;title&quot;:&quot;4. Hazardous waste generated&quot;},{&quot;series&quot;:&quot;5. Hazardous waste generated, per capita&quot;,&quot;title&quot;:&quot;5. Hazardous waste generated, per capita&quot;},{&quot;series&quot;:&quot;6. Hazardous waste treated, by type of treatment&quot;,&quot;title&quot;:&quot;6. Hazardous waste treated, by type of treatment&quot;},{&quot;series&quot;:&quot;7. Hazardous waste treated or disposed&quot;,&quot;title&quot;:&quot;7. Hazardous waste treated or disposed&quot;},{&quot;series&quot;:&quot;8. Municipal waste treated by type of treatment&quot;,&quot;title&quot;:&quot;8. Municipal waste treated by type of treatment&quot;},{&quot;series&quot;:&quot;9. Total waste generation, by activity&quot;,&quot;title&quot;:&quot;9. Total waste generation, by activity&quot;},{&quot;series&quot;:&quot;10. Proportion of hazardous waste treated or disposed&quot;,&quot;title&quot;:&quot;10. Proportion of hazardous waste treated or disposed&quot;},{&quot;series&quot;:&quot;11. Municipal waste generated&quot;,&quot;title&quot;:&quot;11. Municipal waste generated&quot;},{&quot;series&quot;:&quot;12. Proportion of municipal waste treated, by type of treatment&quot;,&quot;title&quot;:&quot;12. Proportion of municipal waste treated, by type of treatment&quot;},{&quot;series&quot;:&quot;13. Hazardous waste generated, per unit of GDP&quot;,&quot;title&quot;:&quot;13. Hazardous waste generated, per unit of GDP&quot;},{&quot;series&quot;:&quot;14. WEEE Collection Rate based on POM&quot;,&quot;title&quot;:&quot;14. WEEE Collection Rate based on POM&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
-  data-showdata="false"
+  data-showdata="true"
   data-graphtype="line"
   data-graphtypes="null"
   data-geocoderegex=""
@@ -439,19 +451,2133 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Electronic waste collected, per capita&quot;,&quot;2. Electronic waste collected&quot;,&quot;3. Hazardous waste exported&quot;,&quot;4. Hazardous waste generated&quot;,&quot;5. Hazardous waste generated, per capita&quot;,&quot;6. Hazardous waste treated, by type of treatment&quot;,&quot;7. Hazardous waste treated or disposed&quot;,&quot;8. Municipal waste treated by type of treatment&quot;,&quot;9. Total waste generation, by activity&quot;,&quot;10. Proportion of hazardous waste treated or disposed&quot;,&quot;11. Municipal waste generated&quot;,&quot;12. Proportion of municipal waste treated, by type of treatment&quot;,&quot;13. Hazardous waste generated, per unit of GDP&quot;,&quot;14. WEEE Collection Rate based on POM&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Type of waste treatment&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Incineration&quot;,&quot;Incineration to generate energy&quot;,&quot;Landfilling&quot;,&quot;Recycling&quot;,&quot;Other type of waste management&quot;,&quot;Composting&quot;,&quot;Preparing for re-use&quot;,&quot;Mining and quarrying&quot;,&quot;Agriculture, forestry and fishing&quot;,&quot;Manufacturing&quot;,&quot;Total&quot;,&quot;Construction&quot;,&quot;Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use&quot;,&quot;Electricity, gas, steam and air conditioning supply&quot;,&quot;Water supply; sewerage; waste management and remediation activities&quot;,&quot;Services (except wholesale of waste and scrap)&quot;,&quot;Wholesale of waste and scrap&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type of waste treatment&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Kilograms&quot;,&quot;Tonnes&quot;,&quot;Percentage&quot;,&quot;kilograms per constant 2015 United States dollars&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
-  data-proxyseries="null"
+  data-proxy="both"
+  data-proxyseries="[&quot;14. WEEE Collection Rate based on POM&quot;]"
 >
   
-  <div id="indicator-main" class="indicator-main col-md-12">
+  <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
+  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
+    <div id="serieses"></div>
+<div id="units"></div>
+<div id="toolbar">
+  <span id="series-help">
+    <h4>Sub-categories</h4>
+    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+  </span>
+  <div id="fields">
+    <p class="async-loading" data-img="/sdgsite/assets/img/loading-small.gif"></p>
+  </div>
+</div>
+
+  </div>
+  <div id="indicator-main" class="indicator-main col-md-9">
+    
+
+
+
+
+<div id="headlineTable">
+
+  <div id="datatables">
+
+    
+    <a href="https://nsomalta.github.io/sdgdata/en/headline/12-4-2.csv" class="btn btn-primary btn-download" download="indicator_12-4-2.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
+    <a href="https://nsomalta.github.io/sdgdata/en/data/12-4-2.csv" class="btn btn-primary btn-download" download='indicator_12-4-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
+
+    <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
+
+    
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>(a) Hazardous waste generated per capita; and (b) proportion of hazardous waste treated, by type of treatment</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>3.7</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>3.76</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>3.59</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>4</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>3.85</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>4.46</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>5.37</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>6.31</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>6.55</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>8.43</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>6.89</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>5.42</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">1. Electronic waste collected, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>1,535</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>1,564</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>1,506</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>1,704</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>1,673</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>1,984</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>2,445</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>2,953</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>3,175</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>4,248</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>3,552</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>2,809</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">2. Electronic waste collected</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>17,831</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>16,828</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>14,307</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>10,653</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>19,422</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>17,146</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>110,008</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>15,862</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>19,537</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>9,820</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>20,743</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>8,236</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>15,050</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">3. Hazardous waste exported</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>24,996</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">4. Hazardous waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>38,370</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">4. Hazardous waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>36,871</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">4. Hazardous waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>134,559</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">4. Hazardous waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>33,024</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">4. Hazardous waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>41,677</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">4. Hazardous waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>44,777</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">4. Hazardous waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>60</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">5. Hazardous waste generated, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>91</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">5. Hazardous waste generated, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>85</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">5. Hazardous waste generated, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>296</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">5. Hazardous waste generated, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>68</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">5. Hazardous waste generated, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>81</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">5. Hazardous waste generated, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>84</td>
+          
+          
+          
+          <td>Kilograms</td>
+          
+          
+          
+          <td class="table-value">5. Hazardous waste generated, per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>364</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">7. Hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>502</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">7. Hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>438</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">7. Hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>477</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">7. Hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>473</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">7. Hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>642</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">7. Hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>243</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">7. Hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>1.46</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">10. Proportion of hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>1.31</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">10. Proportion of hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>1.19</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">10. Proportion of hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>0.35</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">10. Proportion of hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>1.43</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">10. Proportion of hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>1.54</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">10. Proportion of hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>0.54</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">10. Proportion of hazardous waste treated or disposed</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>258,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>259,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>257,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>257,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>273,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>285,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>292,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>312,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>326,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>351,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>331,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>317,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>328,000</td>
+          
+          
+          
+          <td>Tonnes</td>
+          
+          
+          
+          <td class="table-value">11. Municipal waste generated</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>0.003</td>
+          
+          
+          
+          <td>kilograms per constant 2015 United States dollars</td>
+          
+          
+          
+          <td class="table-value">13. Hazardous waste generated, per unit of GDP</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>0.004</td>
+          
+          
+          
+          <td>kilograms per constant 2015 United States dollars</td>
+          
+          
+          
+          <td class="table-value">13. Hazardous waste generated, per unit of GDP</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>0.004</td>
+          
+          
+          
+          <td>kilograms per constant 2015 United States dollars</td>
+          
+          
+          
+          <td class="table-value">13. Hazardous waste generated, per unit of GDP</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>0.012</td>
+          
+          
+          
+          <td>kilograms per constant 2015 United States dollars</td>
+          
+          
+          
+          <td class="table-value">13. Hazardous waste generated, per unit of GDP</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>0.002</td>
+          
+          
+          
+          <td>kilograms per constant 2015 United States dollars</td>
+          
+          
+          
+          <td class="table-value">13. Hazardous waste generated, per unit of GDP</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>0.003</td>
+          
+          
+          
+          <td>kilograms per constant 2015 United States dollars</td>
+          
+          
+          
+          <td class="table-value">13. Hazardous waste generated, per unit of GDP</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>16</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">14. WEEE Collection Rate based on POM</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>22</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">14. WEEE Collection Rate based on POM</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>27</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">14. WEEE Collection Rate based on POM</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>40</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">14. WEEE Collection Rate based on POM</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>32</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">14. WEEE Collection Rate based on POM</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>26</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">14. WEEE Collection Rate based on POM</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>27</td>
+          
+          
+          
+          <td>Percentage</td>
+          
+          
+          
+          <td class="table-value">14. WEEE Collection Rate based on POM</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    
+  </div>
+
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Environment and Resources Authority (ERA)</p>
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
+  
+
+</div>
+
+
+<section>
+
+  <p class="async-loading" data-img="/sdgsite/assets/img/loading-small.gif"></p>
+
+  <div class="async-loaded mt-4" style="display:none;">
+
+    <div style="display: none;">
+    <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  </div>
+  <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-chartview"
+          data-bs-target="#chartview"
+          aria-controls="chartview"
+          aria-describedby="table-alternative"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Chart tab"
+
+        
+      >Chart</button>
+    </li>
+    
+    <li role="presentation"
+      class="
+        nav-item
+        
+        
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-tableview"
+          data-bs-target="#tableview"
+          aria-controls="tableview"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to Table tab"
+
+        
+      >Table</button>
+    </li>
+    
+  </ul>
+  
+    <div class="tab-content data-view">
+    
+      
+        <div role="tabpanel" class="tab-pane active" id="chartview">
+          
+
+    <div id="dataset-size-warning" style="display:none" role="alert">
+      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
+      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+    </div>
+
+    
+    <div id="selectionsChart">
+      <figure role="group">
+        <div id="chart-canvas">
+          <h4 id="chart-heading" class="chart-title">
+            1. Electronic waste collected, per capita
+          </h4>
+          <div id="chart" class="plot-container">
+            <canvas
+    role="img"
+    aria-labelledby="chart-heading"
+    aria-describedby="table-alternative chart-annotations"
+    tabindex="0"
+ ></canvas>
+
+          </div>
+          <div id="plotLegend"></div>
+          <div id="selectionChartFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+        </div>
+      </figure>
+      <div id="chartSelectionDownload" class="clearfix">
+        <button
+          id="btnSave"
+          title="Download chart image as PNG"
+          aria-label="Download chart image as PNG"
+          class='btn btn-primary btn-download'>
+          Download chart image (.png)
+        </button><!--
+   --></div>
+    </div>
+
+
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="tableview">
+          <div style="display: none;">
+            <span id="column-sort-info">Click to sort by this column</span>
+          </div>
+          <div id="selectionsTable"></div>
+<dl id="tableTargetLines" class="clearfix"></dl>
+<div id="selectionTableFooter" class="table-footer-text">
+  <h5 class="sr-only">Chart details</h5>
+    <dl>
+        
+
+        <dt class="data-controlled-footer-field unit-from-data">Unit of Measurement:</dt>
+        <dd class="data-controlled-footer-field unit-from-data"></dd>
+
+        
+
+        
+
+        
+
+        
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        >Footnote:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="COMMENT_TS"
+        ></dd>
+        
+        <dt
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        >Data last updated:</dt>
+        <dd
+          class="data-controlled-footer-field"
+          data-ts-attribute="DATA_LAST_UPDATE"
+        ></dd>
+        
+        
+    </dl>
+    
+</div>
+
+<div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+  </div>
+  
+
+  </div>
+
+</section>
+
   
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
         
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>National Metadata</button>
+  </li>
+
 
   <li role="presentation" class="nav-item">
     <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
@@ -462,6 +2588,14 @@ data-event-label="Change to Global Metadata tab"
   </li>
 
 
+<li role="presentation" class="nav-item">
+  <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to Sources tab"
+>Sources</button>
+</li>
+
 
 
 
@@ -471,6 +2605,351 @@ data-event-label="Change to Global Metadata tab"
 <div class="tab-content">
     
         
+<div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                This table provides metadata for the actual indicator available from Malta statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Maltese statistics, this table should be consulted for information on national methodology and other Maltese-specific metadata information.
+            </p>
+            <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Link to proxy metadata </th>
+        <td>
+          
+            <p>The National Metadata for ‘14. WEEE Collection Rate based on POM’ is in line with the <a href="https://ec.europa.eu/eurostat/cache/metadata/de/env_waselee_esms.htm">EU Methodology</a></p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
+          
+            Dec 11, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata last updated </th>
+        <td>
+          
+            Dec 11, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
+</div>
+
 <div role="tabpanel" class="tab-pane" id="global">
     <!-- Global Metadata -->
     <div>
@@ -692,6 +3171,867 @@ data-event-label="Change to Global Metadata tab"
     </div>
 </div>
 
+
+<div role="tabpanel" class="tab-pane" id="sources">
+    <!-- Count the non-empty sources (up to 5) -->
+
+
+
+
+  <div class="row">
+  
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 1</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Environment and Resources Authority (ERA)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>1,2,3,14</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>National Statistics Office (NSO) Malta</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>4,5,6,7,8,9,10</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 3</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>Eurostat</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>1,2,3,11,12</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 4</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>UN SDG Database</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>13</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+  </div>
+
+
+</div>
 
 
     
@@ -960,12 +4300,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20241210130200'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20241211075517'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20241210130200"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20241211075517"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
