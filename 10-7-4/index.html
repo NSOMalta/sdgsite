@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241217091149">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20241217123206">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -937,6 +937,42 @@ data-event-label="Change to Sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Method of computation </th>
+        <td>
+          
+            <p>The indicator is based on the below definitions:</p>
+<ul>
+  <li>
+    <p><strong>Application for asylum:</strong> The application made by a non-EU national or a stateless person which can be understood as a request for international protection from a Member State under the Geneva Convention. Any application for international protection is presumed to be an application for asylum unless a non-EU national or a stateless person explicitly requests another kind of protection that can be applied for separately. An application for asylum is deemed to have been lodged once a form is submitted by the applicant for asylum or a report prepared by the authorities has reached the competent authorities. This includes first applications and repeated applications (subsequent, reopened and new) but excludes applications for temporary protection and reviews of positive decisions previously taken by the IPA.</p>
+  </li>
+  <li>
+    <p><strong>First instance decision:</strong> A decision granted by the respective authority acting as a first instance of the administrative/judicial asylum procedure in the receiving country. In Malta, the authority is the International Protection Agency (IPA). In this release, first instance decisions reported refer to positive decisions and rejections/applications deemed inadmissible. The data excludes any other decisions that may have been taken by the IPA in the reference year, such as applications that were discontinued as explicitly/implicitly withdrawn, administrative closures and applications closed as Dublin cases.</p>
+  </li>
+  <li>
+    <p><strong>Person granted authorisation to stay for humanitarian reasons:</strong> A person covered by a decision granting authorisation to stay for humanitarian reasons under national law concerning international protection. It includes persons who are not eligible for international protection but are nonetheless protected against removal.</p>
+  </li>
+  <li>
+    <p><strong>Person granted subsidiary protection status:</strong> A person who is eligible for subsidiary protection is a third-country national or a stateless person who does not qualify as a refugee but in respect of whom substantial grounds have been shown for believing that the person concerned, if returned to his/her country of origin, or in the case of a stateless person, to his/her country of former habitual residence, would face a real risk of suffering serious harm and is unable, or, owing to such risk, unwilling to avail him/herself of the protection of that country (Art.2(e), Directive 2004/83/EC).</p>
+  </li>
+  <li>
+    <p><strong>Refugee:</strong> A non-EU national who, owing to a well-founded fear of being persecuted for reasons of race, religion, nationality, political opinion or membership of a particular social group, is outside the country of nationality and is unable or, owing to such fear, is unwilling to avail him/herself of the protection of that country, or a stateless person, who, being outside of the country of former habitual residence for the same reason as mentioned above, is unable or, owing to such fear, unwilling to return to it (Art.2(d), Directive 2004/83/EC).</p>
+  </li>
+  <li>
+    <p><strong>Rejected applicant:</strong> A person covered by a decision rejecting an application for international protection under consideration by the responsible national authority.</p>
+  </li>
+</ul>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
       
@@ -977,18 +1013,33 @@ data-event-label="Change to Sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Data last updated </th>
+        <td>
           
-      
-      
-      
-        
+            Dec 03, 2024
           
-      
-      
-      
+        </td>
+        </tr>
         
+      
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Metadata last updated </th>
+        <td>
           
+            Dec 17, 2024
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -1982,12 +2033,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20241217091149'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20241217123206'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20241217091149"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20241217123206"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
