@@ -491,7 +491,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/4-2-1/",
-          "status": "notstarted"
+          "status": "inprogress"
         },
         {
           "id": "4-2-2",
@@ -1755,7 +1755,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/16-1-4/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-2-1",
@@ -1763,7 +1763,7 @@
           "description": "",
           "keywords": "",
           "href": "/sdgsite/16-2-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "16-2-2",
