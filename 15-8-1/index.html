@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250207093616">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250211153858">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -424,7 +424,7 @@ data-event-label="high"
   data-id="15-8-1"
   data-country="Malta"
   data-charttitle="Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species"
-  data-charttitles="[]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Legislation or Regulation or Act related to the prevention of introduction and management of Invasive Alien Species&quot;,&quot;title&quot;:&quot;1. Legislation or Regulation or Act related to the prevention of introduction and management of Invasive Alien Species&quot;},{&quot;series&quot;:&quot;2. National Biodiversity Strategy and Action Plan (NBSAP) targets alignment to Aichi Biodiversity target 9 set out in the Strategic Plan for Biodiversity 2011-2020&quot;,&quot;title&quot;:&quot;2. National Biodiversity Strategy and Action Plan (NBSAP) targets alignment to Aichi Biodiversity target 9 set out in the Strategic Plan for Biodiversity 2011-2020&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -619,7 +619,7 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: ECOLEX, FAOLEX, NBSAPs, and country consultations</p>
+    <p>Source: International Union for Conservation of Nature (IUCN) - data retrieved from ECOLEX, FAOLEX, and country consultations</p>
     
     
     <p>Geographical Area: </p>
@@ -628,7 +628,7 @@ data-event-label="high"
     <p>Unit of Measurement: </p>
     
     
-    <p>Footnote: </p>
+    <p>Footnote: Note: 1 = YES, 0 = NO</p>
     
   </div>
   
@@ -714,7 +714,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species
+            1. Legislation or Regulation or Act related to the prevention of introduction and management of Invasive Alien Species
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -736,6 +736,9 @@ data-event-label="Change to Table tab"
 
         
 
+        
+        <dt>Footnote:</dt>
+        <dd>Note: 1 = YES, 0 = NO</dd>
         
 
         
@@ -800,6 +803,9 @@ data-event-label="Change to Table tab"
 
         
 
+        
+        <dt>Footnote:</dt>
+        <dd>Note: 1 = YES, 0 = NO</dd>
         
 
         
@@ -1107,6 +1113,8 @@ data-event-label="Change to Sources tab"
     
     <div class="col-md-6">
       
+        <h4>Source 1</h4>
+      
       <table class="table metadata-content">
   <tbody>
   
@@ -1171,7 +1179,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>ECOLEX, FAOLEX, NBSAPs, and country consultations</p>
+            <p>International Union for Conservation of Nature (IUCN) - data retrieved from ECOLEX, FAOLEX, and country consultations</p>
 
           
         </td>
@@ -1232,20 +1240,242 @@ data-event-label="Change to Sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>International Union for Conservation of Nature (IUCN) - data retrieved from countries’ National Biodiversity Strategy and Action Plans (NBSAP)</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>1,2</p>
+
+          
+        </td>
+        </tr>
+        
+      
   
   
   
@@ -1577,12 +1807,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250207093616'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250211153858'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250207093616"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250211153858"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
