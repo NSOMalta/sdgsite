@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250211153858">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250212130745">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -424,7 +424,7 @@ data-event-label="high"
   data-id="12-2-2"
   data-country="Malta"
   data-charttitle="Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP"
-  data-charttitles="[]"
+  data-charttitles="[{&quot;series&quot;:&quot;Domestic Material Consumption (DMC)&quot;,&quot;title&quot;:&quot;Domestic Material Consumption (DMC)&quot;},{&quot;series&quot;:&quot;DMC per capita&quot;,&quot;title&quot;:&quot;Domestic Material Consumption (DMC) per capita&quot;},{&quot;series&quot;:&quot;GDP per unit of DMC (Resource Productivity)&quot;,&quot;title&quot;:&quot;GDP per unit of DMC (Resource Productivity)&quot;},{&quot;series&quot;:&quot;Domestic Material Consumption (DMC) in Index form&quot;,&quot;title&quot;:&quot;Domestic Material Consumption (DMC) in index form&quot;},{&quot;series&quot;:&quot;DMC per capita in Index form&quot;,&quot;title&quot;:&quot;DMC per capita in index form&quot;},{&quot;series&quot;:&quot;GDP per unit of DMC (Resource Productivity) in Index form&quot;,&quot;title&quot;:&quot;GDP per unit of DMC (Resource Productivity) in index form&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -439,7 +439,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Domestic material consumption per capita, by type of raw material (tonnes)&quot;,&quot;Domestic material consumption per unit of GDP, by type of raw material (kilograms per constant 2015 United States dollars)&quot;,&quot;Domestic material consumption, by type of raw material (tonnes)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Type of Product&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;BIM&quot;,&quot;FEO&quot;,&quot;NFO&quot;,&quot;FOF&quot;,&quot;ALP&quot;,&quot;WOD&quot;,&quot;WCH&quot;,&quot;GBO&quot;,&quot;CPR&quot;,&quot;CRO&quot;,&quot;MEO&quot;,&quot;NMM&quot;,&quot;COL&quot;,&quot;NMC&quot;,&quot;NMA&quot;,&quot;ONT&quot;,&quot;GAS&quot;,&quot;PET&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type of Product&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Tonnes&quot;,&quot;Kilograms per constant 2015 United States dollars&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Domestic Material Consumption (DMC)&quot;,&quot;DMC per capita&quot;,&quot;GDP per unit of DMC (Resource Productivity)&quot;,&quot;Domestic Material Consumption (DMC) in Index form&quot;,&quot;DMC per capita in Index form&quot;,&quot;GDP per unit of DMC (Resource Productivity) in Index form&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Metric tonnes (thousands)&quot;,&quot;Tonnes per person&quot;,&quot;EUR per kilogramme&quot;,&quot;Index (2010=100)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -472,15 +472,1617 @@ data-event-label="high"
   <div id="datatables">
 
     
+    <a href="https://nsomalta.github.io/sdgdata/en/headline/12-2-2.csv" class="btn btn-primary btn-download" download="indicator_12-2-2.csv" tabindex="0" role="button">Download headline data (.csv)</a>
+    
     <a href="https://nsomalta.github.io/sdgdata/en/data/12-2-2.csv" class="btn btn-primary btn-download" download='indicator_12-2-2.csv' tabindex='0' role='button'>Download source data (.csv)</a>
 
     <p class="no-js-disaggregation-hint">Download source data for disaggregations (.csv)</p>
 
     
-    <h3>No headline data available</h3>
+    <h3>Headline data</h3>
+    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
+      <caption>Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</caption>
+      <thead>
+        
+        
+        <th scope="col">Year</th>
+        
+        
+        
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col">Units</th>
+        
+        
+        
+        <th scope="col" class="table-value">Series</th>
+        
+        
+      </thead>
+      <tbody>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>2970.31</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>3913.55</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>4457.43</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>3722.05</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>5156.42</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>6144.28</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>6184.69</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>5329.19</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>6289.93</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>5993.31</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>6593.21</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>5825.7</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>5385.15</td>
+          
+          
+          
+          <td>Metric tonnes (thousands)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>7.17</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>9.4</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>10.63</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>8.76</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>11.9</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>13.83</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>13.61</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>11.41</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>13.0</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>11.89</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>12.79</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>11.24</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>10.14</td>
+          
+          
+          
+          <td>Tonnes per person</td>
+          
+          
+          
+          <td class="table-value">DMC per capita</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>2.89</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>2.22</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>2.03</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>2.58</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>2.0</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>1.84</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>1.91</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>2.5</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>2.27</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>2.48</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>2.18</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>2.79</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>3.15</td>
+          
+          
+          
+          <td>EUR per kilogramme</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity)</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>132.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>150.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>125.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>174.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>207.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>208.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>179.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>212.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>202.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>222.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>196.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>181.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">Domestic Material Consumption (DMC) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>131.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>148.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>122.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>166.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>193.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>190.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>159.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>181.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>166.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>178.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>157.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>141.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">DMC per capita in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2010</td>
+          
+          
+          
+          <td>100.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2011</td>
+          
+          
+          
+          <td>77.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2012</td>
+          
+          
+          
+          <td>70.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2013</td>
+          
+          
+          
+          <td>89.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2014</td>
+          
+          
+          
+          <td>69.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2015</td>
+          
+          
+          
+          <td>64.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2016</td>
+          
+          
+          
+          <td>66.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2017</td>
+          
+          
+          
+          <td>86.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2018</td>
+          
+          
+          
+          <td>78.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2019</td>
+          
+          
+          
+          <td>86.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2020</td>
+          
+          
+          
+          <td>75.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2021</td>
+          
+          
+          
+          <td>97.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2022</td>
+          
+          
+          
+          <td>109.0</td>
+          
+          
+          
+          <td>Index (2010=100)</td>
+          
+          
+          
+          <td class="table-value">GDP per unit of DMC (Resource Productivity) in Index form</td>
+          
+          
+        </tr>
+        
+      </tbody>
+    </table>
     
   </div>
 
+  
+  <div id="datatableFooter">
+    
+    <p>Source: Eurostat</p>
+    
+    
+    <p>Geographical Area: </p>
+    
+    
+    <p>Unit of Measurement: </p>
+    
+    
+    <p>Footnote: </p>
+    
+  </div>
   
 
 </div>
@@ -564,7 +2166,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP
+            Domestic Material Consumption (DMC)
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1023,7 +2625,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>UNSD/UNEP Questionnaire</p>
+            <p>Eurostat</p>
 
           
         </td>
@@ -1357,206 +2959,6 @@ data-event-label="Change to Sources tab"
 
     </div>
     
-    
-    
-    <div class="col-md-6">
-      
-        <h4>Source 3</h4>
-      
-      <table class="table metadata-content">
-  <tbody>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-      
-      
-      
-      
-      <tr>
-        <th scope="row">Organisation </th>
-        <td>
-          
-            <p>Eurostat</p>
-
-          
-        </td>
-        </tr>
-        
-      
-  
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-      
-      
-      
-        
-          
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </tbody>
-</table>
-
-    </div>
-    
   </div>
 
 
@@ -1829,12 +3231,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250211153858'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250212130745'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250211153858"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250212130745"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
