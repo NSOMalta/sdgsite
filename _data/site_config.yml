@@ -90,11 +90,12 @@ frontpage_cards:
     rule_color: ''
   - title: International Resources
     content: |
-      <a href="https://unstats.un.org/sdgs/dataportal">Data Portal</a>
-      <a href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">Eurostat SDGs</a>
-      <a href="https://unstats.un.org/sdgs/report/2022/">UN SDG Report</a>
-      <a href="https://ec.europa.eu/eurostat/en/web/products-flagship-publications/w/ks-04-23-184">Sustainable development in the European Union</a>
-
+      <ul>
+        <li><a href="https://unstats.un.org/sdgs/dataportal/database">UN SDG Database</a></li>
+        <li><a href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">Eurostat SDGs</a></li>
+        <li><a href="https://unstats.un.org/sdgs/report/2022/">UN SDG Report</a></li>
+        <li><a href="https://ec.europa.eu/eurostat/en/web/products-flagship-publications/w/ks-04-23-184">Sustainable development in the European Union</a></li>
+      </ul>
     include: ''
     button_label: Read more
     button_link: 'https://nso.gov.mt/published-publications/'
