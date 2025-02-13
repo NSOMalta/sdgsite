@@ -3961,9 +3961,22 @@ opensdg.chartTypes.base = function(info) {
 
   opensdg.chartTypes.line = function(info) {
     var config = opensdg.chartTypes.base(info);
+
+    // Find the corresponding graph limit for the unit
+    var graphLimit = info.graph_limits.find(limit => limit.unit === info.unit);
+
     var overrides = {
         type: 'line',
         options: {
+            scales: {
+                y: {
+                    min: graphLimit.minimum,
+                    max: graphLimit.maximum,
+                    ticks: {
+                        stepSize: graphLimit.stepSize
+                    }
+                }
+            },
             plugins: {
                 tooltip: {
                     mode: 'index',
@@ -3993,10 +4006,12 @@ opensdg.chartTypes.base = function(info) {
             }
         }],
     };
+
     // Add these overrides onto the normal config, and return it.
     _.merge(config, overrides);
     return config;
 }
+
   opensdg.chartTypes.bar = function (info) {
     var config = opensdg.chartTypes.base(info);
     var overrides = {
