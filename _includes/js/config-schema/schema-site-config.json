@@ -571,6 +571,11 @@
                 "type": "object",
                 "title": "Indicator tab",            
                 "properties": {
+                    "series": {
+                    "type": "string",
+                    "title": "Series",
+                    "description": "Field to reserve for the SDG series. Defaults to 'Series'."
+                    },
                     "tab_1": {
                         "type": "string",
                         "title": "Tab 1",
