@@ -281,7 +281,7 @@
                                   "type": "number",
                                   "minimum": 0,
                                   "title": "Step Size",
-                                  "description": ""Interval between tick marks on the y axis."
+                                  "description": "Interval between tick marks on the y axis."
                               },
                         }
                     }
