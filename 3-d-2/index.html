@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250217104555">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250217113730">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -425,7 +425,7 @@ data-event-label="high"
   data-country="Malta"
   data-charttitle="Percentage of bloodstream infections due to selected antimicrobial-resistant organismsi"
   data-charttitles="[{&quot;series&quot;:&quot;Escherichia coli resistant to 3rd-generation cephalosporin (ESBL - E. coli)&quot;,&quot;title&quot;:&quot;Escherichia coli resistant to 3rd-generation cephalosporin (ESBL - E. coli)&quot;},{&quot;series&quot;:&quot;Methicillin-Resistant Staphylococcus Aureus (MRSA)&quot;,&quot;title&quot;:&quot;Methicillin-Resistant Staphylococcus Aureus (MRSA)&quot;}]"
-  data-measurementunit=""
+  data-measurementunit="Percentage (%)"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -433,7 +433,7 @@ data-event-label="high"
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[]"
-  data-graphlimits="[]"
+  data-graphlimits="[{&quot;series&quot;:&quot;Methicillin-Resistant Staphylococcus Aureus (MRSA)&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:50,&quot;stepSize&quot;:5}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
@@ -673,7 +673,7 @@ data-event-label="high"
     <p>Geographical Area: </p>
     
     
-    <p>Unit of Measurement: </p>
+    <p>Unit of Measurement: Percentage (%)</p>
     
     
     <p>Footnote: </p>
@@ -1614,12 +1614,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250217104555'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250217113730'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250217104555"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250217113730"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>

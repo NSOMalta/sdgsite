@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250217104555">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250217113730">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -423,7 +423,7 @@ data-event-label="high"
   data-indicatorid='indicator_3-d-1'
   data-id="3-d-1"
   data-country="Malta"
-  data-charttitle="International Health Regulations (IHR) capacity and health emergency preparedness"
+  data-charttitle="International Health Regulations (IHR) capacity and health emergency preparedness by IHR capacity"
   data-charttitles="[]"
   data-measurementunit="Percentage (%)"
   data-xaxislabel=""
@@ -432,14 +432,14 @@ data-event-label="high"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[]"
-  data-graphlimits="[]"
+  data-startvalues="[{&quot;field&quot;:&quot;IHR Capacity&quot;,&quot;value&quot;:&quot;Chemical events&quot;}]"
+  data-graphlimits="[{&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:100,&quot;stepSize&quot;:10}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;IHR Capacity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Policy, Legal and normative Instruments to implement IHR&quot;,&quot;IHR Coordination, National IHR Focal Point functions and advocacy&quot;,&quot;Financing&quot;,&quot;Laboratory&quot;,&quot;Surveillance&quot;,&quot;Human resources&quot;,&quot;Health emergency management&quot;,&quot;Health services provision&quot;,&quot;Infection prevention and control (IPC)&quot;,&quot;Risk communication and community engagement (RCCE)&quot;,&quot;Points of entry (PoEs) and border health&quot;,&quot;Zoonotic diseases&quot;,&quot;Food safety&quot;,&quot;Chemical events&quot;,&quot;Radiation emergencies&quot;,&quot;&quot;]},&quot;title&quot;:&quot;IHR Capacity&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;IHR Capacity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Chemical events&quot;,&quot;Financing&quot;,&quot;Food safety&quot;,&quot;Health emergency management&quot;,&quot;Health services provision&quot;,&quot;Human resources&quot;,&quot;IHR Coordination, National IHR Focal Point functions and advocacy&quot;,&quot;Infection prevention and control (IPC)&quot;,&quot;Laboratory&quot;,&quot;Points of entry (PoEs) and border health&quot;,&quot;Policy, Legal and normative Instruments to implement IHR&quot;,&quot;Radiation emergencies&quot;,&quot;Risk communication and community engagement (RCCE)&quot;,&quot;Surveillance&quot;,&quot;Zoonotic diseases&quot;,&quot;&quot;]},&quot;title&quot;:&quot;IHR Capacity&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -564,7 +564,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            International Health Regulations (IHR) capacity and health emergency preparedness
+            International Health Regulations (IHR) capacity and health emergency preparedness by IHR capacity
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1416,12 +1416,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250217104555'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250217113730'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250217104555"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250217113730"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
