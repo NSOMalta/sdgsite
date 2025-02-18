@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250217140743">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250218074913">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -424,7 +424,7 @@ data-event-label="high"
   data-id="9-1-2"
   data-country="Malta"
   data-charttitle="Passenger and freight volumes, by mode of transport"
-  data-charttitles="[{&quot;series&quot;:&quot;1. Freight volume (aviation) in tonne kilometres (millions)&quot;,&quot;title&quot;:&quot;1. Freight volume (aviation) in tonne kilometres (millions)&quot;},{&quot;series&quot;:&quot;2. Passenger volume (aviation) in passenger kilometres (millions)&quot;,&quot;title&quot;:&quot;2. Passenger volume (aviation) in passenger kilometres (millions)&quot;},{&quot;series&quot;:&quot;3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)&quot;,&quot;title&quot;:&quot;3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)&quot;},{&quot;series&quot;:&quot;4. Unloaded local cargo (maritime transport) in millions of tonnes&quot;,&quot;title&quot;:&quot;4. Unloaded local cargo (maritime transport) in millions of tonnes&quot;},{&quot;series&quot;:&quot;5. Loaded local cargo (maritime transport) in millions of tonnes&quot;,&quot;title&quot;:&quot;5. Loaded local cargo (maritime transport) in millions of tonnes&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Freight volume (aviation)&quot;,&quot;title&quot;:&quot;1. Freight volume (aviation)&quot;},{&quot;series&quot;:&quot;2. Passenger volume (aviation)&quot;,&quot;title&quot;:&quot;2. Passenger volume (aviation)&quot;},{&quot;series&quot;:&quot;3. Container port traffic (maritime transport)&quot;,&quot;title&quot;:&quot;3. Container port traffic (maritime transport)&quot;},{&quot;series&quot;:&quot;4. Unloaded local cargo (maritime transport)&quot;,&quot;title&quot;:&quot;4. Unloaded local cargo (maritime transport)&quot;},{&quot;series&quot;:&quot;5. Loaded local cargo (maritime transport)&quot;,&quot;title&quot;:&quot;5. Loaded local cargo (maritime transport)&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -439,7 +439,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Freight volume (aviation) in tonne kilometres (millions)&quot;,&quot;2. Passenger volume (aviation) in passenger kilometres (millions)&quot;,&quot;3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)&quot;,&quot;4. Unloaded local cargo (maritime transport) in millions of tonnes&quot;,&quot;5. Loaded local cargo (maritime transport) in millions of tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Freight Tonne-Kilometres (FTK)&quot;,&quot;Revenue Passenger-Kilometres (RPK)&quot;,&quot;Twenty-foot Equivalent Unit (TEU)&quot;,&quot;Metric tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Freight volume (aviation)&quot;,&quot;2. Passenger volume (aviation)&quot;,&quot;3. Container port traffic (maritime transport)&quot;,&quot;4. Unloaded local cargo (maritime transport)&quot;,&quot;5. Loaded local cargo (maritime transport)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Millions of Freight Tonne-Kilometres (FTK)&quot;,&quot;Millions of Revenue Passenger-Kilometres (RPK)&quot;,&quot;Millions of Twenty-foot Equivalent Units (TEU)&quot;,&quot;Millions of metric tonnes&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -514,11 +514,11 @@ data-event-label="high"
           
           
           
-          <td>Freight Tonne-Kilometres (FTK)</td>
+          <td>Millions of Freight Tonne-Kilometres (FTK)</td>
           
           
           
-          <td class="table-value">1. Freight volume (aviation) in tonne kilometres (millions)</td>
+          <td class="table-value">1. Freight volume (aviation)</td>
           
           
         </tr>
@@ -534,11 +534,11 @@ data-event-label="high"
           
           
           
-          <td>Freight Tonne-Kilometres (FTK)</td>
+          <td>Millions of Freight Tonne-Kilometres (FTK)</td>
           
           
           
-          <td class="table-value">1. Freight volume (aviation) in tonne kilometres (millions)</td>
+          <td class="table-value">1. Freight volume (aviation)</td>
           
           
         </tr>
@@ -554,11 +554,11 @@ data-event-label="high"
           
           
           
-          <td>Freight Tonne-Kilometres (FTK)</td>
+          <td>Millions of Freight Tonne-Kilometres (FTK)</td>
           
           
           
-          <td class="table-value">1. Freight volume (aviation) in tonne kilometres (millions)</td>
+          <td class="table-value">1. Freight volume (aviation)</td>
           
           
         </tr>
@@ -574,11 +574,11 @@ data-event-label="high"
           
           
           
-          <td>Freight Tonne-Kilometres (FTK)</td>
+          <td>Millions of Freight Tonne-Kilometres (FTK)</td>
           
           
           
-          <td class="table-value">1. Freight volume (aviation) in tonne kilometres (millions)</td>
+          <td class="table-value">1. Freight volume (aviation)</td>
           
           
         </tr>
@@ -594,11 +594,11 @@ data-event-label="high"
           
           
           
-          <td>Freight Tonne-Kilometres (FTK)</td>
+          <td>Millions of Freight Tonne-Kilometres (FTK)</td>
           
           
           
-          <td class="table-value">1. Freight volume (aviation) in tonne kilometres (millions)</td>
+          <td class="table-value">1. Freight volume (aviation)</td>
           
           
         </tr>
@@ -614,11 +614,11 @@ data-event-label="high"
           
           
           
-          <td>Freight Tonne-Kilometres (FTK)</td>
+          <td>Millions of Freight Tonne-Kilometres (FTK)</td>
           
           
           
-          <td class="table-value">1. Freight volume (aviation) in tonne kilometres (millions)</td>
+          <td class="table-value">1. Freight volume (aviation)</td>
           
           
         </tr>
@@ -634,11 +634,11 @@ data-event-label="high"
           
           
           
-          <td>Revenue Passenger-Kilometres (RPK)</td>
+          <td>Millions of Revenue Passenger-Kilometres (RPK)</td>
           
           
           
-          <td class="table-value">2. Passenger volume (aviation) in passenger kilometres (millions)</td>
+          <td class="table-value">2. Passenger volume (aviation)</td>
           
           
         </tr>
@@ -654,11 +654,11 @@ data-event-label="high"
           
           
           
-          <td>Revenue Passenger-Kilometres (RPK)</td>
+          <td>Millions of Revenue Passenger-Kilometres (RPK)</td>
           
           
           
-          <td class="table-value">2. Passenger volume (aviation) in passenger kilometres (millions)</td>
+          <td class="table-value">2. Passenger volume (aviation)</td>
           
           
         </tr>
@@ -674,11 +674,11 @@ data-event-label="high"
           
           
           
-          <td>Revenue Passenger-Kilometres (RPK)</td>
+          <td>Millions of Revenue Passenger-Kilometres (RPK)</td>
           
           
           
-          <td class="table-value">2. Passenger volume (aviation) in passenger kilometres (millions)</td>
+          <td class="table-value">2. Passenger volume (aviation)</td>
           
           
         </tr>
@@ -694,11 +694,11 @@ data-event-label="high"
           
           
           
-          <td>Revenue Passenger-Kilometres (RPK)</td>
+          <td>Millions of Revenue Passenger-Kilometres (RPK)</td>
           
           
           
-          <td class="table-value">2. Passenger volume (aviation) in passenger kilometres (millions)</td>
+          <td class="table-value">2. Passenger volume (aviation)</td>
           
           
         </tr>
@@ -714,11 +714,11 @@ data-event-label="high"
           
           
           
-          <td>Revenue Passenger-Kilometres (RPK)</td>
+          <td>Millions of Revenue Passenger-Kilometres (RPK)</td>
           
           
           
-          <td class="table-value">2. Passenger volume (aviation) in passenger kilometres (millions)</td>
+          <td class="table-value">2. Passenger volume (aviation)</td>
           
           
         </tr>
@@ -734,11 +734,11 @@ data-event-label="high"
           
           
           
-          <td>Revenue Passenger-Kilometres (RPK)</td>
+          <td>Millions of Revenue Passenger-Kilometres (RPK)</td>
           
           
           
-          <td class="table-value">2. Passenger volume (aviation) in passenger kilometres (millions)</td>
+          <td class="table-value">2. Passenger volume (aviation)</td>
           
           
         </tr>
@@ -754,11 +754,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -774,11 +774,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -794,11 +794,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -814,11 +814,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -834,11 +834,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -854,11 +854,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -874,11 +874,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -894,11 +894,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -914,11 +914,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -934,11 +934,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -954,11 +954,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -974,11 +974,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -994,11 +994,11 @@ data-event-label="high"
           
           
           
-          <td>Twenty-foot Equivalent Unit (TEU)</td>
+          <td>Millions of Twenty-foot Equivalent Units (TEU)</td>
           
           
           
-          <td class="table-value">3. Container port traffic (maritime transport) in twenty-foot equivalent units - TEUs (millions)</td>
+          <td class="table-value">3. Container port traffic (maritime transport)</td>
           
           
         </tr>
@@ -1014,11 +1014,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1034,11 +1034,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1054,11 +1054,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1074,11 +1074,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1094,11 +1094,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1114,11 +1114,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1134,11 +1134,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1154,11 +1154,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1174,11 +1174,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1194,11 +1194,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1214,11 +1214,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1234,11 +1234,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">4. Unloaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">4. Unloaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1254,11 +1254,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1274,11 +1274,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1294,11 +1294,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1314,11 +1314,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1334,11 +1334,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1354,11 +1354,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1374,11 +1374,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1394,11 +1394,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1414,11 +1414,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1434,11 +1434,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1454,11 +1454,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1474,11 +1474,11 @@ data-event-label="high"
           
           
           
-          <td>Metric tonnes</td>
+          <td>Millions of metric tonnes</td>
           
           
           
-          <td class="table-value">5. Loaded local cargo (maritime transport) in millions of tonnes</td>
+          <td class="table-value">5. Loaded local cargo (maritime transport)</td>
           
           
         </tr>
@@ -1586,7 +1586,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            1. Freight volume (aviation) in tonne kilometres (millions)
+            1. Freight volume (aviation)
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1717,40 +1717,405 @@ data-event-label="Change to Table tab"
   <div class="mt-4">
 <ul class="nav nav-tabs" role="tablist">
     
+    
         
-
-  <li role="presentation" class="nav-item">
-    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                id="tab-national"
+                data-bs-target="#national"
+                aria-controls="national"
+                role="tab"
+                data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
-data-event-label="Change to Global Metadata tab"
->Global Metadata</button>
-  </li>
+data-event-label="Change to Proxy Metadata tab"
 
+            >Proxy Metadata</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-global"
+                data-bs-target="#global"
+                aria-controls="global"
+                role="tab"
+                data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to indicator.global_metadata tab"
 
-<li role="presentation" class="nav-item">
-  <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-sources" data-bs-target="#sources" aria-controls="sources" role="tab" data-on="click"
+            >Global Metadata</button>
+        </li>
+    
+        
+        
+        
+        
+        <li role="presentation" class="nav-item">
+            <button
+                type="button"
+                class="nav-link "
+                data-bs-toggle="tab"
+                id="tab-sources"
+                data-bs-target="#sources"
+                aria-controls="sources"
+                role="tab"
+                data-on="click"
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to Sources tab"
->Sources</button>
-</li>
 
-
-
-
+            >Sources</button>
+        </li>
+    
     
  </ul>
 
 <div class="tab-content">
     
         
-<div role="tabpanel" class="tab-pane" id="global">
-    <!-- Global Metadata -->
-    <div>
-        <article>
-            <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
-            <table class="table metadata-content">
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane active" id="national">
+            <article>
+                <p>This table provides metadata for the actual indicator available from Malta statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Maltese statistics, this table should be consulted for information on national methodology and other Maltese-specific metadata information.</p>
+
+                <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="global">
+            <article>
+                <p>This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href="https://unstats.un.org/sdgs/metadata/">Complete global metadata</a> is provided by the UN Statistics Division.</p>
+
+                <table class="table metadata-content">
   <tbody>
   
       
@@ -1951,13 +2316,21 @@ data-event-label="Change to Sources tab"
   </tbody>
 </table>
 
-        </article>
-    </div>
-</div>
-
-
-<div role="tabpanel" class="tab-pane" id="sources">
-    <!-- Count the non-empty sources (up to 5) -->
+            </article>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div role="tabpanel" class="tab-pane " id="sources">
+            <article>
+                
+                <!-- Count the non-empty sources (up to 5) -->
 
 
 
@@ -2604,9 +2977,9 @@ data-event-label="Change to Sources tab"
   </div>
 
 
-</div>
-
-
+            </article>
+        </div>
+        
     
     
         <div role="tabpanel" class="tab-pane" id="edit">
@@ -2873,12 +3246,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250217140743'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250218074913'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250217140743"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250218074913"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
