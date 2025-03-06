@@ -418,48 +418,39 @@
             "description": "The number (or 'id') for the indicator."
         },
         "indicator_tabs": {
-            "type": "array",
-            "title": "All Indicator tabs",
+            "type": "object",
+            "title": "Indicator tabs",
             "description": "Assign content for the indicator tabs, if the override box is checked. Otherwise this indicator will use the assignments set in your site configuration.",
-            "items":{
-                "type": "object",
-                "title": "Indicator tabs",
-                "allOf": [
-                    { "$ref": "#/definitions/series_unit_constraint" },
-                    {
-                        "properties": {
-                            "override": {
-                                "type": "boolean",
-                                "title": "Override site configuration",
-                                "description": "If checked, the site-wide indicator tab configuration will be ignored for this indicator."
-                            },
-                            "tab_1": {
-                                "type": "string",
-                                "title": "Tab 1",
-                                "description": "What to display in the first tab",
-                                "$ref": "#/definitions/indicator_tabs_options"
-                            },
-                            "tab_2": {
-                                "type": "string",
-                                "title": "Tab 2",
-                                "description": "What to display in the second tab",
-                                "$ref": "#/definitions/indicator_tabs_options"
-                            },
-                            "tab_3": {
-                                "type": "string",
-                                "title": "Tab 3",
-                                "description": "What to display in the third tab",
-                                "$ref": "#/definitions/indicator_tabs_options"
-                            },
-                            "tab_4": {
-                                "type": "string",
-                                "title": "Tab 4",
-                                "description": "What to display in the fourth tab",
-                                "$ref": "#/definitions/indicator_tabs_options"
-                            }
-                        }
-                    }
-                ]
+            "properties": {
+                "override": {
+                    "type": "boolean",
+                    "title": "Override site configuration",
+                    "description": "If checked, the site-wide indicator tab configuration will be ignored for this indicator."
+                },
+                "tab_1": {
+                    "type": "string",
+                    "title": "Tab 1",
+                    "description": "What to display in the first tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                },
+                "tab_2": {
+                    "type": "string",
+                    "title": "Tab 2",
+                    "description": "What to display in the second tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                },
+                "tab_3": {
+                    "type": "string",
+                    "title": "Tab 3",
+                    "description": "What to display in the third tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                },
+                "tab_4": {
+                    "type": "string",
+                    "title": "Tab 4",
+                    "description": "What to display in the fourth tab",
+                    "$ref": "#/definitions/indicator_tabs_options"
+                }
             }
         },
         "national_geographical_coverage": {
