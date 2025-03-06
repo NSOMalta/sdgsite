@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250306103230">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250306113914">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -441,10 +441,10 @@ data-event-label="high"
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="null"
+  data-graphtypes="[{&quot;series&quot;:&quot;9. Number of residential dwellings per capita&quot;,&quot;type&quot;:&quot;bar&quot;},{&quot;series&quot;:&quot;1. Proportion of urban population living in inadequate housing&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;series&quot;:&quot;2. Proportion of urban population living in slums&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;series&quot;:&quot;3. Share of persons living in overcrowded households&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;series&quot;:&quot;4. Population living in an area with noise pollution&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;series&quot;:&quot;5. Housing cost overburden rate by poverty status&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;series&quot;:&quot;6. Material deprivation for the housing dimension&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;series&quot;:&quot;7. Population living in households with moisture damages&quot;,&quot;type&quot;:&quot;line&quot;},{&quot;series&quot;:&quot;8. Population considering their dwelling as too dark&quot;,&quot;type&quot;:&quot;line&quot;}]"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[]"
+  data-startvalues="[{&quot;field&quot;:&quot;Poverty Status&quot;,&quot;value&quot;:&quot;All Statuses&quot;},{&quot;field&quot;:&quot;Poverty Status&quot;,&quot;value&quot;:&quot;Below 60% of median equivalised income&quot;},{&quot;field&quot;:&quot;Poverty Status&quot;,&quot;value&quot;:&quot;Above 60% of median equivalised income&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
@@ -2315,7 +2315,8 @@ data-event-label="Change to Sources tab"
         <th scope="row">Link to proxy metadata </th>
         <td>
           
-            <p>The National Metadata for ‘5. Housing cost overburden rate by poverty status (%)’ is in line with the <a href="https://ec.europa.eu/eurostat/cache/metadata/en/sdg_01_50_esmsip2.htm">EU Methodology</a></p>
+            <p>The National Metadata for series 3,4,6,7, and 8 is in line with the <a href="https://ec.europa.eu/eurostat/cache/metadata/en/ilc_sieusilc.htm">EU Methodology</a>
+Further information on ‘5. Housing cost overburden rate by poverty status (%)’ can be found <a href="https://ec.europa.eu/eurostat/cache/metadata/en/sdg_01_50_esmsip2.htm">here</a></p>
 
           
         </td>
@@ -2536,7 +2537,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Dec 10, 2024
+            Mar 06, 2025
           
         </td>
         </tr>
@@ -3982,12 +3983,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250306103230'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250306113914'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250306103230"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250306113914"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
