@@ -2639,11 +2639,11 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 iframe {
   margin: 0 auto;
   display: block;
-  width: 100%;
-  height: auto;
+  width: 500px;
+  height: 300px;
   object-fit: contain; }
 
-.embedded-map > img {
+.embedded-map img {
   width: 500px;
   height: 300px; }
 
