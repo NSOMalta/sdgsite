@@ -10,10 +10,13 @@
 iframe{
   margin: 0 auto;
   display: block;
-  width: 100%;
-  //height: 100%;
 }
-
+@media (width: 1398.40px) {
+  iframe{
+    width: 849px;
+    height: 495px;      
+  }
+}
 .navbar-brand {
     width: calc(100% - 100px);
     max-width: 550px;
