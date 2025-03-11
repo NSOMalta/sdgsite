@@ -2638,12 +2638,11 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 
 iframe {
   margin: 0 auto;
-  display: block; }
+  display: block;
+  width: 500;
+  height: 300;
+  object-fit: contain; }
 
-@media (width: 1398.4px) {
-  iframe {
-    width: 849px;
-    height: 495px; } }
 .navbar-brand {
   width: calc(100% - 100px);
   max-width: 550px;
