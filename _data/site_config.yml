@@ -137,7 +137,7 @@ indicator_metadata_form:
   dropdowns: []
   repository_link: /tree/develop/meta
   translation_link: ''
-  language: ''
+  language: 'en'
   scopes:
     - national
     - global
