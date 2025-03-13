@@ -1,4 +1,3 @@
-
 name: Test PRs
 
 on: [pull_request]
@@ -9,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v1
     - name: Set up Ruby 2.6
       uses: ruby/setup-ruby@v1
       with:
@@ -20,8 +19,7 @@ jobs:
       run: echo "REPOSITORY_URL_SITE=https://github.com/$GITHUB_REPOSITORY" >> $GITHUB_ENV
     - name: Build the site
       run: |
-        gem update --system 3.2.3
-        gem install bundler -v 2.4.22
+        gem install bundler
         bundle config path vendor/bundle
         bundle install
         bundle exec jekyll build --baseurl=/${{ env.GITHUB_REPOSITORY_NAME_PART }}
