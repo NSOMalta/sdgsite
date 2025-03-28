@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250328095739">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250328110631">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -424,7 +424,7 @@ data-event-label="high"
   data-id="17-1-1"
   data-country="Malta"
   data-charttitle="Total government revenue as a proportion of GDP, by source"
-  data-charttitles="[{&quot;series&quot;:&quot;Total government revenue as a proportion of GDP&quot;,&quot;title&quot;:&quot;Total government revenue as a proportion of GDP&quot;},{&quot;series&quot;:&quot;Total government revenue in local currency&quot;,&quot;title&quot;:&quot;Total government revenue in local currency&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;Total government revenue as a proportion of GDP&quot;,&quot;title&quot;:&quot;Total government revenue as a proportion of GDP, by source&quot;},{&quot;series&quot;:&quot;Total government revenue in local currency&quot;,&quot;title&quot;:&quot;Total government revenue in local currency&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -800,7 +800,9 @@ data-event-label="high"
     <p>Unit of Measurement: </p>
     
     
-    <p>Footnote: Notes: The General Government sector includes the Budgetary Central Government made up of all Government ministries and departments, the Extra Budgetary Units (EBUs) which are classified as forming part of this sector, as well as all the Local Councils.  2. Transactions between General Government are consolidated.
+    <p>Footnote: Notes:
+1. The General Government sector includes the Budgetary Central Government made up of all Government ministries and departments, the Extra Budgetary Units (EBUs) which are classified as forming part of this sector, as well as all the Local Councils.
+2. Transactions between General Government are consolidated.
 </p>
     
   </div>
@@ -887,7 +889,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Total government revenue as a proportion of GDP
+            Total government revenue as a proportion of GDP, by source
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -910,7 +912,11 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Notes: The General Government sector includes the Budgetary Central Government made up of all Government ministries and departments, the Extra Budgetary Units (EBUs) which are classified as forming part of this sector, as well as all the Local Councils.  2. Transactions between General Government are consolidated.</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>The General Government sector includes the Budgetary Central Government made up of all Government ministries and departments, the Extra Budgetary Units (EBUs) which are classified as forming part of this sector, as well as all the Local Councils.</li>
+  <li>Transactions between General Government are consolidated.</li>
+</ol>
 </dd>
         
 
@@ -977,7 +983,11 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Notes: The General Government sector includes the Budgetary Central Government made up of all Government ministries and departments, the Extra Budgetary Units (EBUs) which are classified as forming part of this sector, as well as all the Local Councils.  2. Transactions between General Government are consolidated.</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>The General Government sector includes the Budgetary Central Government made up of all Government ministries and departments, the Extra Budgetary Units (EBUs) which are classified as forming part of this sector, as well as all the Local Councils.</li>
+  <li>Transactions between General Government are consolidated.</li>
+</ol>
 </dd>
         
 
@@ -1762,12 +1772,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250328095739'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250328110631'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250328095739"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250328110631"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
