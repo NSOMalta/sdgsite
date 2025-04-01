@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250401080351">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250401083535">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -436,7 +436,7 @@ data-event-label="high"
   data-id="16-2-1"
   data-country="Malta"
   data-charttitle="Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month"
-  data-charttitles="[{&quot;series&quot;:&quot;1. Total number of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;,&quot;title&quot;:&quot;1. Total number of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;},{&quot;series&quot;:&quot;2. Rate of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population&quot;,&quot;title&quot;:&quot;2. Rate of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Total number of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;,&quot;title&quot;:&quot;1. Total number of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;},{&quot;series&quot;:&quot;2. Rate of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population&quot;,&quot;title&quot;:&quot;2. Rate of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -883,7 +883,7 @@ data-event-label="high"
   
   <div id="datatableFooter">
     
-    <p>Source: The Foundation for Social Welfare Services</p>
+    <p>Source: The Foundation for Social Welfare Services (FSWS)</p>
     
     
     <p>Geographical Area: </p>
@@ -978,7 +978,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            1. Total number of referrals received by the Child Protection Services concerning service users aged <1 to 14 years
+            1. Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1332,6 +1332,8 @@ data-event-label="Change to Sources tab"
   <li>A case is recorded every time a service user contacts the Child Protection Service.</li>
   <li>Persons and types of abuse may be counted more than once since service users may be referred to the service more than once during the same reporting year.</li>
   <li>A case may remain active across the reporting years (carried over from one year to another).</li>
+  <li>Since 2020, referrals data include all intake case status as well as cases that were still pending an outcome by the end of the reporting year.</li>
+  <li>Increases observed are also due to a mandatory reporting provision introduced in 2021. Furthermore, the increase observed in 2020 is attributed to a change in data collection method and the type of data collected. The FSWS developed an online case management system and the Child Protection Service fully migrated into the online system in 2020.</li>
   <li>The rate of referrals is based on the mid-year population of children aged 0-14.</li>
 </ol>
 
@@ -1404,7 +1406,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Mar 28, 2025
+            Apr 01, 2025
           
         </td>
         </tr>
@@ -1804,7 +1806,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Organisation </th>
         <td>
           
-            <p>The Foundation for Social Welfare Services</p>
+            <p>The Foundation for Social Welfare Services (FSWS)</p>
 
           
         </td>
@@ -2433,12 +2435,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250401080351'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250401083535'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250401080351"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250401083535"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
