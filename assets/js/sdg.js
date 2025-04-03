@@ -4059,7 +4059,7 @@ opensdg.chartTypes.base = function(info) {
     return config;
 }
 
-  opensdg.chartTypes.stacked = function (info) {
+  opensdg.chartTypes.bar = function (info) {
     var config = opensdg.chartTypes.base(info);
     var overrides = {
         type: 'stacked',
