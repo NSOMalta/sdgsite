@@ -1,58 +1,48 @@
 opensdg.chartTypes.bar = function (info) {
-    var config = opensdg.chartTypes.base(info);
+    var config = opensdg.chartTypes.base(info); // base configuration
     var overrides = {
         type: 'bar',
     };
-      if (info.stackedDisaggregation) {
-        
-        overrides.options = {
-            scales: {
-                x: { stacked: false },
-                y: { stacked: false },
-            }
-        };
-      }
-    // Manually set the borderWidths to 0 to avoid a weird border effect on the bars.
-    config.data.datasets.forEach(function(dataset) {
-        dataset.borderWidth = 0;
-    });
-    // Add these overrides onto the normal config, and return it.
-    _.merge(config, overrides);
-    return config;
-}
 
-opensdg.chartTypes.bar = function (info) {
-    var config = opensdg.chartTypes.base(info);
-    var overrides = {
-        type: 'stacked',
-    };
-    if (info.stackedDisaggregation) {
-        
-        overrides.options = {
-            scales: {
-                x: { stacked: true },
-                y: { stacked: true },
-            }
-        };
-        // If we have stackedDisaggregation, we need to group datasets into stacks.
-        config.data.datasets.forEach(function (dataset) {
-            var disaggregation = $.extend({}, dataset.disaggregation);
-            // We're going to "stringify" each combination of disaggregations in order
-            // to place them in their own "stacks". To place "stacked" disaggregations
-            // into the same stack, we set them as "samestack" before stringifying.
-            // Note that the string "samestack" is completely arbitrary.
-            if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
-                disaggregation[info.stackedDisaggregation] = 'samestack';
-            }
-            // Use the disaggregation as a unique id for each stack.
-            dataset.stack = JSON.stringify(disaggregation);
-        });
-    }
+    // Check if 'graph_types' exists and if stacking is applied to this series.
+    // Iterate over all series in 'graph_types' and check the 'stacked' flag.
+    var graphTypes = info.graph_types || [];
+    graphTypes.forEach(function (seriesConfig) {
+        if (seriesConfig.graph_type === 'stacked') {
+            // If the series is marked as stacked, apply stacking settings.
+            overrides.options = {
+                scales: {
+                    x: { stacked: true },
+                    y: { stacked: true },
+                },
+            };
+
+            // Group datasets into stacks based on the disaggregation.
+            config.data.datasets.forEach(function (dataset) {
+                var disaggregation = $.extend({}, dataset.disaggregation);
+                // Ensure that the disaggregation gets correctly grouped.
+                if (typeof disaggregation[info.stackedDisaggregation] !== 'undefined') {
+                    disaggregation[info.stackedDisaggregation] = 'samestack';
+                }
+                dataset.stack = JSON.stringify(disaggregation);
+            });
+        } else {
+            // If the series is not stacked, make sure the scales are not stacked.
+            overrides.options = {
+                scales: {
+                    x: { stacked: false },
+                    y: { stacked: false },
+                },
+            };
+        }
+    });
+
     // Manually set the borderWidths to 0 to avoid a weird border effect on the bars.
-    config.data.datasets.forEach(function(dataset) {
+    config.data.datasets.forEach(function (dataset) {
         dataset.borderWidth = 0;
     });
+
     // Add these overrides onto the normal config, and return it.
     _.merge(config, overrides);
     return config;
-}
+};
