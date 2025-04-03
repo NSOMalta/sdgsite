@@ -378,7 +378,7 @@
             "type": "string",
             "title": "Graph type",
             "description": "What type of graph to use for the indicator.",
-            "enum": ["line", "bar", "binary"]
+            "enum": ["line", "bar", "binary", "stacked"]
         },
         "graph_types": {
             "type": "array",
