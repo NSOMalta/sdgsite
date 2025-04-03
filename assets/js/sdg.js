@@ -4046,7 +4046,7 @@ opensdg.chartTypes.base = function(info) {
     return config;
 }
 
-  opensdg.chartTypes.bar = function (info) {
+  opensdg.chartTypes.stacked = function (info) {
     var config = opensdg.chartTypes.base(info);
     var overrides = {
         type: 'stacked',
