@@ -3,6 +3,15 @@ opensdg.chartTypes.bar = function (info) {
     var overrides = {
         type: 'bar',
     };
+      if (info.stackedDisaggregation) {
+        
+        overrides.options = {
+            scales: {
+                x: { stacked: false },
+                y: { stacked: false },
+            }
+        };
+      }
     // Manually set the borderWidths to 0 to avoid a weird border effect on the bars.
     config.data.datasets.forEach(function(dataset) {
         dataset.borderWidth = 0;
