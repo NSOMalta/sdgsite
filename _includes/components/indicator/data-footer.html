@@ -22,8 +22,6 @@
         {% for footer_field in page.indicator.footer_fields %}
         <dt
           data-for-series={{ footer_field.series | default: "" | jsonify }}
-          data-for-unit={{ footer_field.unit | default: "" | jsonify }}
-        >{{ footer_field.label | t }}:</dt>
         <dd
           data-for-series={{ footer_field.series | default: "" | jsonify }}
           data-for-unit={{ footer_field.unit | default: "" | jsonify }}
