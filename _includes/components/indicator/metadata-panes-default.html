@@ -1,3 +1,12 @@
+<div role="tabpanel" class="tab-pane" id="global">
+    <!-- Global Metadata -->
+    <div>
+        <article>
+            <p>{{ page.t.indicator.global_metadata_blurb }}</p>
+            {% include components/indicator/metadata.html scope='global' %}
+        </article>
+    </div>
+</div>
 {% if page.indicator.proxy %}
 <div role="tabpanel" class="tab-pane active" id="national">
     <!-- National Metadata -->
@@ -13,16 +22,6 @@
     </div>
 </div>
 {% endif %}
-<div role="tabpanel" class="tab-pane" id="global">
-    <!-- Global Metadata -->
-    <div>
-        <article>
-            <p>{{ page.t.indicator.global_metadata_blurb }}</p>
-            {% include components/indicator/metadata.html scope='global' %}
-        </article>
-    </div>
-</div>
-
 {% if page.indicator.reporting_status == 'complete' %}
 <div role="tabpanel" class="tab-pane" id="sources">
     {% include components/indicator/sources.html %}
