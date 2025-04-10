@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250410104801">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250410112400">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -408,6 +408,18 @@ data-event-label="high"
   
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
+
 
   
 
@@ -424,7 +436,7 @@ data-event-label="high"
   data-id="16-7-1"
   data-country="Malta"
   data-charttitle="Proportions of positions in national and local institutions, including (a) the legislatures; (b) the public service; and (c) the judiciary, compared to national distributions, by sex, age, persons with disabilities and population groups"
-  data-charttitles="[{&quot;series&quot;:&quot;1. Proportion of positions in parliament compared to national distributions&quot;,&quot;title&quot;:&quot;Proportion of positions in parliament compared to national distributions&quot;},{&quot;series&quot;:&quot;2. Proportion of positions in the public service compared to national distributions&quot;,&quot;title&quot;:&quot;Proportion of positions in the public service compared to national distributions&quot;},{&quot;series&quot;:&quot;3. Proportion of positions in the judiciary compared to national distributions&quot;,&quot;title&quot;:&quot;Proportion of positions in the judiciary compared to national distributions, by court level&quot;},{&quot;series&quot;:&quot;4. Number of parliamentarians&quot;,&quot;title&quot;:&quot;4. Number of parliamentarians&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Proportion of positions in parliament compared to national distributions&quot;,&quot;title&quot;:&quot;Proportion of positions in parliament compared to national distributions&quot;},{&quot;series&quot;:&quot;2. Proportion of positions in the public service compared to national distributions&quot;,&quot;title&quot;:&quot;Proportion of positions in the public service compared to national distributions&quot;},{&quot;series&quot;:&quot;3. Proportion of positions in the judiciary compared to national distributions&quot;,&quot;title&quot;:&quot;Proportion of positions in the judiciary compared to national distributions, by court level&quot;},{&quot;series&quot;:&quot;4. Number of parliamentarians&quot;,&quot;title&quot;:&quot;4. Number of parliamentarians, by sex and legislature&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
@@ -439,11 +451,11 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Proportion of positions in parliament compared to national distributions&quot;,&quot;2. Proportion of positions in the public service compared to national distributions&quot;,&quot;3. Proportion of positions in the judiciary compared to national distributions&quot;,&quot;4. Number of parliamentarians &quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&lt;=45Y&quot;,&quot;Total&quot;,&quot;&lt;45Y&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Type of Occupation&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Managers&quot;,&quot;Professionals&quot;,&quot;Technicians and Associate Professionals&quot;,&quot;Clerical Support Workers&quot;,&quot;Total national-level public service personnel (including police, education, health, front-desk administrative and all other public service personnel)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type of Occupation&quot;},{&quot;name&quot;:&quot;Court Level&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Constitutional Courts&quot;,&quot;Higher Courts&quot;,&quot;Lower Courts&quot;,&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Court Level&quot;},{&quot;name&quot;:&quot;Legislature&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;12th Legislature&quot;,&quot;13th Legislature&quot;,&quot;14th Legislature&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Legislature&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ratio&quot;,&quot;Number&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Proportion of positions in parliament compared to national distributions&quot;,&quot;2. Proportion of positions in the public service compared to national distributions&quot;,&quot;3. Proportion of positions in the judiciary compared to national distributions&quot;,&quot;4. Number of parliamentarians&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&lt;=45Y&quot;,&quot;Total&quot;,&quot;&lt;45Y&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Type of Occupation&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Managers&quot;,&quot;Professionals&quot;,&quot;Technicians and Associate Professionals&quot;,&quot;Clerical Support Workers&quot;,&quot;Total national-level public service personnel (including police, education, health, front-desk administrative and all other public service personnel)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Type of Occupation&quot;},{&quot;name&quot;:&quot;Court Level&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Constitutional Courts&quot;,&quot;Higher Courts&quot;,&quot;Lower Courts&quot;,&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Court Level&quot;},{&quot;name&quot;:&quot;Legislature&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;12th Legislature&quot;,&quot;13th Legislature&quot;,&quot;14th Legislature&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Legislature&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Ratio&quot;,&quot;Number&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
-  data-proxyseries="null"
+  data-proxy="both"
+  data-proxyseries="[&quot;4. Number of parliamentarians&quot;]"
 >
   
   <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
@@ -587,7 +599,31 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Notes:</p>
+
+        
+        
+        <dt
+          data-for-series="1. Proportion of positions in parliament compared to national distributions"
+        <dd
+          data-for-series="1. Proportion of positions in parliament compared to national distributions"
+          data-for-unit=""
+        >
+</dd>
+        
+        <dt
+          data-for-series="2. Proportion of positions in the public service compared to national distributions"
+        <dd
+          data-for-series="2. Proportion of positions in the public service compared to national distributions"
+          data-for-unit=""
+        >
+</dd>
+        
+        <dt
+          data-for-series="3. Proportion of positions in the judiciary compared to national distributions"
+        <dd
+          data-for-series="3. Proportion of positions in the judiciary compared to national distributions"
+          data-for-unit=""
+        ><p>Notes:</p>
 <ol>
   <li>The above data shows ratios, which are more internationally comparable than simple proportions. Ratios show whether the respective cohort of people is over or under represented when considering its national population distribution.</li>
   <li>A value of 1 shows perfect representation, values above 1 depict over-representation, and values below 1 show under-representation.</li>
@@ -595,7 +631,18 @@ data-event-label="Change to Table tab"
 </ol>
 </dd>
         
-
+        <dt
+          data-for-series="4. Number of parliamentarians"
+        <dd
+          data-for-series="4. Number of parliamentarians"
+          data-for-unit=""
+        ><p>Notes:</p>
+<ol>
+  <li>The reference years shown above refer to the year in which the respective legislature started.</li>
+  <li>2013 refers to the 12th Legislature (2013-2017), 2017 refers to the 13th Legislature (2017-2022), and 2022 refers to the 14th Legislature (2022-present).</li>
+</ol>
+</dd>
+        
         
 
         
@@ -659,7 +706,31 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Notes:</p>
+
+        
+        
+        <dt
+          data-for-series="1. Proportion of positions in parliament compared to national distributions"
+        <dd
+          data-for-series="1. Proportion of positions in parliament compared to national distributions"
+          data-for-unit=""
+        >
+</dd>
+        
+        <dt
+          data-for-series="2. Proportion of positions in the public service compared to national distributions"
+        <dd
+          data-for-series="2. Proportion of positions in the public service compared to national distributions"
+          data-for-unit=""
+        >
+</dd>
+        
+        <dt
+          data-for-series="3. Proportion of positions in the judiciary compared to national distributions"
+        <dd
+          data-for-series="3. Proportion of positions in the judiciary compared to national distributions"
+          data-for-unit=""
+        ><p>Notes:</p>
 <ol>
   <li>The above data shows ratios, which are more internationally comparable than simple proportions. Ratios show whether the respective cohort of people is over or under represented when considering its national population distribution.</li>
   <li>A value of 1 shows perfect representation, values above 1 depict over-representation, and values below 1 show under-representation.</li>
@@ -667,7 +738,18 @@ data-event-label="Change to Table tab"
 </ol>
 </dd>
         
-
+        <dt
+          data-for-series="4. Number of parliamentarians"
+        <dd
+          data-for-series="4. Number of parliamentarians"
+          data-for-unit=""
+        ><p>Notes:</p>
+<ol>
+  <li>The reference years shown above refer to the year in which the respective legislature started.</li>
+  <li>2013 refers to the 12th Legislature (2013-2017), 2017 refers to the 13th Legislature (2017-2022), and 2022 refers to the 14th Legislature (2022-present).</li>
+</ol>
+</dd>
+        
         
 
         
@@ -712,6 +794,14 @@ data-event-label="Change to Table tab"
 <ul class="nav nav-tabs" role="tablist">
     
         
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link active" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>Proxy Metadata</button>
+  </li>
+
 
   <li role="presentation" class="nav-item">
     <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-global" data-bs-target="#global" aria-controls="global" role="tab" data-on="click"
@@ -739,6 +829,321 @@ data-event-label="Change to Sources tab"
 <div class="tab-content">
     
         
+<div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                This table provides metadata for the actual indicator available from Malta statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from Maltese statistics, this table should be consulted for information on national methodology and other Maltese-specific metadata information.
+            </p>
+            <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
+</div>
+
 <div role="tabpanel" class="tab-pane" id="global">
     <!-- Global Metadata -->
     <div>
@@ -2007,8 +2412,19 @@ data-event-label="Change to Sources tab"
       
       
       
-        
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
           
+            <p>4</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
   
   
   
@@ -2300,12 +2716,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250410104801'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250410112400'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250410104801"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250410112400"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
