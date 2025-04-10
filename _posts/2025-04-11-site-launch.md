@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Press Information Notice
-date: 2025-04-11
 author: NSO
 excerpt: National Statistics Office Launches SDG website
 language: en
