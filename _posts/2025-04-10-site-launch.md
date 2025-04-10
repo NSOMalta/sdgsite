@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Press Information Notice
-date: 2025-04-10 09:29
+date: 2025-04-10 09:37:11 +0200
 author: SDG Team
 excerpt: SDG Site Launch
 language: en
