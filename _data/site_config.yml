@@ -56,8 +56,8 @@ disclaimer:
   message: ''
   hidden: false
 email_contacts:
-  questions: international.nso@gov.mt
-  suggestions: international.nso@gov.mt
+  questions: cmu.nso@gov.mt
+  suggestions: cmu.nso@gov.mt
   functional: it.nso@gov.mt
 empty_metadata_placeholder: ''
 empty_metadata_placeholder_sources: ''
