@@ -1,18 +1,3 @@
-{% if page.indicator.proxy %}
-<div role="tabpanel" class="tab-pane active" id="national">
-    <!-- National Metadata -->
-    <div>
-        <article>
-            <p>
-                {% assign country_name = site.country.name | t %}
-                {% assign country_adjective = site.country.adjective | t %}
-                {{ page.t.indicator.national_metadata_blurb | t }}
-            </p>
-            {% include components/indicator/metadata.html scope='national' %}
-        </article>
-    </div>
-</div>
-{% endif %}
 <div role="tabpanel" class="tab-pane" id="global">
     <!-- Global Metadata -->
     <div>
@@ -22,7 +7,21 @@
         </article>
     </div>
 </div>
-
+{% if page.indicator.proxy %}
+<div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                {% assign country_name = site.country.name | t %}
+                {% assign country_adjective = site.country.adjective | t %}
+                This table provides metadata for the proxy data used (closest to the UN SDG indicator) to report on the progress towards achieving the SDG Target. Please note that even when data for the actual UN SDG indicator is fully available, this table should still be consulted for any additional specific metadata information.
+            </p>
+            {% include components/indicator/metadata.html scope='national' %}
+        </article>
+    </div>
+</div>
+{% endif %}
 {% if page.indicator.reporting_status == 'complete' %}
 <div role="tabpanel" class="tab-pane" id="sources">
     {% include components/indicator/sources.html %}

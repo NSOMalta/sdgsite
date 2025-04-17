@@ -8,6 +8,7 @@ title: general.site_title
 url: ""
 environment: staging
 
+
 # Pages
 collections:
   pages:
@@ -37,3 +38,4 @@ exclude:
   - README.md
   - LICENSE
 
+timezone: Europe/Brussels

@@ -46,7 +46,7 @@ create_pages:
 custom_css: []
 custom_js:
   - /assets/js/custom.js
-data_edit_url: data
+data_edit_url: ''
 data_fields:
   units: ''
   series: ''
@@ -56,8 +56,8 @@ disclaimer:
   message: ''
   hidden: false
 email_contacts:
-  questions: international.nso@gov.mt
-  suggestions: international.nso@gov.mt
+  questions: cmu.nso@gov.mt
+  suggestions: cmu.nso@gov.mt
   functional: it.nso@gov.mt
 empty_metadata_placeholder: ''
 empty_metadata_placeholder_sources: ''
@@ -82,7 +82,7 @@ frontpage_cards:
   - title: SDGs in Malta
     content: |
       <ul>
-        <li><a href="https://nso.gov.mt/themes_publications/transport-statistics-2021-3/">Sustainable Development in Malta</a></li>
+        <li><a href="https://nso.gov.mt/themes_publications/transport-statistics-2021-3/">SDG Publication: 2021 edition</a></li>
         <li><a href="https://sustainabledevelopment.gov.mt/vision-2050/">Malta's Sustainable Development Vision</a></li> 
         <li><a href="https://sustainabledevelopment.gov.mt/maltas-sustainable-development-strategy-for-2050/">Malta's Sustainable Development Strategy</a></li>
       </ul>
@@ -94,9 +94,9 @@ frontpage_cards:
     content: |
       <ul>
         <li><a href="https://unstats.un.org/sdgs/dataportal/database">UN SDG Database</a></li>
-        <li><a href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">Eurostat SDGs</a></li>
-        <li><a href="https://unstats.un.org/sdgs/report/2022/">UN SDG Report</a></li>
-        <li><a href="https://ec.europa.eu/eurostat/en/web/products-flagship-publications/w/ks-04-23-184">Sustainable development in the European Union</a></li>
+        <li><a href="https://unstats.un.org/sdgs/report/2024/">UN SDG Report 2024</a></li>
+        <li><a href="https://ec.europa.eu/eurostat/web/products-flagship-publications/w/ks-05-24-071">Sustainable development in the European Union - 2024 Edition</a></li>
+        <li><a href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">Eurostat: SDGs & me</a></li>       
       </ul>
     include: ''
     button_label: Read more
@@ -137,7 +137,7 @@ indicator_metadata_form:
   dropdowns: []
   repository_link: /tree/develop/meta
   translation_link: ''
-  language: ''
+  language: en
   scopes:
     - national
     - global
@@ -201,7 +201,7 @@ menu:
   - path: /about
     translation_key: menu.about
     dropdown: []
-metadata_edit_url: metadata
+metadata_edit_url: ''
 metadata_tabs: []
 meta_tags: []
 news:
