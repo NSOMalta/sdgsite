@@ -46,7 +46,7 @@ create_pages:
 custom_css: []
 custom_js:
   - /assets/js/custom.js
-data_edit_url: data
+data_edit_url: ''
 data_fields:
   units: ''
   series: ''
@@ -201,7 +201,7 @@ menu:
   - path: /about
     translation_key: menu.about
     dropdown: []
-metadata_edit_url: metadata
+metadata_edit_url: ''
 metadata_tabs: []
 meta_tags: []
 news:
