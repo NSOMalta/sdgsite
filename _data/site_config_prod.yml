@@ -18,6 +18,7 @@
 environment: production
 # Replace my-github-org and open-sdg-data-starter as needed.
 remote_data_prefix: "https://NSOMalta.github.io/sdgdataprod"
+remote_site_prefix: "https://NSOMalta.github.io/sdgsiteprod"
 
 analytics:
   # For production, you likely want to enter a Google Analytics code below.
