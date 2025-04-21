@@ -24,7 +24,7 @@ categories:
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">17/04/2025</td>
-      <td style="border: 1px solid #000; padding: 8px;">5.1.1</td>
+      <td style="border: 1px solid #000; padding: 8px;">5.1.1 (proxy - series 3)</td>
       <td style="border: 1px solid #000; padding: 8px;">Added data for 2024</td>
     </tr>
     <tr>
@@ -54,7 +54,7 @@ categories:
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">17/04/2025</td>
-      <td style="border: 1px solid #000; padding: 8px;">16.5.1</td>
+      <td style="border: 1px solid #000; padding: 8px;">16.5.1 (proxy)</td>
       <td style="border: 1px solid #000; padding: 8px;">Added data for 2024</td>
     </tr>
   </tbody>
