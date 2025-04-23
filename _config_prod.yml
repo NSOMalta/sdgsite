@@ -3,5 +3,5 @@
 # NOTE: This "production" version only contains differences from _config.yml.
 #       See also _data/site_config_prod.yml in this repository.
 
-baseurl: "https://NSOMalta.github.io/sdgsiteprod"
+baseurl: "sdgsiteprod"
 environment: production
