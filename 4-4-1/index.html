@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250423104737">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250423115900">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -435,7 +435,7 @@ data-event-label="high"
   data-indicatorid='indicator_4-4-1'
   data-id="4-4-1"
   data-country="Malta"
-  data-charttitle="Proportion of youth and adults with information and communications technology (ICT) skills, by sex and individuals' level of digital skills"
+  data-charttitle="Proportion of youth and adults with digital skills, by individuals' level of digital skills and sex"
   data-charttitles="[]"
   data-measurementunit="Percentage (%)"
   data-xaxislabel=""
@@ -444,14 +444,14 @@ data-event-label="high"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;Never used the internet&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;no overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;low overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;basic overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;basic or above basic overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;above basic overall digital skills&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;Basic or above basic overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;Above basic overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;Basic overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;Low overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;No overall digital skills&quot;},{&quot;field&quot;:&quot;Level of digital skills&quot;,&quot;value&quot;:&quot;Not used the internet in the last 3 months&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;}]"
   data-graphlimits="[]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Level of digital skills&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;above basic overall digital skills&quot;,&quot;basic or above basic overall digital skills&quot;,&quot;basic overall digital skills&quot;,&quot;low overall digital skills&quot;,&quot;no overall digital skills&quot;,&quot;Never used the internet&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Level of digital skills&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Level of digital skills&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Basic or above basic overall digital skills&quot;,&quot;Above basic overall digital skills&quot;,&quot;Basic overall digital skills&quot;,&quot;Low overall digital skills&quot;,&quot;No overall digital skills&quot;,&quot;Not used the internet in the last 3 months&quot;,&quot;Basic or above basic information and data literacy skills&quot;,&quot;Above basic information and data literacy skills&quot;,&quot;Basic information and data literacy skills&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Level of digital skills&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Males&quot;,&quot;Females&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy="proxy"
@@ -576,7 +576,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Proportion of youth and adults with information and communications technology (ICT) skills, by sex and individuals' level of digital skills
+            Proportion of youth and adults with digital skills, by individuals' level of digital skills and sex
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -601,8 +601,8 @@ data-event-label="Change to Table tab"
         
         <dd><p>Notes:</p>
 <ol>
-  <li>Break in time series in 2021.</li>
-  <li>Data for the reference year 2018 was not collected.</li>
+  <li>A break in time series exists for the year 2021; hence, data produced from 2021 onwards adopted a different methodology.</li>
+  <li>Data for the reference years 2018, 2020, and 2022 are not available.</li>
   <li>This indicator refers to individuals aged 16-74.</li>
 </ol>
 </dd>
@@ -673,8 +673,8 @@ data-event-label="Change to Table tab"
         
         <dd><p>Notes:</p>
 <ol>
-  <li>Break in time series in 2021.</li>
-  <li>Data for the reference year 2018 was not collected.</li>
+  <li>A break in time series exists for the year 2021; hence, data produced from 2021 onwards adopted a different methodology.</li>
+  <li>Data for the reference years 2018, 2020, and 2022 are not available.</li>
   <li>This indicator refers to individuals aged 16-74.</li>
 </ol>
 </dd>
@@ -1221,7 +1221,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Feb 17, 2025
+            Apr 22, 2025
           
         </td>
         </tr>
@@ -1808,12 +1808,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250423104737'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250423115900'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250423104737"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250423115900"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
