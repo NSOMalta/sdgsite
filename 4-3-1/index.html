@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250422174701">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250423102758">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -451,7 +451,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Participation rate in education and training in the last 4 weeks&quot;,&quot;2. Tertiary educational attainment by sex&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;25-34 years&quot;,&quot;34-44 years&quot;,&quot;45-54 years&quot;,&quot;55-64 years&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Participation rate in education and training in the last 4 weeks&quot;,&quot;2. Tertiary educational attainment by sex&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;25-34 years&quot;,&quot;35-44 years&quot;,&quot;45-54 years&quot;,&quot;55-74 years&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy="proxy"
@@ -603,11 +603,15 @@ data-event-label="Change to Table tab"
         
         
         <dt
-          data-for-series="1. Participation rate in education and training in the last 4 weeks"
+          data-for-series="2. Tertiary educational attainment by sex"
         <dd
-          data-for-series="1. Participation rate in education and training in the last 4 weeks"
+          data-for-series="2. Tertiary educational attainment by sex"
           data-for-unit=""
-        ><p>Data points with low reliability: [2014, Male, 55-64, 2.7], [2022, Male, 55-64, 4.0,], [2023, Male, 55-64, 5.6], [2023, Female, 55-64, 8.5]</p>
+        ><p>Notes:</p>
+<ol>
+  <li>This indicator refers to individuals aged 25 to 34.</li>
+  <li>Breaks in time series exist for the years 2011 and 2014.</li>
+</ol>
 </dd>
         
         
@@ -677,11 +681,15 @@ data-event-label="Change to Table tab"
         
         
         <dt
-          data-for-series="1. Participation rate in education and training in the last 4 weeks"
+          data-for-series="2. Tertiary educational attainment by sex"
         <dd
-          data-for-series="1. Participation rate in education and training in the last 4 weeks"
+          data-for-series="2. Tertiary educational attainment by sex"
           data-for-unit=""
-        ><p>Data points with low reliability: [2014, Male, 55-64, 2.7], [2022, Male, 55-64, 4.0,], [2023, Male, 55-64, 5.6], [2023, Female, 55-64, 8.5]</p>
+        ><p>Notes:</p>
+<ol>
+  <li>This indicator refers to individuals aged 25 to 34.</li>
+  <li>Breaks in time series exist for the years 2011 and 2014.</li>
+</ol>
 </dd>
         
         
@@ -1229,7 +1237,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Apr 09, 2025
+            Apr 22, 2025
           
         </td>
         </tr>
@@ -1816,12 +1824,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250422174701'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250423102758'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250422174701"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250423102758"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
