@@ -23,7 +23,7 @@ categories:
       <td style="border: 1px solid #000; padding: 8px;">Added 2 data series</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">28/04/2025</td>
+      <td style="border: 1px solid #000; padding: 8px;">30/04/2025</td>
       <td style="border: 1px solid #000; padding: 8px;">17.8.1</td>
       <td style="border: 1px solid #000; padding: 8px;">Added data for 2024</td>
     </tr>
