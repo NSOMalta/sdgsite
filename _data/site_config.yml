@@ -171,13 +171,13 @@ map_layers:
     staticBorders: false
 map_options:
   disaggregation_controls: false
-  minZoom: 10
+  minZoom: 0
   maxZoom: 20
-  tileURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
+  tileURL: ''
   tileOptions:
     id: ''
     accessToken: ''
-    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+    attribution: ''
   colorRange: chroma.brewer.YlOrRd
   noValueColor: '#f0f0f0'
   styleNormal:
