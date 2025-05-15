@@ -173,7 +173,7 @@ map_options:
   disaggregation_controls: false
   minZoom: 0
   maxZoom: 20
-  tileURL:  'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.{ext}'
+  tileURL:  'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png'
   tileOptions:
     id: ''
     accessToken: ''
