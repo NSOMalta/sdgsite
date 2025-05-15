@@ -173,11 +173,11 @@ map_options:
   disaggregation_controls: false
   minZoom: 5
   maxZoom: 10
-  tileURL: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
+  tileURL:  'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png'
   tileOptions:
     id: ''
     accessToken: ''
-    attribution: ''
+    attribution: '&copy; OpenStreetMap contributors & CartoDB'
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
