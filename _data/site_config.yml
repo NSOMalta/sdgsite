@@ -173,11 +173,12 @@ map_options:
   disaggregation_controls: false
   minZoom: 0
   maxZoom: 20
-  tileURL:  'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png'
+  tileURL:  'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.{ext}'
   tileOptions:
     id: ''
     accessToken: ''
     attribution: ''
+    ext: 'png'
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
