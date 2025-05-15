@@ -20,7 +20,7 @@ breadcrumbs:
     - path: /news
       label: menu.updates
 cookie_consent_form:
-  enabled: true
+  enabled: false
 country:
   name: Malta
   adjective: Maltese
