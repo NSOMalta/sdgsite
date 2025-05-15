@@ -52,9 +52,7 @@ data_fields:
   series: ''
 date_formats: []
 disclaimer:
-  phase: ''
-  message: ''
-  hidden: false
+  hidden: true
 email_contacts:
   questions: cmu.nso@gov.mt
   suggestions: cmu.nso@gov.mt
