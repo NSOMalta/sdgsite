@@ -52,9 +52,7 @@ data_fields:
   series: ''
 date_formats: []
 disclaimer:
-  phase: ''
-  message: ''
-  hidden: false
+  hidden: true
 email_contacts:
   questions: cmu.nso@gov.mt
   suggestions: cmu.nso@gov.mt
@@ -115,9 +113,9 @@ goals_page:
   description: frontpage.instructions_shorter
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
-graph_color_set: accessible
-graph_color_list: []
-graph_color_number: 0
+graph_color_set: custom
+graph_color_list: ['D32F2F','4CAF50', '7B1FA2', '1976D2', 'FFEB3B', '795548', 'FF9800', 'E91E63', '512DA8', 'CDDC39', '455A64', 'FF5722', '42d4f4', 'aaffc3','800000']
+graph_color_number: 15
 graph_title_from_series: false
 header_language_toggle: dropdown
 hide_empty_metadata: true
@@ -152,17 +150,33 @@ languages:
   - en
 languages_public: []
 logos: []
-map_layers: []
+map_layers:
+  -
+    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
+    subfolder: councils
+    # The label to use in the "Download GeoJSON" button:
+    label: indicator.map
+    # The minimum zoom at which this layer should be visible.
+    # For example, if this "min_zoom" is set to 4, then this
+    # layer will be invisible at zoom level 3 or less.
+    min_zoom: 0
+    # The maximum zoom at which this layer should be visible.
+    # For example, if this "max_zoom" is set to 8, then this
+    # layer will be invisible at zoom level 9 or more.
+    max_zoom: 20
+    # Whether or not these boundaries should display statically
+    # on lower layers.
+    staticBorders: false
 map_options:
   disaggregation_controls: false
-  minZoom: 5
-  maxZoom: 10
+  minZoom: 10
+  maxZoom: 20
   tileURL: ''
   tileOptions:
     id: ''
     accessToken: ''
     attribution: ''
-  colorRange: chroma.brewer.BuGn
+  colorRange: chroma.brewer.YlOrRd
   noValueColor: '#f0f0f0'
   styleNormal:
     weight: 1
