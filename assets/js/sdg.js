@@ -3147,7 +3147,7 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"disaggregation_controls":false,"minZoom":5,"maxZoom":10,"tileURL":"https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png","tileOptions":{"id":"","accessToken":"","attribution":"&copy; OpenStreetMap contributors & CartoDB"},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
+      mapOptions: {"disaggregation_controls":false,"minZoom":0,"maxZoom":20,"tileURL":"https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.{ext}","tileOptions":{"id":"","accessToken":"","attribution":"&copy; <a href=\"https://www.stadiamaps.com/\" target=\"_blank\">Stadia Maps</a> &copy; <a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a> &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"},"colorRange":"chroma.brewer.BuGn","noValueColor":"#f0f0f0","styleNormal":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#888888","dashArray":""},"styleHighlighted":{"weight":1,"opacity":1,"fillOpacity":0.7,"color":"#111111","dashArray":""},"styleStatic":{"weight":2,"opacity":1,"fillOpacity":0,"color":"#172d44","dashArray":"5,5"}},
       mapLayers: [{"subfolder":"councils","label":"indicator.map","min_zoom":0,"max_zoom":20,"staticBorders":false}],
       precision: precision,
       precisionItems: precisionItems,
