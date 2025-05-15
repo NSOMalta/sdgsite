@@ -171,7 +171,7 @@ map_layers:
     staticBorders: false
 map_options:
   disaggregation_controls: false
-  minZoom: 0
+  minZoom: 5
   maxZoom: 20
   tileURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
   tileOptions:
