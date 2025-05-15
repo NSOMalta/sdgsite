@@ -143,7 +143,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250515172248">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250515190915">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -1091,169 +1091,6 @@ data-event-label="high"
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 
 
-<script>
-  
-
-
-var klaroConfig = {
-    version: 1,
-    elementID: 'klaro',
-    styling: {
-        theme: ['light', 'top', 'wide'],
-    },
-    noAutoLoad: false,
-    htmlTexts: false,
-    embedded: false,
-    groupByPurpose: true,
-    storageMethod: 'cookie',
-    cookieName: 'cookie_settings',
-    cookieExpiresAfterDays: 365,
-    default: false,
-    mustConsent: false,
-    acceptAll: true,
-    hideDeclineAll: false,
-    hideLearnMore: false,
-    noticeAsModal: false,
-    services: [
-        {
-            name: 'contrast',
-            default: true,
-            purposes: ['functional'],
-            cookies: ['contrast'],
-            required: true,
-            optOut: false,
-            onlyOnce: true,
-        },
-        {
-            name: 'cookie_settings',
-            default: true,
-            purposes: ['functional'],
-            cookies: ['cookie_settings'],
-            required: true,
-            optOut: false,
-            onlyOnce: true,
-        },
-        
-        {
-            name: 'google-analytics',
-            default: false,
-            purposes: ['analytics'],
-            
-            cookies: ['_gat', '_gid', '_ga'],
-            
-            required: false,
-            optOut: false,
-            onlyOnce: false,
-        },
-        
-    ],
-};
-
-  klaroConfig.lang = 'en';
-klaroConfig.translations = {
-    en: {
-        acceptAll: "Accept all",
-        acceptSelected: "Accept selected",
-        close: "Close",
-        consentModal: {
-            description: "Here you can change which cookies you're happy for us to use.",
-            title: "Cookie settings",
-        },
-        consentNotice: {
-            changeDescription: "The cookies used on this site have changed since you last visited, please renew your consent.",
-            description: "We use some essential cookies to make this service work. We’d also like to use {purposes} so we can understand how you use the service and make improvements.",
-            learnMore: "View cookies",
-            testing: "Testing mode!",
-        },
-        contextualConsent: {
-            acceptAlways: "Always",
-            acceptOnce: "Yes",
-            description: "Do you want to load external content supplied by {title}?",
-        },
-        decline: "Reject additional cookies",
-        ok: "Accept additional cookies",
-        poweredBy: "Realized with Klaro!",
-        privacyPolicy: {
-            name: "privacy policy",
-            text: "To learn more, please read our privacy policy.",
-        },
-        purposeItem: {
-            service: "service",
-            services: "services",
-        },
-        purposes: {
-            functional: {
-                description: "Essential cookies keep your information secure, and do things like remember your preferences and the choices you make whilst you use the website. They always need to be on.",
-                title: "Essential cookies",
-            },
-            analytics: {
-                description: "These services collect information about how you use the website. We use this data to help make the website better.",
-                title: "Analytics cookies",
-            },
-        },
-        save: "Save",
-        service: {
-            disableAll: {
-                description: "Use this switch to enable or disable all services.",
-                title: "Enable or disable all services",
-            },
-            optOut: {
-                description: "This services is loaded by default (but you can opt out)",
-                title: "(opt-out)",
-            },
-            purpose: "purpose",
-            purposes: "purposes",
-            required: {
-                description: "This service is always required",
-                title: "(always required)",
-            },
-        },
-    },
-};
-var allRequired = true;
-klaroConfig.services.forEach(function(service) {
-    if (!service.required) {
-        allRequired = false;
-    }
-    if (service.name === 'contrast') {
-        service.translations = {
-            en: {
-                description: "Retains active state of accessibility services",
-                title: "Accessibility mode",
-            },
-        }
-    }
-    else if (service.name === 'cookie_settings') {
-        service.translations = {
-            en: {
-                description: "Saves your cookie consent settings",
-                title: "Cookie settings",
-            },
-        }
-    }
-    else if (service.name === 'google-analytics') {
-        service.translations = {
-            en: {
-                description: "Collects information about page visits using Google Analytics",
-                title: "Google Analytics",
-            },
-        }
-    }
-});
-
-if (allRequired) {
-    klaroConfig.translations['en'].consentNotice.description = "We use some essential cookies to make this service work. They always need to be on.";
-    klaroConfig.translations['en'].ok = "OK";
-    klaroConfig.hideDeclineAll = true;
-    klaroConfig.hideLearnMore = true;
-}
-
-</script>
-<script src="https://cdn.kiprotect.com/klaro/v0.7/klaro-no-css.js"></script>
-<script>translations['cookies'] = translations['cookies'] || {};
-    translations['cookies']['cookie_settings'] = 'Cookie settings';</script>
-
-
 
 
 
@@ -1265,12 +1102,12 @@ if (allRequired) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250515172248'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250515190915'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250515172248"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250515190915"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
