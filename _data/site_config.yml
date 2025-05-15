@@ -173,7 +173,7 @@ map_options:
   disaggregation_controls: false
   minZoom: 5
   maxZoom: 10
-  tileURL: ''
+  tileURL: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
   tileOptions:
     id: ''
     accessToken: ''
