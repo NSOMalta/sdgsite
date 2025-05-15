@@ -173,12 +173,11 @@ map_options:
   disaggregation_controls: false
   minZoom: 0
   maxZoom: 20
-  tileURL:  'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.{ext}'
+  tileURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
   tileOptions:
     id: ''
     accessToken: ''
     attribution: ''
-    ext: 'png'
   colorRange: chroma.brewer.BuGn
   noValueColor: '#f0f0f0'
   styleNormal:
