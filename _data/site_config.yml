@@ -155,7 +155,7 @@ logos: []
 map_layers:
   -
     # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
-    subfolder: councils2
+    subfolder: councils
     # The label to use in the "Download GeoJSON" button:
     label: indicator.map
     # The minimum zoom at which this layer should be visible.
@@ -171,7 +171,7 @@ map_layers:
     staticBorders: false
 map_options:
   disaggregation_controls: false
-  minZoom: 0
+  minZoom: 10
   maxZoom: 20
   tileURL: ''
   tileOptions:
