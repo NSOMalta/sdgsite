@@ -163,7 +163,7 @@ map_options:
   disaggregation_controls: false
   minZoom: 10
   maxZoom: 20
-  tileURL: ''
+  tileURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
   tileOptions:
     id: ''
     accessToken: ''
