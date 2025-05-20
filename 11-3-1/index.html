@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250519164917">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250520084911">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -331,9 +331,6 @@ data-event-label="high"
         <li class="breadcrumb-item">
             <a href="/sdgsite/">Home</a>
         </li>
-        <li class="breadcrumb-item">
-            <a href="/sdgsite/goals">Goals</a>
-        </li>
         
         <li class="breadcrumb-item">
             <a href="/sdgsite/11/"
@@ -430,7 +427,7 @@ data-event-label="high"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;GeoCode&quot;,&quot;type&quot;:&quot;string&quot;,&quot;title&quot;:&quot;GeoCode&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -480,7 +477,11 @@ data-event-label="high"
         
         
         
-        <th scope="col" class="table-value">Value</th>
+        <th scope="col">Value</th>
+        
+        
+        
+        <th scope="col" class="table-value">GeoCode</th>
         
         
       </thead>
@@ -493,7 +494,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">3.41781</td>
+          <td>3.41781</td>
+          
+          
+          
+          <td class="table-value">83640313B32595760925513</td>
           
           
         </tr>
@@ -505,7 +510,11 @@ data-event-label="high"
           
           
           
-          <td class="table-value">0.8078</td>
+          <td>0.8078</td>
+          
+          
+          
+          <td class="table-value">83640313B32595760925513</td>
           
           
         </tr>
@@ -1335,12 +1344,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250519164917'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250520084911'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250519164917"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250520084911"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
