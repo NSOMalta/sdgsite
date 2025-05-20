@@ -2651,4 +2651,5 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   max-width: 100%; }
 
 .embedded-map iframe {
-  max-width: 100%; }
+  width: 1000px;
+  height: 600px; }
