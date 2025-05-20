@@ -23,7 +23,11 @@
     max-width: 100%;
 }
 
-.embedded-map iframe{
-    width: 1000px;
+.embedded-map iframe {
+    width: 100%;
+    max-width: 1000px;
     height: 600px;
+    display: block;
+    margin: 0 auto;
+    border: 0;
 }
