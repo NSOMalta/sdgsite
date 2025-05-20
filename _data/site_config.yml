@@ -7,13 +7,9 @@ breadcrumbs:
   goal:
     - path: /
       label: general.home
-    - path: /goals
-      label: general.goals
   indicator:
     - path: /
       label: general.home
-    - path: /goals
-      label: general.goals
   post:
     - path: /
       label: general.home
@@ -31,10 +27,6 @@ create_goals:
 create_indicators:
   previous_next_links: true
 create_pages:
-  - filename: ''
-    folder: /goals
-    layout: goals
-    title: general.goals
   - filename: ''
     folder: /reporting-status
     layout: reportingstatus
