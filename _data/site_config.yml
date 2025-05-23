@@ -142,52 +142,7 @@ languages:
   - en
 languages_public: []
 logos: []
-map_layers:
-  -
-    # The subfolder under 'geojson' in the data repository holding the GeoJSON files:
-    subfolder: councils
-    # The label to use in the "Download GeoJSON" button:
-    label: indicator.map
-    # The minimum zoom at which this layer should be visible.
-    # For example, if this "min_zoom" is set to 4, then this
-    # layer will be invisible at zoom level 3 or less.
-    min_zoom: 0
-    # The maximum zoom at which this layer should be visible.
-    # For example, if this "max_zoom" is set to 8, then this
-    # layer will be invisible at zoom level 9 or more.
-    max_zoom: 20
-    # Whether or not these boundaries should display statically
-    # on lower layers.
-    staticBorders: false
-map_options:
-  disaggregation_controls: false
-  minZoom: 10
-  maxZoom: 20
-  tileURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
-  tileOptions:
-    id: ''
-    accessToken: ''
-    attribution: ''
-  colorRange: chroma.brewer.YlOrRd
-  noValueColor: '#f0f0f0'
-  styleNormal:
-    weight: 1
-    opacity: 1
-    fillOpacity: 0.7
-    color: '#888888'
-    dashArray: ''
-  styleHighlighted:
-    weight: 1
-    opacity: 1
-    fillOpacity: 0.7
-    color: '#111111'
-    dashArray: ''
-  styleStatic:
-    weight: 2
-    opacity: 1
-    fillOpacity: 0
-    color: '#172d44'
-    dashArray: '5,5'
+map_layers: []
 menu:
   - path: /
     translation_key: general.home
