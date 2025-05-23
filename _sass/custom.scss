@@ -31,3 +31,9 @@
     margin: 0 auto;
     border: 0;
 }
+
+@media only screen and (min-width: 992px) {
+    .frontpage-goals-grid .goal-tiles .goal-tile {
+        width: 15%;
+    }
+}
