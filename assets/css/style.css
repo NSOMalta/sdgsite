@@ -2661,8 +2661,11 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 @media only screen and (min-width: 992px) {
   .frontpage-goals-grid .goal-tiles .goal-tile {
     width: 15%; } }
+/*
 .goal-icon-image goal-icon-image- {
-  box-shadow: none; }
-
+    box-shadow: none;
+}
 .goal-icon-image goal-icon-image-:hover {
-  box-shadow: none; }
+    box-shadow: none;
+}
+*/
