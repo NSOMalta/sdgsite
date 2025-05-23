@@ -1,0 +1,14 @@
+<div class="goal-tiles">
+    <div class="row g-2">
+        {% for goal in page.goals %}
+        <div class="col-4 col-md-2 col-lg-1 goal-tile">
+            <a href="{{ goal.url }}">
+                <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ page.t.general.goal }} {{ goal.number }} - {{ goal.short | escape }}" class="goal-icon-image goal-icon-image-{{ site.goal_image_extension }}"/>
+            </a>
+        </div>
+        {% endfor %}
+        <div class="col-4 col-md-2 goal-tile global-goals-extra-icon">
+           <img src="{{ site.goal_image_base }}/{{ page.language }}/18.png" id="goal-18" alt="The Global Goals for Sustainable Development" class="goal-icon-image goal-icon-image-{{ site.goal_image_extension }}" />
+        </div>
+    </div>
+</div>
