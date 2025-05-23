@@ -2671,3 +2671,6 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 */
 h1, h2, h3, h4, h5 {
   font-family: 'Noto Sans', 'Poppins', sans-serif; }
+
+p {
+  font-family: 'Roboto Flex', sans-serif; }
