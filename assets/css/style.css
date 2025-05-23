@@ -2669,5 +2669,5 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
     box-shadow: none;
 }
 */
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: 'Noto Sans', 'Poppins', sans-serif; }
