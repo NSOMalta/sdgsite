@@ -77,8 +77,8 @@ frontpage_cards:
         <li><a href="https://sustainabledevelopment.gov.mt/maltas-sustainable-development-strategy-for-2050/">Malta's Sustainable Development Strategy</a></li>
       </ul>
     include: ''
-    button_label: Read more
-    button_link: 'https://nso.gov.mt/published-publications/'
+    button_label: ''
+    button_link: ''
     rule_color: ''
   - title: International Resources
     content: |
@@ -89,15 +89,16 @@ frontpage_cards:
         <li><a href="https://ec.europa.eu/eurostat/cache/digpub/sdgs/">Eurostat: SDGs & me</a></li>       
       </ul>
     include: ''
-    button_label: Read more
-    button_link: 'https://nso.gov.mt/published-publications/'
+    button_label: ''
+    button_link: ''
     rule_color: ''
 frontpage_goals_grid:
   title: frontpage.heading_short
   description: frontpage.instructions_shorter
 frontpage_introduction_banner:
   title: frontpage.intro_title
-  description: frontpage.intro_body
+  description: |
+    [The Sustainable Development Goals (SDGs)](https://www.un.org/sustainabledevelopment/sustainable-development-goals/) are a universal call to action to end poverty, protect the planet and improve the lives and prospects of everyone, everywhere. The 17 Goals were adopted by all UN Member States in 2015, as part of the [2030 Agenda for Sustainable Development](https://sdgs.un.org/2030agenda).
 goal_image_base: 'https://open-sdg.org/sdg-translations/assets/img/goals'
 goal_image_extension: ''
 goals_page:
