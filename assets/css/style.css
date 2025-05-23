@@ -2661,8 +2661,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 @media only screen and (min-width: 992px) {
   .frontpage-goals-grid .goal-tiles .goal-tile {
     width: 15%; } }
-.col-4 col-md-2 goal-tile global-goals-extra-icon img {
+#goal-18 {
   box-shadow: none; }
 
-.col-4 col-md-2 goal-tile global-goals-extra-icon img:hover {
+#goal-18:hover {
   box-shadow: none; }
