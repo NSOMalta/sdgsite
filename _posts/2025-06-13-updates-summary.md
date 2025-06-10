@@ -4,7 +4,7 @@ title: Data Updates Summary
 author: NSO
 excerpt: Recent updates to the SDG indicators data
 language: en
-permalink: /data-summary-12-06-25/
+permalink: /data-summary-13-06-25/
 categories:
   - National
 ---
@@ -56,6 +56,16 @@ categories:
       <td style="border: 1px solid #000; padding: 8px;">10/06/2025</td>
       <td style="border: 1px solid #000; padding: 8px;">8.2.1</td>
       <td style="border: 1px solid #000; padding: 8px;">Revised 2024 data</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">10/06/2025</td>
+      <td style="border: 1px solid #000; padding: 8px;">8.9.1</td>
+      <td style="border: 1px solid #000; padding: 8px;">Revised 2024 data</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">10/06/2025</td>
+      <td style="border: 1px solid #000; padding: 8px;">8.9.2</td>
+      <td style="border: 1px solid #000; padding: 8px;">New Indicator</td>
     </tr>
   </tbody>
 </table>
