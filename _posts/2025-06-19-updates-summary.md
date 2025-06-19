@@ -30,12 +30,12 @@ categories:
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">19/06/2025</td>
       <td style="border: 1px solid #000; padding: 8px;">6.4.1</td>
-      <td style="border: 1px solid #000; padding: 8px;">Revised 2015-2021 data <br>Added 2022 data</br></td>
+      <td style="border: 1px solid #000; padding: 8px;">Revised 2015-2021 data <br>Added 2022 data</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">19/06/2025</td>
       <td style="border: 1px solid #000; padding: 8px;">9.4.1</td>
-      <td style="border: 1px solid #000; padding: 8px;">Revised 2022 and 2024 data (series 1)<br>Revised all data (series 2)</br></td>
+      <td style="border: 1px solid #000; padding: 8px;">Revised 2022 and 2024 data (series 1)<br>Revised all data (series 2)</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">19/06/2025</td>
