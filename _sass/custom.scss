@@ -47,10 +47,44 @@
     box-shadow: none;
 }
 */
-h1, h2, h3, h4, h5, p, li {
+h1, h2, h3, h4, h5, p, li, span {
     font-family: 'Noto Sans', 'Poppins', sans-serif;
 }
+#search button {
+    color: white;
+    background-color: #00a69f;
+    border: 1.25px solid #00a69f;
+    border-radius: 0;
+}
 
+.navbar .navbar-nav > .nav-item.active > .nav-link {
+    border-bottom: 3px solid #00a69f;
+    background: transparent;
+    color: #0b0c0c;
+}
+
+.btn-download {
+    border: none !important;
+    background: #1E526E !important;
+    color: white !important;
+    box-shadow: 0 2px 0 #1E526E;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-download button:hover {
+    border: none !important;
+    background: #00a69f !important;
+    color: white !important;
+    box-shadow: 0 2px 0 #00a69f;
+    border-radius: 0;
+    position: relative;
+}
+
+//body {
+//    background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
+//    padding-top: 15px;
+//}
 // p {
 //     font-family: 'Roboto Flex', sans-serif;
 // }
