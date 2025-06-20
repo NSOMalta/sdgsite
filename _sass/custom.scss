@@ -56,6 +56,12 @@ h1, h2, h3, h4, h5, p, li, span {
     border: 1.25px solid #00a69f;
     border-radius: 0;
 }
+
+.navbar .navbar-nav > .nav-item.active > .nav-link {
+    border-bottom: 3px solid #00a69f;
+    background: transparent;
+    color: #00a69f;
+}
 // p {
 //     font-family: 'Roboto Flex', sans-serif;
 // }
