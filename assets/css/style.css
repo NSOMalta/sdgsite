@@ -2682,3 +2682,11 @@ h1, h2, h3, h4, h5, p, li, span {
   border-bottom: 3px solid #00a69f;
   background: transparent;
   color: #0b0c0c; }
+
+.btn-download {
+  border: none !important;
+  background: #1E526E !important;
+  color: white !important;
+  box-shadow: 0 2px 0 #1E526E;
+  border-radius: 0;
+  position: relative; }
