@@ -50,7 +50,12 @@
 h1, h2, h3, h4, h5, p, li, span {
     font-family: 'Noto Sans', 'Poppins', sans-serif;
 }
-
+#search button {
+    color: white;
+    background-color: #00a69f;
+    border: 1.25px solid #00a69f;
+    border-radius: 0;
+}
 // p {
 //     font-family: 'Roboto Flex', sans-serif;
 // }
