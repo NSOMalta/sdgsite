@@ -2699,6 +2699,7 @@ h1, h2, h3, h4, h5, p, li, span {
 */
 .btn-download {
   background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
+  background-size: 200% auto;
   color: white !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
 
