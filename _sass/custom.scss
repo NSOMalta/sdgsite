@@ -81,10 +81,13 @@ h1 {
     background: #00a69f !important; 
 }
 */
+
 .btn-download {
+    box-shadow: none;
     font-size: 13px;
     padding: 12px 32px;
     text-transform: uppercase;
+    font-family: 'Noto Sans', 'Poppins', sans-serif;
     width: auto;
     display: inline-block;
     font-weight: 500;
@@ -96,7 +99,7 @@ h1 {
      transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
 }
 .btn-download:hover, .btn-download:focus{
-     background: #264f65 !important; 
+     background: initial !important; 
      background-position: right center !important;
      color: #fff !important;
 }
