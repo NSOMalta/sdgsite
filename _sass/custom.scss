@@ -151,7 +151,9 @@ body {
     background-position: right center !important;
     color: #fff !important;
 }
-
+body.contrast-high #search button {
+  background-color: #eeeeee;
+  }
 
 // p {
 //     font-family: 'Roboto Flex', sans-serif;
