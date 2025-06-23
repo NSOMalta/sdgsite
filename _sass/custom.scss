@@ -81,8 +81,9 @@ h1 {
     background: #00a69f !important; 
 }
 */
-.btn{
-    box-shadow: none;
+
+.btn-download {
+      box-shadow: none;
     font-size: 13px;
     padding: 12px 32px;
     text-transform: uppercase;
@@ -91,9 +92,6 @@ h1 {
     display: inline-block;
     font-weight: 500;
     border: 2px solid transparent;
-}
-.btn-download {
-   
      background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
      background-color: transparent !important;
      background-size: 200% auto !important;
