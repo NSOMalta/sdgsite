@@ -2763,3 +2763,6 @@ body {
   background-size: 200% auto !important;
   background-position: right center !important;
   color: #fff !important; }
+
+body.contrast-high #search button {
+  background-color: #eeeeee; }
