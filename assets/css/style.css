@@ -2702,12 +2702,12 @@ h1 {
 */
 .btn-download {
   background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
+  background-color: transparent !important;
   background-size: 200% auto !important;
   color: white !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important; }
 
 .btn-download:hover, .btn-download:focus {
-  background: linear-gradient(to left, #00a69f, #264f65, #00a69f) !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   background-position: right center !important;
   color: #fff !important; }
