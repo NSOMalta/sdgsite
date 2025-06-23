@@ -2693,3 +2693,7 @@ h1, h2, h3, h4, h5, p, li, span {
 
 .btn-download:hover {
   background: #00a69f !important; }
+
+body {
+  background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
+  padding-top: 15px; }
