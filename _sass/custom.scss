@@ -50,6 +50,10 @@
 h1, h2, h3, h4, h5, p, li, span {
     font-family: 'Noto Sans', 'Poppins', sans-serif;
 }
+h1 {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
 #search button {
     color: white;
     background-color: #00a69f;
@@ -79,14 +83,16 @@ h1, h2, h3, h4, h5, p, li, span {
 */
 .btn-download {
      background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
-     background-size: 200% auto;
+     background-size: 200% auto !important;
      color: white !important;
-     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+     background-position: left center !important;
+     transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
 }
 .btn-download:hover {
-     background-position: right center;
+     background-position: right center !important;
      color: #fff !important;
 }
+
 body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px;
