@@ -2673,8 +2673,7 @@ h1, h2, h3, h4, h5, p, li, span {
   font-family: 'Noto Sans', 'Poppins', sans-serif; }
 
 h1 {
-  font-weight: 600 !important;
-  text-transform: uppercase; }
+  font-weight: 600 !important; }
 
 #search button {
   color: white;
