@@ -111,6 +111,26 @@ body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px;
 }
+#search .input-group {
+    margin-top: 20px;
+    flex-wrap: nowrap;
+}
+#search input {
+    width: 33ch;
+    border-width: 10px 0px 10px 10px;
+    border: 1.25px solid #d3d3d3;
+    background-color: #e9e9e9;
+    border-radius: 20px 0px 0px 20px;
+}
+#search button {
+    color: white;
+    background-color: #00a69f;
+    border-radius: 0px 20px 20px 0px;
+    border-color: #00a69f;
+    border-width: 3px 3px 3px 3px;
+}
+
+
 // p {
 //     font-family: 'Roboto Flex', sans-serif;
 // }
