@@ -2740,6 +2740,12 @@ body {
   background-color: #e9e9e9;
   border-radius: 20px 0px 0px 20px; }
 
+#search input:focus {
+  background-color: white !important;
+  border-color: #00a69f;
+  box-shadow: 0 0 0 5px transparent !important;
+  outline: 2px solid transparent !important; }
+
 #search button {
   color: white;
   background-color: #00a69f;
