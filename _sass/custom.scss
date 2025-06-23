@@ -85,10 +85,9 @@ h1 {
      background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
      background-size: 200% auto !important;
      color: white !important;
-     background-position: left center !important;
      transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
 }
-.btn-download:hover {
+.btn-download:hover, .btn-download:focus{
      background-position: right center !important;
      color: #fff !important;
 }
