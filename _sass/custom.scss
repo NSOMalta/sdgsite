@@ -101,6 +101,7 @@ h1 {
      transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
 }
 .btn-download:hover, .btn-download:focus {
+     box-shadow: none;
     background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
     background-size: 200% auto !important;
     background-position: right center !important;
