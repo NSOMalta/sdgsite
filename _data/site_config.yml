@@ -162,7 +162,13 @@ menu:
     dropdown: []
 metadata_edit_url: ''
 metadata_tabs: []
-meta_tags: []
+meta_tags:
+  - path: ''
+    name: description
+    content: Sustainable Development Goals Malta
+  - path: ''
+    name: keywords
+    content: SDG, sdgs, Malta, NSO, Sustainable development goals, SDGs
 news:
   category_links: false
 progress_status:
