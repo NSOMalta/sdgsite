@@ -85,8 +85,9 @@ h1 {
     font-size: 13px;
     padding: 12px 32px;
     text-transform: uppercase;
-        width: auto;
+    width: auto;
     display: inline-block;
+    font-weight: 500;
     border: 2px solid transparent;
      background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
      background-color: transparent !important;
@@ -95,7 +96,7 @@ h1 {
      transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
 }
 .btn-download:hover, .btn-download:focus{
-     background: transparent !important; 
+     background: #264f65 !important; 
      background-position: right center !important;
      color: #fff !important;
 }
