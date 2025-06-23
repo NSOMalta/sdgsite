@@ -2700,7 +2700,7 @@ h1 {
     background: #00a69f !important; 
 }
 */
-.btn {
+.btn-download {
   box-shadow: none;
   font-size: 13px;
   padding: 12px 32px;
@@ -2709,9 +2709,7 @@ h1 {
   width: auto;
   display: inline-block;
   font-weight: 500;
-  border: 2px solid transparent; }
-
-.btn-download {
+  border: 2px solid transparent;
   background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
   background-color: transparent !important;
   background-size: 200% auto !important;
