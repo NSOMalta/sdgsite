@@ -2754,8 +2754,7 @@ body {
   color: white !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   border-radius: 0px 20px 20px 0px;
-  border-color: #00a69f;
-  border-width: 3px 3px 3px 3px; }
+  border-color: transparent; }
 
 #search button:hover {
   box-shadow: none !important;
