@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250630110925">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250630124615">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -392,6 +392,12 @@ data-event-label="high"
   
 
   
+<div class="row metadata-available-indicator">
+  <div class="col-xs-12">
+    <h2>Proportion of informal employment, by sector</h2>
+  </div>
+</div>
+
 
   
 
@@ -409,7 +415,7 @@ data-event-label="high"
   data-indicatorid='indicator_8-3-1'
   data-id="8-3-1"
   data-country="Malta"
-  data-charttitle="Proportion of informal employment in total employment, by activity and sex"
+  data-charttitle="Proportion of informal employment, by sector (%)"
   data-charttitles="[]"
   data-measurementunit="Percentage (%)"
   data-xaxislabel=""
@@ -418,14 +424,14 @@ data-event-label="high"
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Activity&quot;,&quot;value&quot;:&quot;All Activities&quot;},{&quot;field&quot;:&quot;Activity&quot;,&quot;value&quot;:&quot;Agriculture, forestry and fishing&quot;},{&quot;field&quot;:&quot;Activity&quot;,&quot;value&quot;:&quot;Non-agriculture&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Sector&quot;,&quot;value&quot;:&quot;Total&quot;},{&quot;field&quot;:&quot;Sector&quot;,&quot;value&quot;:&quot;Non-agriculture&quot;}]"
   data-graphlimits="[{&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:100,&quot;stepSize&quot;:10}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Non-agriculture&quot;,&quot;All Activities&quot;,&quot;Agriculture, forestry and fishing&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activity&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Sector&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Non-agriculture&quot;,&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sector&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -550,7 +556,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Proportion of informal employment in total employment, by activity and sex
+            Proportion of informal employment, by sector (%)
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -577,7 +583,6 @@ data-event-label="Change to Table tab"
 <ol>
   <li>Data is produced through International Labour Organisation (ILO) microdata processing.</li>
   <li>Age coverage refers to those aged 16 years and older.</li>
-  <li>Data points flagged as having low reliability: [2010, Agriculture, forestry and fishing, Female, 78], [2015,	Agriculture, forestry and fishing,	All Sexes,	46.29], [2015,	Agriculture, forestry and fishing,	Male,	47.43], [2020,	Agriculture, forestry and fishing,	All Sexes,	65.45], [2020,	Agriculture, forestry and fishing,	Male,	63.37], [2021,	Agriculture, forestry and fishing,	All Sexes,	50.91], [2021,	Agriculture, forestry and fishing,	Male,	50.91]</li>
 </ol>
 </dd>
         
@@ -649,7 +654,6 @@ data-event-label="Change to Table tab"
 <ol>
   <li>Data is produced through International Labour Organisation (ILO) microdata processing.</li>
   <li>Age coverage refers to those aged 16 years and older.</li>
-  <li>Data points flagged as having low reliability: [2010, Agriculture, forestry and fishing, Female, 78], [2015,	Agriculture, forestry and fishing,	All Sexes,	46.29], [2015,	Agriculture, forestry and fishing,	Male,	47.43], [2020,	Agriculture, forestry and fishing,	All Sexes,	65.45], [2020,	Agriculture, forestry and fishing,	Male,	63.37], [2021,	Agriculture, forestry and fishing,	All Sexes,	50.91], [2021,	Agriculture, forestry and fishing,	Male,	50.91]</li>
 </ol>
 </dd>
         
@@ -1510,12 +1514,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250630110925'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250630124615'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250630110925"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250630124615"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
