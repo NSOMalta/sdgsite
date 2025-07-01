@@ -1,7 +1,7 @@
 ---
 title: Maps
 language: en
-permalink: maps/
+permalink: /maps/
 layout: page
 ---
 The Maps page is under development
