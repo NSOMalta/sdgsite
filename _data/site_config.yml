@@ -151,6 +151,9 @@ menu:
   - path: /reporting-status
     translation_key: menu.reporting_status
     dropdown: []
+  - path: /maps
+    translation_key: Maps
+    dropdown: []
   - path: /news
     translation_key: menu.updates
     dropdown: []
@@ -160,9 +163,7 @@ menu:
   - path: /about
     translation_key: menu.about
     dropdown: []
-  - path: /maps
-    translation_key: Maps
-    dropdown: []
+
 metadata_edit_url: ''
 metadata_tabs: []
 meta_tags:
