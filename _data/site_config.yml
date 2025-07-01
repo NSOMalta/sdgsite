@@ -35,6 +35,10 @@ create_pages:
     folder: /search
     layout: search
     title: search.search
+  - filename: ''
+    folder: /maps
+    layout: maps
+    title: Maps
 custom_css: []
 custom_js:
   - /assets/js/custom.js
@@ -147,6 +151,9 @@ map_layers: []
 menu:
   - path: /
     translation_key: general.home
+    dropdown: []
+  - path: /maps
+    translation_key: Maps
     dropdown: []
   - path: /reporting-status
     translation_key: menu.reporting_status
