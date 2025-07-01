@@ -34,11 +34,11 @@
 }
 
 .all-maps {
-    display: flex
-    align-items: centre
+    display: flex;
+    align-items: centre;
     justify-content: center;
-    width: 600px
-    height: 600px
+    width: 600px;
+    height: 600px;
 }
 @media only screen and (min-width: 992px) {
     .frontpage-goals-grid .goal-tiles .goal-tile {
