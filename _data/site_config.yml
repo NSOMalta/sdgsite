@@ -148,11 +148,11 @@ menu:
   - path: /
     translation_key: general.home
     dropdown: []
-  - path: /reporting-status
-    translation_key: menu.reporting_status
-    dropdown: []
   - path: /maps
     translation_key: Maps
+    dropdown: []
+  - path: /reporting-status
+    translation_key: menu.reporting_status
     dropdown: []
   - path: /news
     translation_key: menu.updates
@@ -163,7 +163,6 @@ menu:
   - path: /about
     translation_key: menu.about
     dropdown: []
-
 metadata_edit_url: ''
 metadata_tabs: []
 meta_tags:
