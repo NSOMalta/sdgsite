@@ -77,8 +77,9 @@ frontpage_cards:
     content: |
       <ul>
         <li><a href="https://nso.gov.mt/themes_publications/transport-statistics-2021-3/">SDG Publication: 2021 edition</a></li>
-        <li><a href="https://sustainabledevelopment.gov.mt/vision-2050/">Malta's Sustainable Development Vision</a></li> 
         <li><a href="https://sustainabledevelopment.gov.mt/maltas-sustainable-development-strategy-for-2050/">Malta's Sustainable Development Strategy</a></li>
+        <li><a href="https://sustainabledevelopment.gov.mt/vision-2050/">Malta's Sustainable Development Vision</a></li> 
+        <li><a href="https://sustainabledevelopment.gov.mt/vnr/">Malta's Second Voluntary National Review</a></li>
       </ul>
     include: ''
     button_label: ''
