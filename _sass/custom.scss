@@ -38,6 +38,13 @@
     margin-top: 50px;
     padding: 20px;
 }
+
+.map-indicator-buttons{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
 .esri-view .esri-view-surface:focus:after {
    box-sizing: border-box;
     z-index: 999;
