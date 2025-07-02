@@ -13,8 +13,34 @@ layout: default
         <input type="image" src="https://NSOMalta.github.io/sdgsite/assets/img/4.3.1.png" id="map-4" />
         <input type="image" src="https://NSOMalta.github.io/sdgsite/assets/img/8.5.2.png" id="map-8" />
       </div>
-      <div class="embedded-maps">
-        <iframe src=https://msa-mt.maps.arcgis.com/apps/instant/media/index.html?appid=80c8faccd0b446aa950122f4c4b17376 frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+      <div id="updateMap" class="embedded-maps">
+        <iframe src=https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=752d577fddc946e3876d21dbb6e73ff4&level=11 frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
       </div>
     </div>
 </div>
+
+<script>
+  const button = document.getElementById('map-4');
+  const button2 = document.getElementById('map-8');
+  const updateMap = document.getElementById('updateMap');
+
+  button.addEventListener('click', function() {
+    updateMap.innerHTML =  `
+      <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=752d577fddc946e3876d21dbb6e73ff4&level=11" 
+              frameborder="0" 
+              style="border:0; width:100%; height:600px;" 
+              allowfullscreen>
+        iFrames are not supported on this page.
+      </iframe>`;
+  });
+  
+  button2.addEventListener('click', function() {
+    updateMap.innerHTML =  `
+      <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=567a7e5073ca486fa6979dc7e9f27022&level=11" 
+              frameborder="0" 
+              style="border:0; width:100%; height:600px;" 
+              allowfullscreen>
+        iFrames are not supported on this page.
+      </iframe>`;
+  });
+</script>
