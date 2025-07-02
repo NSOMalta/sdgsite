@@ -2749,6 +2749,10 @@ h1 {
   background-position: right center !important;
   color: #fff !important; }
 
+#map-4:focus, #map-8:focus {
+  box-shadow: none !important;
+  border: 2px solid transparent !important; }
+
 body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px; }
