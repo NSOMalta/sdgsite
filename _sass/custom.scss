@@ -33,7 +33,8 @@
     border: 0;
 }
 .embedded-maps{
-    border: 1px solid black;
+    border: 1px solid #d3d3d3;
+    box-shadow: 5px 5px 5px #d3d3d3;
     border-radius: 50px;
     margin-top: 50px;
     padding: 20px;
@@ -42,7 +43,8 @@
 .map-indicator-buttons{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    margin-top: 30px;
+    gap: 10px;
 }
 
 .esri-view .esri-view-surface:focus:after {
@@ -64,9 +66,40 @@
     .frontpage-goals-grid .goal-tiles .goal-tile {
         width: 15%;
     }
+
 }
 
+.card-text ul{
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
 
+.card-text a{
+    text-decoration: none;
+    color: #32BCAD;
+    transition: transform 2s ease-in;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-text a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: #32BCAD;
+
+}
+
+@media only screen and (max-width: 770px) {
+    .map-indicator-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        gap: 20px;
+    }
+}
+ 
 /*
 .goal-icon-image goal-icon-image- {
     box-shadow: none;
@@ -111,7 +144,7 @@ h1 {
 */
 
 .btn-download {
-      box-shadow: none !important;
+    box-shadow: none !important;
     font-size: 13px;
     padding: 12px 32px;
     text-transform: uppercase;
@@ -136,12 +169,35 @@ h1 {
     color: #fff !important;
 }
 
-#map-4:focus, #map-8:focus{
+#map-4, #map-8{
+  border: 2px solid transparent !important;
   box-shadow: none !important; 
-  border: 2px solid transparent !important; 
   color: #fff !important;
-
+  transition: transform 0.2s;
+  background-color: transparent !important;
 }
+
+
+ 
+/*
+#map-4:focus, #map-8:focus, #map-4:active, #map-8:active{
+    border-bottom-style: solid !important;
+    border-color: yellow !important;
+    border-radius: 28px !important;
+    border-width: 0 0 10px 0 !important;
+    border-radius: 27px !important;
+    color: #fff !important;
+    background-color: transparent !important;
+}
+*/
+
+#map-4:hover, #map-8:hover {
+  border-radius: 20px  !important;
+  color: #fff !important;
+  transform: scale(1.05);
+  background-color: transparent !important; 
+}
+
 body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px;
