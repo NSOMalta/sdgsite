@@ -71,6 +71,21 @@
 
 }
 
+.card-text ul{
+    list-style-type: none;
+}
+
+.card-text a{
+    text-decoration: none;
+    color: #32BCAD;
+}
+
+.card-text a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: #32BCAD;
+}
+
 @media only screen and (max-width: 770px) {
     .map-indicator-buttons {
         display: flex;
