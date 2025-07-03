@@ -65,14 +65,19 @@
         width: 15%;
     }
 
-    .map-indicator-buttons{
+    
+
+}
+
+@media only screen and (max-width: 770px) {
+     .map-indicator-buttons{
         display: flex;
         flex-direction: column;
         padding: 10px;
-    }
+    }  
+
 }
-
-
+ 
 /*
 .goal-icon-image goal-icon-image- {
     box-shadow: none;
