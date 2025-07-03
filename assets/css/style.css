@@ -2695,14 +2695,14 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .card-text a {
   text-decoration: none;
   color: #32BCAD;
-  transition: transform 2s ease-in; }
+  transition: transform 2s ease-in;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif; }
 
 .card-text a:hover {
   font-weight: bold;
   text-decoration: none;
-  color: #32BCAD;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif; }
+  color: #32BCAD; }
 
 @media only screen and (max-width: 770px) {
   .map-indicator-buttons {
