@@ -2790,9 +2790,8 @@ h1 {
 
 #map-4:hover, #map-8:hover {
   border-radius: 20px;
-  box-shadow: -0px 7px 7px 0px yellow !important;
   color: #fff !important;
-  transform: scale(1.5);
+  transform: scale(1.05);
   background-color: transparent !important; }
 
 body {
