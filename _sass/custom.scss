@@ -185,14 +185,13 @@ h1 {
     color: #fff !important;
     background-color: transparent !important;
 }
-#map-4:hover, #map-8:hover{
-    border-radius: 20px;
-    box-shadow: -0px 7px 7px 0px yellow !important;
-    color: #fff !important;
-    transform: scale(1.5);
-    background-color: transparent !important;
-}
 
+#map-4:hover, #map-8:hover {
+  border-radius: 20px;
+  color: #fff !important;
+  transform: scale(1.05);
+  background-color: transparent !important; 
+}
 
 body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
