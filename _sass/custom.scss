@@ -144,7 +144,7 @@ h1 {
 */
 
 .btn-download {
-      box-shadow: none !important;
+    box-shadow: none !important;
     font-size: 13px;
     padding: 12px 32px;
     text-transform: uppercase;
@@ -169,10 +169,20 @@ h1 {
     color: #fff !important;
 }
 
-#map-4:focus, #map-8:focus{
+#map-4, #map-8{
+  border: 2px solid transparent !important;
   box-shadow: none !important; 
   color: #fff !important;
   background-color: transparent !important;
+}
+
+
+
+#map-4:focus, #map-8:focus{
+    border-radius: 20px;
+    box-shadow: -0px 7px 7px 0px yellow;
+    color: #fff !important;
+    background-color: transparent !important;
 }
 
 body {
