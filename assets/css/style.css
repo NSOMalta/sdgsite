@@ -2667,7 +2667,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .map-indicator-buttons {
   display: flex;
   flex-direction: row;
-  padding: 10px; }
+  margin-top: 30px;
+  gap: 10px; }
 
 .esri-view .esri-view-surface:focus:after {
   box-sizing: border-box;
