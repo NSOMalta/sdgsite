@@ -2689,6 +2689,7 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   .map-indicator-buttons {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 10px; } }
 /*
 .goal-icon-image goal-icon-image- {
