@@ -2775,8 +2775,15 @@ h1 {
   background-position: right center !important;
   color: #fff !important; }
 
-#map-4:focus, #map-8:focus {
+#map-4, #map-8 {
+  border: 2px solid transparent !important;
   box-shadow: none !important;
+  color: #fff !important;
+  background-color: transparent !important; }
+
+#map-4:focus, #map-8:focus {
+  border-radius: 20px;
+  box-shadow: -0px 7px 7px 0px yellow;
   color: #fff !important;
   background-color: transparent !important; }
 
