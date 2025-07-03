@@ -2782,15 +2782,17 @@ h1 {
   transition: transform 0.2s;
   background-color: transparent !important; }
 
-#map-4:focus, #map-8:focus, #map-4:active, #map-8:active {
-  border-bottom-style: solid !important;
-  border-color: yellow !important;
-  border-radius: 28px !important;
-  border-width: 0 0 10px 0 !important;
-  border-radius: 27px !important;
-  color: #fff !important;
-  background-color: transparent !important; }
-
+/*
+#map-4:focus, #map-8:focus, #map-4:active, #map-8:active{
+    border-bottom-style: solid !important;
+    border-color: yellow !important;
+    border-radius: 28px !important;
+    border-width: 0 0 10px 0 !important;
+    border-radius: 27px !important;
+    color: #fff !important;
+    background-color: transparent !important;
+}
+*/
 #map-4:hover, #map-8:hover {
   border-radius: 20px  !important;
   color: #fff !important;
