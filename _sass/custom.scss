@@ -180,17 +180,17 @@ h1 {
 
 
 #map-4:focus, #map-8:focus, #map-4:active, #map-8:active{
-    border-bottom-style: solid;
-    border-color: yellow;
-    border-radius: 28px;
-    border-width: 10px;
-    border-radius: 20px;
+    border-bottom-style: solid  !important;
+    border-color: yellow  !important;
+    border-radius: 28px  !important;
+    border-width: 10px  !important;
+    border-radius: 20px  !important;
     color: #fff !important;
     background-color: transparent !important;
 }
 
 #map-4:hover, #map-8:hover {
-  border-radius: 20px;
+  border-radius: 20px  !important;
   color: #fff !important;
   transform: scale(1.05);
   background-color: transparent !important; 
