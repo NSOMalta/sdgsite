@@ -2688,7 +2688,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   .frontpage-goals-grid .goal-tiles .goal-tile {
     width: 15%; } }
 .card-text ul {
-  list-style-type: none; }
+  list-style-type: none;
+  #
+    padding: 0;
+  margin: 0; }
 
 .card-text a {
   text-decoration: none;
