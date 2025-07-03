@@ -60,8 +60,8 @@ footer_language_toggle: none
 footer_menu:
   - path: /contact-us
     translation_key: menu.contact_us
-  - path: 'https://twitter.com/NSOMALTA'
-    translation_key: general.twitter
+  - path: 'https://x.com/NSOMALTA'
+    translation_key: X
   - path: 'https://www.facebook.com/nsomalta/'
     translation_key: general.facebook
   - path: /about/cookies-and-privacy/
