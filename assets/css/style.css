@@ -2684,8 +2684,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 
 @media only screen and (min-width: 992px) {
   .frontpage-goals-grid .goal-tiles .goal-tile {
-    width: 15%; }
-
+    width: 15%; } }
+@media only screen and (max-width: 770px) {
   .map-indicator-buttons {
     display: flex;
     flex-direction: column;
