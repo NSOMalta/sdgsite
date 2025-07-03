@@ -64,6 +64,12 @@
     .frontpage-goals-grid .goal-tiles .goal-tile {
         width: 15%;
     }
+
+    .map-indicator-buttons{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
 
 
