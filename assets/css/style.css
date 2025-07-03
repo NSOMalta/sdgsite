@@ -2777,7 +2777,6 @@ h1 {
 
 #map-4:focus, #map-8:focus {
   box-shadow: none !important;
-  border: 2px solid transparent !important;
   color: #fff !important;
   background-color: transparent !important; }
 
