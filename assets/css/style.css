@@ -2689,8 +2689,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   .map-indicator-buttons {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 20px; } }
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 20px; } }
 /*
 .goal-icon-image goal-icon-image- {
     box-shadow: none;
