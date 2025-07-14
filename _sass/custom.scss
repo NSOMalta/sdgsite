@@ -248,6 +248,158 @@ body.contrast-high #search button {
 
 // p {
 //     font-family: 'Roboto Flex', sans-serif;
-// }
+// 
 
+//footer-custom
+
+
+.footer_box{
+    margin-top: 50px;
+    background: #F7F7F7;
+    width: 100%;
+}
+
+
+.New_footer{
+        
+        padding-top: 50px;
+        padding-bottom: 25px;
+
+        display: flex;
+        flex-wrap: wrap;
+        
+        margin: auto;
+        width: 90%;
+        justify-content: space-between;
+
+        /* ?  i am not sing it */
+        border-color: #e4e4e4;
+
+        
+    }
     
+.footer_1{
+     /*background-color: yellow;
+        margin-bottom: 40px; 
+        */
+    }
+.footer_1 img{
+        max-height: 56px;
+    }
+
+.New_footer ul{
+    list-style: none;
+    }
+
+.footer_titel{
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-family: 'Noto Sans', 'Poppins', sans-serif;
+        font-size: 16px;
+    }
+
+.new-badge-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+}
+
+.icon-with-badge {
+    position: relative;
+    display: inline-block;
+}
+
+.new-badge {
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    background-color: #32BCAD;
+    color: white;
+    font-weight: 700;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    pointer-events: none;
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    /* Tilt the badge text */
+    transform: rotate(-10deg);
+    transform-origin: center;
+}
+
+/* Hide the badge on mobile */
+@media (max-width: 767px) {
+    .new-badge {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+.New_footer{
+        width: 100%;
+    }
+.footer_1{
+    margin-left: 10px; 
+    }
+
+}/* media 1024 */
+
+
+@media only screen and (max-width: 800px) {
+
+
+.footer_1{
+    z-index: 2;
+}
+
+.footer_1{
+    width: 20%;
+}
+
+}/* media 800 */
+
+@media only screen and (max-width: 550px) {
+.footer_1{
+    order: 1;
+    width: 170px;
+    margin: auto;
+}
+}
+
+/* social media icon */
+.extra-small-icon {
+    list-style: none;
+    padding: 0;
+}
+
+.extra-small-icon li {
+    display: inline-block;
+}
+
+.extra-small-icon li:first-child {
+    margin-left: 0;
+}
+
+.extra-small-icon li:last-child {
+    margin-right: 0;
+}
+
+.extra-small-icon li {
+    margin: 0 11px;
+}
+
+.footer_1 p{
+    margin: 0 0 25px;
+}
+.extra-small-icon li a {
+    transition: all 0.3s ease-in-out;
+}
+
+.extra-small-icon li a:hover {
+    opacity: .5;
+}
