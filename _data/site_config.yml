@@ -64,6 +64,8 @@ footer_menu:
     translation_key: general.facebook
   - path: 'https://www.instagram.com/nsomalta/'
     translation_key: Instagram
+  - path: 'https://www.linkedin.com/company/national-statistics-office---malta/'
+    translation_key: LinkedIn
   - path: 'https://x.com/NSOMALTA'
     translation_key: X
   - path: /about/cookies-and-privacy/
