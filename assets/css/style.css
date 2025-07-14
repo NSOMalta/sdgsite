@@ -2926,3 +2926,19 @@ body.contrast-high #search button {
     order: 1;
     width: 170px;
     margin: auto; } }
+/* social media icon */
+.extra-small-icon {
+  list-style: none;
+  padding: 0; }
+
+.extra-small-icon li {
+  display: inline-block; }
+
+.extra-small-icon li:first-child {
+  margin-left: 0; }
+
+.extra-small-icon li:last-child {
+  margin-right: 0; }
+
+.extra-small-icon li {
+  margin: 0 2px; }
