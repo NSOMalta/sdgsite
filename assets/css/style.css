@@ -2945,3 +2945,6 @@ body.contrast-high #search button {
 
 .footer_1 p {
   margin: 0 0 25px; }
+
+.extra-small-icon li a:hover {
+  opacity: .5; }
