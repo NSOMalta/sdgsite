@@ -85,7 +85,7 @@ frontpage_cards:
     content: |
       <ul>
         <li><a href="https://unstats.un.org/sdgs/dataportal/database">UN SDG Database</a></li>
-        <li><a href="https://unstats.un.org/sdgs/report/2024/">UN SDG Report 2024</a></li>
+        <li><a href="https://unstats.un.org/sdgs/report/2025/">UN SDG Report 2025</a></li>
         <li><a href="https://ec.europa.eu/eurostat/en/web/products-flagship-publications/w/ks-01-24-018">Sustainable development in the European Union - 2025 Edition</a></li>
         <li><a href="https://ec.europa.eu/eurostat/cache/visualisations/sdgs/">Eurostat: SDGs & me</a></li>       
       </ul>
