@@ -21,7 +21,7 @@ country:
   name: Malta
   adjective: Maltese
 create_goals:
-  previous_next_links: false
+  previous_next_links: true
   goal_content_heading: ''
   goals: []
 create_indicators:
