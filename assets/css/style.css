@@ -2820,7 +2820,7 @@ body {
   box-shadow: 0 0 0 5px transparent !important;
   outline: 2px solid transparent !important; }
 
-#search button {
+#search button, .btn button {
   color: white;
   background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
   background-color: transparent !important;
@@ -2830,7 +2830,7 @@ body {
   border-radius: 0px 20px 20px 0px;
   border-color: transparent; }
 
-#search button:hover {
+#search button:hover, .btn button:hover {
   box-shadow: none !important;
   background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
   background-color: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
