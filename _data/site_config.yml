@@ -177,7 +177,7 @@ news:
   category_links: false
 observation_attributes:
   - field: COMMENT_OBS
-    label: Comment
+    label: ''
 progress_status:
   status_heading: ''
   status_help: ''
