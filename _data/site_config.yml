@@ -178,8 +178,6 @@ news:
 observation_attributes:
   - field: COMMENT_OBS
     label: ''
-  - field: COMMENT_OBS_2
-    label: ''
 progress_status:
   status_heading: ''
   status_help: ''

@@ -17,10 +17,9 @@
         {% if page.indicator.data_footnote and page.indicator.data_footnote != '' %}
         <dd>{{ page.indicator.data_footnote | markdownify }}</dd>
         {% endif %}
+
          {% if site.observation_attributes and site.observation_attributes.size > 0 %}
-         {% for observation_attribute in page.indicator.observation_attributes %}
             <dl class="observation-attribute-list"></dl>
-       {% endfor %}
         {% endif %}
         {% if page.indicator.footer_fields and page.indicator.footer_fields.size > 0 %}
         <br>
@@ -47,5 +46,4 @@
         {% endfor %}
         {% endif %}
     </dl>
-   
 </div>
