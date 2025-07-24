@@ -40,6 +40,5 @@ categories:
   <td style="border: 1px solid #000; padding: 8px;">3.7.2</td>
   <td style="border: 1px solid #000; padding: 8px;">Added data for 2024</td>
 </tr>
-
   </tbody>
 </table>
