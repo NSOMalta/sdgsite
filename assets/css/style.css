@@ -2909,6 +2909,9 @@ h1 {
   background: transparent;
   color: #0b0c0c; }
 
+.navbar .navbar-nav > .nav-item > .nav-link:hover {
+  border-bottom: 3px solid #eea337; }
+
 /*
 .btn-download {
     border: none !important;
