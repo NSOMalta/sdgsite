@@ -2796,7 +2796,7 @@ h1 {
     background-color: transparent !important;
 }
 */
-#map-4:hover, #map-8:hover {
+#map-1-2-1:hover, #map-1-2-2:hover, #map-4:hover, #map-8:hover {
   border-radius: 20px  !important;
   color: #fff !important;
   transform: scale(1.05);
