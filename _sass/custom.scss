@@ -173,7 +173,7 @@ h1 {
     color: #fff !important;
 }
 
-#map-4, #map-8{
+#map-1-2-1, #map-1-2-2, #map-4, #map-8 {
   border: 2px solid transparent !important;
   box-shadow: none !important; 
   color: #fff !important;
@@ -184,7 +184,7 @@ h1 {
 
  
 /*
-#map-4:focus, #map-8:focus, #map-4:active, #map-8:active{
+#map-1-2-1:focus, #map-1-2-2:focus, #map-1-2-1:active, #map-1-2-2:active, #map-4:focus, #map-8:focus, #map-4:active, #map-8:active{
     border-bottom-style: solid !important;
     border-color: yellow !important;
     border-radius: 28px !important;
@@ -195,7 +195,7 @@ h1 {
 }
 */
 
-#map-4:hover, #map-8:hover {
+#map-1-2-1:hover, #map-1-2-2:hover, #map-4:hover, #map-8:hover {
   border-radius: 20px  !important;
   color: #fff !important;
   transform: scale(1.05);
