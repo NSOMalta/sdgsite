@@ -2812,6 +2812,7 @@ h1 {
   font-weight: bold; }
 
 .map-content {
+  width: 100%;
   margin-top: 8%; }
 
 #map-1-2-1, #map-1-2-2, #map-4, #map-8 {
