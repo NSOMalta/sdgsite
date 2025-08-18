@@ -108,7 +108,7 @@ goals_page:
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: custom
-graph_color_list: ['E55050','7ADAA5', '9B177E', '799EFF', 'FFDE63', 'C78A3B', 'FF714B', 'E53888', '154D71', 'C5FF95', '819A91', '03A6A1', 'D9C4B0', 'FF9587','722323']
+graph_color_list: ['E55050','7ADAA5', '799EFF', 'E53888','FFDE63', '9063FF', 'C5FF95','C78A3B', 'FF714B', '154D71', '819A91', '03A6A1', 'D9C4B0', 'FF9587','722323']
 graph_color_number: 15
 graph_title_from_series: false
 header_language_toggle: dropdown
