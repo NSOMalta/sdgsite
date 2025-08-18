@@ -1217,7 +1217,7 @@ $(document).ready(function() {
 opensdg.chartColors = function(indicatorId) {
   var colorSet = "custom";
   var numberOfColors = 15;
-  var customColorList = ["D32F2F","4CAF50","7B1FA2","1976D2","FFEB3B","795548","FF9800","E91E63","512DA8","CDDC39","455A64","FF5722","42d4f4","aaffc3","800000"];
+  var customColorList = ["E55050","7ADAA5","9B177E","799EFF","FFDE63","C78A3B","FFBC4C","E53888","154D71","C5FF95","819A91","03A6A1","D9C4B0","FF9587","722323"];
 
   this.goalNumber = parseInt(indicatorId.slice(indicatorId.indexOf('_')+1,indicatorId.indexOf('-')));
   this.goalColors = [['e5243b', '891523', 'ef7b89', '2d070b', 'f4a7b0', 'b71c2f', 'ea4f62', '5b0e17', 'fce9eb'],
