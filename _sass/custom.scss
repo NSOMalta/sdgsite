@@ -173,6 +173,12 @@ h1 {
     color: #fff !important;
 }
 
+
+.maps-container{
+    display: flex;
+    flex-direction: row;
+}
+
 #map-1-2-1, #map-1-2-2, #map-4, #map-8 {
     box-shadow: none !important; 
     transition: transform 0.2s;
