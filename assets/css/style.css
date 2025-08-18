@@ -2781,7 +2781,7 @@ h1 {
 #map-1-2-1, #map-1-2-2, #map-4, #map-8 {
   box-shadow: none !important;
   transition: transform 0.2s;
-  background-color: transparent !important;
+  background-color: white;
   text-decoration: none;
   border-radius: 50px;
   font-size: 30px;
@@ -2812,11 +2812,20 @@ h1 {
     background-color: transparent !important;
 }
 */
-#map-1-2-1:hover, #map-1-2-2:hover, #map-4:hover, #map-8:hover {
-  border-radius: 20px  !important;
-  color: #fff !important;
+#map-1-2-1:hover, #map-1-2-2:hover {
   transform: scale(1.05);
-  background-color: transparent !important; }
+  background-color: #EB1C2D;
+  color: white; }
+
+#map-4:hover {
+  transform: scale(1.05);
+  background-color: #C31F33;
+  color: white; }
+
+#map-8:hover {
+  transform: scale(1.05);
+  background-color: #8F1838;
+  color: white; }
 
 body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
