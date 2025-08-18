@@ -174,13 +174,32 @@ h1 {
 }
 
 #map-1-2-1, #map-1-2-2, #map-4, #map-8 {
-  border: 2px solid transparent !important;
-  box-shadow: none !important; 
-  color: #fff !important;
-  transition: transform 0.2s;
-  background-color: transparent !important;
+    box-shadow: none !important; 
+    transition: transform 0.2s;
+    background-color: transparent !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    width: 20%;
+
 }
 
+#map-1-2-1, #map-1-2-2{
+    color: #EB1C2D;
+    border: 2px solid #EB1C2D;
+}
+
+#map-4{
+    color: #C31F33;
+    border: 2px solid #C31F33;
+}
+
+#map-8{
+    color: #8F1838;
+    border: 2px solid #8F1838;
+}
 
  
 /*
