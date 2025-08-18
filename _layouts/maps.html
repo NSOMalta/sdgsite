@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Maps
+title: Interactive Maps
 ---
 <div class="container">
   {% include components/page/breadcrumbs.html %}
@@ -11,10 +11,10 @@ title: Maps
       <h1>{{ page.title | t }}</h1>
       {% endif %}
       <div class ="map-indicator-buttons">
-        <input type="image" src="https://NSOMalta.github.io/sdgsite/assets/img/1.2.1.png" id="map-1-2-1" />
-        <input type="image" src="https://NSOMalta.github.io/sdgsite/assets/img/1.2.2.png" id="map-1-2-2" />
-        <input type="image" src="https://NSOMalta.github.io/sdgsite/assets/img/4.3.1.png" id="map-4" />
-        <input type="image" src="https://NSOMalta.github.io/sdgsite/assets/img/8.5.2.png" id="map-8" />
+        <button type="button" id="map-1-2-1">1.2.1</button>
+        <button type="button" id="map-1-2-2">1.2.2</button>
+        <button type="button" id="map-4-3-1">4.3.1</button>
+        <button type="button" id="map-8-5-2">8.5.2</button>
       </div>
       <div id="updateMap" class="embedded-maps">
         <iframe src=https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11 frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
