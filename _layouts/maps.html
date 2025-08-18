@@ -10,6 +10,8 @@ title: Interactive Maps
       {% if page.title %}
       <h1>{{ page.title | t }}</h1>
       {% endif %}
+
+      <div class = "maps-container">
       <div class ="map-indicator-buttons">
         <button type="button" id="map-1-2-1">1.2.1</button>
         <button type="button" id="map-1-2-2">1.2.2</button>
@@ -18,6 +20,7 @@ title: Interactive Maps
       </div>
       <div id="updateMap" class="embedded-maps">
         <iframe src=https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11 frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+      </div>
       </div>
     </div>
 </div>
