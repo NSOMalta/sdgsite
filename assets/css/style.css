@@ -2832,7 +2832,12 @@ h1 {
   font-weight: bold;
   padding: 10px; }
 
-#map-1-2-1, #map-1-2-2 {
+#map-1-2-1 {
+  background-color: #EB1C2D;
+  color: white;
+  border: 2px solid #EB1C2D; }
+
+#map-1-2-2 {
   color: #EB1C2D;
   border: 2px solid #EB1C2D; }
 
