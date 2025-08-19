@@ -149,11 +149,11 @@ menu:
   - path: /
     translation_key: general.home
     dropdown: []
-  - path: /maps
-    translation_key: Maps
-    dropdown: []
   - path: /reporting-status
     translation_key: menu.reporting_status
+    dropdown: []
+  - path: /maps
+    translation_key: Interactive Maps
     dropdown: []
   - path: /news
     translation_key: menu.updates
