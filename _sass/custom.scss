@@ -211,6 +211,13 @@ h1 {
     padding: 10px;
     border-radius: 50px 50px 0 0;
     font-weight: bold;
+    gap: 15px;
+}
+
+#headerIcon{
+    width: 90px;
+    height: 38px;
+    align-self: center;
 }
 
 .map-content{
