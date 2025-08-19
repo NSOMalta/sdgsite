@@ -36,6 +36,7 @@ title: Interactive Maps
   const button8 = document.getElementById('map-8');
   const updateMap = document.getElementById('updateMap');
   const updateHeader = document.getElementById('updateHeader');
+
   /*
    window.addEventListener('DOMContentLoaded', (event) => {
     const map4 = document.getElementById('map-4');
@@ -54,6 +55,7 @@ title: Interactive Maps
       </iframe>`;
     updateHeader.innerHTML = `
       <h3>1.2.1 - At risk of poverty (ARP) rate</h3>`;
+    updateHeader.style.backgroundColor = "#EB1C2D";
   });
   
   button122.addEventListener('click', function() {
@@ -66,6 +68,7 @@ title: Interactive Maps
       </iframe>`;
      updateHeader.innerHTML = `
       <h3>1.2.2 - At risk of poverty or social exclusion (AROPE) rate</h3>`;
+     updateHeader.style.backgroundColor = "#EB1C2D";
   });
     button4.addEventListener('click', function() {
     updateMap.innerHTML =  `
@@ -77,6 +80,7 @@ title: Interactive Maps
       </iframe>`;
       updateHeader.innerHTML = `
       <h3>4.3.1 - Tertiary education attainment rate</h3>`;
+       updateHeader.style.backgroundColor = "#C31F33";
   });
     button8.addEventListener('click', function() {
     updateMap.innerHTML =  `
@@ -88,5 +92,6 @@ title: Interactive Maps
       </iframe>`;
        updateHeader.innerHTML = `
       <h3>8.5.2 - Employment Rate</h3>`;
+      updateHeader.style.backgroundColor = "#8F1838";
   });
 </script>
