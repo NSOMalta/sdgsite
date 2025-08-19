@@ -32,7 +32,6 @@ title: Interactive Maps
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', () => {        
-  localStorage.setItem("currentMap","121");
 
   const button121 = document.getElementById('map-1-2-1');
   const button122 = document.getElementById('map-1-2-2');
@@ -79,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button4.style.border = "2px solid #C31F33";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-      localStorage.setItem("currentMap","121");
+      sessionStorage.setItem("currentMap","121");
   }
   
   function load122() {
@@ -113,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button4.style.border = "2px solid #C31F33";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-          localStorage.setItem("currentMap","122");
+          sessionStorage.setItem("currentMap","122");
 
   };
   
@@ -148,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button122.style.border = "2px solid #EB1C2D";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-          localStorage.setItem("currentMap","4");
+          sessionStorage.setItem("currentMap","4");
 
   };
   function load8() {
@@ -182,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button122.style.border = "2px solid #EB1C2D";
       button4.style.color= "#C31F33";
       button4.style.border = "2px solid #C31F33";
-        localStorage.setItem("currentMap","8");
+        sessionStorage.setItem("currentMap","8");
 
   };
 
@@ -192,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button4.addEventListener('click', load4);
     button8.addEventListener('click', load8);
 
-    const mapToLoad = localStorage.getItem("currentMap");
+    const mapToLoad = sessionStorage.getItem("currentMap");
     if(mapToLoad === "122") load122();
     else if(mapToLoad === "4") load4();
     else if(mapToLoad === "8") load8();
