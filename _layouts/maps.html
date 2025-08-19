@@ -20,7 +20,7 @@ title: Interactive Maps
       </div>
       <div id="updateMap" class="embedded-maps">
         <div id="updateHeader" class="map-header">
-          <p>1.2.1 - At risk of poverty (ARP) rate</p>
+          <h2>1.2.1 - At risk of poverty (ARP) rate</h2>
         </div>
         <div class="map-content">
           <iframe src=https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11 frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
@@ -52,7 +52,7 @@ title: Interactive Maps
               allowfullscreen>
         iFrames are not supported on this page.
       </iframe>`;
-    updateMap.innerHTML = `
+    updateHeader.innerHTML = `
       <h2>1.2.1 - At risk of poverty (ARP) rate</h2>`;
   });
   
@@ -64,7 +64,7 @@ title: Interactive Maps
               allowfullscreen>
         iFrames are not supported on this page.
       </iframe>`;
-     updateMap.innerHTML = `
+     updateHeader.innerHTML = `
       <h2>At risk of poverty or social exclusion (AR0PE) rate</h2>`;
   });
     button4.addEventListener('click', function() {
@@ -75,7 +75,7 @@ title: Interactive Maps
               allowfullscreen>
         iFrames are not supported on this page.
       </iframe>`;
-      updateMap.innerHTML = `
+      updateHeader.innerHTML = `
       <h2>Tertiary education attainment rate</h2>`;
   });
     button8.addEventListener('click', function() {
@@ -86,7 +86,7 @@ title: Interactive Maps
               allowfullscreen>
         iFrames are not supported on this page.
       </iframe>`;
-       updateMap.innerHTML = `
+       updateHeader.innerHTML = `
       <h2>Employment Rate</h2>`;
   });
 </script>
