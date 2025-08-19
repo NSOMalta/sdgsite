@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250819104204">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250819104921">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -294,8 +294,10 @@ data-event-label="high"
       <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg1 icon.svg" alt="sdg 1 icon">
       <h3>1.2.1 - At risk of poverty (ARP) rate</h3>`;
     updateHeader.style.backgroundColor = "#EB1C2D";
-     button121.style.backgroundColor="#EB1C2D"; 
+       button121.style.backgroundColor="#EB1C2D"; 
       button121.style.color="white";
+      button121.style.pointerEvents = "none";  
+      button121.style.cursor = "default";      
       button122.style.backgroundColor="white"; 
       button4.style.backgroundColor="white"; 
       button8.style.backgroundColor="white"; 
@@ -321,6 +323,8 @@ data-event-label="high"
      updateHeader.style.backgroundColor = "#EB1C2D";
       button122.style.backgroundColor="#EB1C2D"; 
       button122.style.color="white";
+      button122.style.pointerEvents = "none";  
+      button122.style.cursor = "default"; 
       button121.style.backgroundColor="white"; 
       button4.style.backgroundColor="white"; 
       button8.style.backgroundColor="white"; 
@@ -346,6 +350,8 @@ data-event-label="high"
        updateHeader.style.backgroundColor = "#C31F33";
        button4.style.backgroundColor="#C31F33"; 
       button4.style.color="white";
+      button4.style.pointerEvents = "none";  
+      button4.style.cursor = "default"; 
       button121.style.backgroundColor="white"; 
       button122.style.backgroundColor="white"; 
       button8.style.backgroundColor="white"; 
@@ -368,6 +374,8 @@ data-event-label="high"
       <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg8 icon.svg" alt="sdg 8 icon">
       <h3>8.5.2 - Employment Rate</h3>`;
       updateHeader.style.backgroundColor = "#8F1838";
+      button8.style.pointerEvents = "none";  
+      button8.style.cursor = "default"; 
        button8.style.backgroundColor="#8F1838"; 
       button8.style.color="white";
       button121.style.backgroundColor="white"; 
@@ -476,12 +484,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250819104204'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250819104921'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250819104204"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250819104921"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
