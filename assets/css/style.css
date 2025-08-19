@@ -2849,17 +2849,18 @@ h1 {
   color: #8F1838;
   border: 2px solid #8F1838; }
 
-/*
-#map-1-2-1:focus, #map-1-2-2:focus, #map-1-2-1:active, #map-1-2-2:active, #map-4:focus, #map-8:focus, #map-4:active, #map-8:active{
-    border-bottom-style: solid !important;
-    border-color: yellow !important;
-    border-radius: 28px !important;
-    border-width: 0 0 10px 0 !important;
-    border-radius: 27px !important;
-    color: #fff !important;
-    background-color: transparent !important;
-}
-*/
+#map-1-2-1:focus, #map-1-2-2:focus {
+  background-color: #EB1C2D !important;
+  color: white !important; }
+
+#map-8:focus {
+  background-color: #8F1838 !important;
+  color: white !important; }
+
+#map-4:focus {
+  background-color: #C31F33 !important;
+  color: white !important; }
+
 #map-1-2-1:hover, #map-1-2-2:hover {
   transform: scale(1.05);
   background-color: #EB1C2D;
