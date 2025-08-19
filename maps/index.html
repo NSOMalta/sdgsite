@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250819105240">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250819110939">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -268,7 +268,7 @@ data-event-label="high"
     </div>
 </div>
 <script>
-  default();
+document.addEvenetListener('DOMContentLoaded', () => {
   const button121 = document.getElementById('map-1-2-1');
   const button122 = document.getElementById('map-1-2-2');
   const button4 = document.getElementById('map-4');
@@ -283,7 +283,7 @@ data-event-label="high"
     }
   });
   */
-  button121.addEventListener('click', function default() {
+  function button121(){
     updateMap.innerHTML =  `
       <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11" 
               frameborder="0" 
@@ -308,9 +308,10 @@ data-event-label="high"
       button4.style.border = "2px solid #C31F33";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-  });
+      localStorage.setItem("currentMap","121");
+  }
   
-  button122.addEventListener('click', function() {
+  function load122() {
     updateMap.innerHTML =  `
       <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7745ebbac78c4a5e9b0149d378014b23&level=11" 
               frameborder="0" 
@@ -335,9 +336,11 @@ data-event-label="high"
       button4.style.border = "2px solid #C31F33";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-    
-  });
-    button4.addEventListener('click', function() {
+          localStorage.setItem("currentMap","122");
+
+  };
+  
+  function load4() {
     updateMap.innerHTML =  `
       <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=752d577fddc946e3876d21dbb6e73ff4&level=11" 
               frameborder="0" 
@@ -362,8 +365,10 @@ data-event-label="high"
       button122.style.border = "2px solid #EB1C2D";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-  });
-    button8.addEventListener('click', function() {
+          localStorage.setItem("currentMap","4");
+
+  };
+  function load8() {
     updateMap.innerHTML =  `
       <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=567a7e5073ca486fa6979dc7e9f27022&level=11" 
               frameborder="0" 
@@ -388,8 +393,22 @@ data-event-label="high"
       button122.style.border = "2px solid #EB1C2D";
       button4.style.color= "#C31F33";
       button4.style.border = "2px solid #C31F33";
-  
-  });
+        localStorage.setItem("currentMap","8");
+
+  };
+
+
+    button121.addEventListener('click', load121);
+    button122.addEventListener('click', load123);
+    button4.addEventListener('click', load4);
+    button8.addEventListener('click', load8);
+
+    const mapToLoad = localStorage.getItem("currentMap");
+    if(mapToLoad === "122") load122();
+    if(mapToLoad === "4") load4();
+    if(mapToLoad === "8") load8();
+   else load121();
+});
 </script>
 
 <footer role="contentinfo">
@@ -485,12 +504,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250819105240'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250819110939'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250819105240"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250819110939"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
