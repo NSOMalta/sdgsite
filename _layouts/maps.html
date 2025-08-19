@@ -31,6 +31,10 @@ title: Interactive Maps
     </div>
 </div>
 <script>
+
+  window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem("currentMap");
+});
 document.addEventListener('DOMContentLoaded', () => {        
 
   const button121 = document.getElementById('map-1-2-1');
@@ -200,4 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.maps-container').style.visibility = 'visible';
 
 });
+
+
+  
+
 </script>
