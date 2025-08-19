@@ -2774,7 +2774,8 @@ h1 {
 .maps-container {
   display: flex;
   flex-direction: row;
-  gap: 2%; }
+  gap: 2%;
+  margin-top: 50px; }
 
 .map-indicator-buttons {
   display: flex;
