@@ -38,7 +38,7 @@ create_pages:
   - filename: ''
     folder: /maps
     layout: maps
-    title: Maps
+    title: Interactive Maps
 custom_css: []
 custom_js:
   - /assets/js/custom.js
