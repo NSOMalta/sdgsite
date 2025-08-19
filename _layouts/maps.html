@@ -162,14 +162,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     button121.addEventListener('click', load121);
-    button122.addEventListener('click', load123);
+    button122.addEventListener('click', load122);
     button4.addEventListener('click', load4);
     button8.addEventListener('click', load8);
 
     const mapToLoad = localStorage.getItem("currentMap");
     if(mapToLoad === "122") load122();
-    if(mapToLoad === "4") load4();
-    if(mapToLoad === "8") load8();
+    else if(mapToLoad === "4") load4();
+    else if(mapToLoad === "8") load8();
    else load121();
 });
 </script>
