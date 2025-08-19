@@ -20,17 +20,18 @@ title: Interactive Maps
       </div>
       <div class="embedded-maps">
         <div id="updateHeader" class="map-header">
-          <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg1 icon.svg" alt="sdg icon">
-          <h3>1.2.1 - At risk of poverty (ARP) rate</h3>
+<!--           <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg1 icon.svg" alt="sdg icon">
+          <h3>1.2.1 - At risk of poverty (ARP) rate</h3> -->
         </div>
         <div id="updateMap" class="map-content">
-          <iframe src=https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11 frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+<!--           <iframe src=https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11 frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe> -->
         </div>
       </div>
       </div>
     </div>
 </div>
 <script>
+  default();
   const button121 = document.getElementById('map-1-2-1');
   const button122 = document.getElementById('map-1-2-2');
   const button4 = document.getElementById('map-4');
@@ -45,7 +46,7 @@ title: Interactive Maps
     }
   });
   */
-  button121.addEventListener('click', function() {
+  button121.addEventListener('click', function default() {
     updateMap.innerHTML =  `
       <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11" 
               frameborder="0" 
