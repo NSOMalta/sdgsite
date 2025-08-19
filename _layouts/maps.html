@@ -11,7 +11,7 @@ title: Interactive Maps
       <h1>{{ page.title | t }}</h1>
       {% endif %}
 
-      <div class = "maps-container">
+      <div class = "maps-container" style="visibility:hidden;">
       <div class ="map-indicator-buttons">
         <button type="button" id="map-1-2-1">1.2.1</button>
         <button type="button" id="map-1-2-2">1.2.2</button>
@@ -196,5 +196,8 @@ document.addEventListener('DOMContentLoaded', () => {
     else if(mapToLoad === "4") load4();
     else if(mapToLoad === "8") load8();
    else load121();
+
+  document.querySelector('.maps-container').style.visibility = 'visible';
+
 });
 </script>
