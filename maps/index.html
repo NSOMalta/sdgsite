@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250819113519">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250819114510">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -269,7 +269,6 @@ data-event-label="high"
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', () => {        
-  localStorage.setItem("currentMap","121");
 
   const button121 = document.getElementById('map-1-2-1');
   const button122 = document.getElementById('map-1-2-2');
@@ -316,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button4.style.border = "2px solid #C31F33";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-      localStorage.setItem("currentMap","121");
+      sessionStorage.setItem("currentMap","121");
   }
   
   function load122() {
@@ -350,7 +349,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button4.style.border = "2px solid #C31F33";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-          localStorage.setItem("currentMap","122");
+          sessionStorage.setItem("currentMap","122");
 
   };
   
@@ -385,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button122.style.border = "2px solid #EB1C2D";
       button8.style.color= "#8F1838";
       button8.style.border = "2px solid #8F1838";
-          localStorage.setItem("currentMap","4");
+          sessionStorage.setItem("currentMap","4");
 
   };
   function load8() {
@@ -419,7 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
       button122.style.border = "2px solid #EB1C2D";
       button4.style.color= "#C31F33";
       button4.style.border = "2px solid #C31F33";
-        localStorage.setItem("currentMap","8");
+        sessionStorage.setItem("currentMap","8");
 
   };
 
@@ -429,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button4.addEventListener('click', load4);
     button8.addEventListener('click', load8);
 
-    const mapToLoad = localStorage.getItem("currentMap");
+    const mapToLoad = sessionStorage.getItem("currentMap");
     if(mapToLoad === "122") load122();
     else if(mapToLoad === "4") load4();
     else if(mapToLoad === "8") load8();
@@ -530,12 +529,12 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250819113519'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250819114510'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250819113519"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250819114510"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
