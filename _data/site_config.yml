@@ -38,7 +38,7 @@ create_pages:
   - filename: ''
     folder: /maps
     layout: maps
-    title: Maps
+    title: Interactive Maps
 custom_css: []
 custom_js:
   - /assets/js/custom.js
@@ -108,7 +108,7 @@ goals_page:
 graph_color_headline: '#004466'
 graph_color_headline_high_contrast: '#55a6e5'
 graph_color_set: custom
-graph_color_list: ['D32F2F','4CAF50', '7B1FA2', '1976D2', 'FFEB3B', '795548', 'FF9800', 'E91E63', '512DA8', 'CDDC39', '455A64', 'FF5722', '42d4f4', 'aaffc3','800000']
+graph_color_list: ['E55050','7ADAA5', '9B177E', '799EFF', 'FFDE63', 'C78A3B', 'FF714B', 'E53888', '154D71', 'C5FF95', '819A91', '03A6A1', 'D9C4B0', 'FF9587','722323']
 graph_color_number: 15
 graph_title_from_series: false
 header_language_toggle: dropdown
@@ -149,11 +149,11 @@ menu:
   - path: /
     translation_key: general.home
     dropdown: []
-  - path: /maps
-    translation_key: Maps
-    dropdown: []
   - path: /reporting-status
     translation_key: menu.reporting_status
+    dropdown: []
+  - path: /maps
+    translation_key: Interactive Maps
     dropdown: []
   - path: /news
     translation_key: menu.updates
