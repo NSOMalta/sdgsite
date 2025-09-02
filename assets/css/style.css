@@ -2690,7 +2690,12 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #264f65; }
+  color: #264f65;
+  text-decoration: none; }
+
+a:focus, a:active {
+  color: #008080;
+  text-decoration: none; }
 
 .card-text a {
   text-decoration: none;
