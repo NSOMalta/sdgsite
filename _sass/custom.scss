@@ -76,6 +76,13 @@ a {
 
 a:hover {
     color: #264f65;
+    text-decoration: none;
+
+}
+
+a:focus, a:active{
+      color: #008080;
+    text-decoration: none;4
 }
 
 .card-text a{
