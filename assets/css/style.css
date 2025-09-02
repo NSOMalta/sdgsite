@@ -2693,7 +2693,7 @@ a:hover {
   color: #264f65;
   text-decoration: none; }
 
-a:focus, a:active {
+a:focus, a:active, a:visited {
   color: #008080;
   text-decoration: none; }
 
