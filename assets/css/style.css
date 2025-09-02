@@ -2743,7 +2743,8 @@ h1 {
   color: #0b0c0c; }
 
 .navbar .navbar-nav > .nav-item > .nav-link:hover {
-  border-bottom: 3px solid #eea337; }
+  border-bottom: 3px solid #eea337;
+  color: #0b0c0c !important; }
 
 /*
 .btn-download {
