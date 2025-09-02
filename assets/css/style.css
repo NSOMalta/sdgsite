@@ -2690,7 +2690,8 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #264f65;
+  color: #264f65 !important;
+  font-weight: bold;
   text-decoration: none; }
 
 a:focus, a:active, a:visited {
