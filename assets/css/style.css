@@ -2685,6 +2685,13 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   padding: 0;
   margin: 0; }
 
+a {
+  color: #008080;
+  text-decoration: none; }
+
+a:hover {
+  color: #264f65; }
+
 .card-text a {
   text-decoration: none;
   color: #32BCAD;
