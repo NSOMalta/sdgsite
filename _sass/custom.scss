@@ -125,12 +125,7 @@ h1 {
     font-weight: 600 !important;
     //text-transform: uppercase;
 }
-#search button {
-    color: white;
-    background-color: #00a69f;
-    border: 1.25px solid #00a69f;
-    border-radius: 0;
-}
+
 
 .navbar .navbar-nav > .nav-item.active > .nav-link {
     border-bottom: 3px solid #00a69f;
@@ -316,6 +311,14 @@ h1 {
 body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px;
+}
+
+
+#search-bar-on-page button, #search button {
+    color: white;
+    background-color: #00a69f;
+    border: 1.25px solid #00a69f;
+    border-radius: 0;
 }
 
 
