@@ -2895,7 +2895,8 @@ body {
   color: white;
   background-color: #00a69f;
   border: 1.25px solid #00a69f;
-  border-radius: 0; }
+  border-radius: 0;
+  height: auto; }
 
 #search-bar-on-page .input-group, #search .input-group {
   margin-top: 20px;
@@ -2903,6 +2904,7 @@ body {
 
 #search-bar-on-page input, #search input {
   width: 33ch;
+  height: auto;
   border-width: 10px 0px 10px 10px;
   border: 1.25px solid #d3d3d3;
   background-color: #e9e9e9;
