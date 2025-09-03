@@ -314,12 +314,15 @@ body {
 }
 
 
-#search-bar-on-page button, #search button {
+#search-bar-on-page .input-group button, #search button {
     color: white;
     background-color: #00a69f;
     border: 1.25px solid #00a69f;
     border-radius: 0;
     height: auto;
+    width: auto;
+    right: auto;
+    line-height: 0;
 }
 
 
