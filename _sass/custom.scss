@@ -317,11 +317,13 @@ body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px;
 }
-#search .input-group {
+
+
+#search-bar-on-page .input-group, #search .input-group {
     margin-top: 20px;
     flex-wrap: nowrap;
 }
-#search input {
+#search-bar-on-page input, #search input {
     width: 33ch;
     border-width: 10px 0px 10px 10px;
     border: 1.25px solid #d3d3d3;
@@ -329,13 +331,13 @@ body {
     border-radius: 20px 0px 0px 20px;
 }
 
- #search input:focus {
+ #search-bar-on-page input:focus, #search input:focus {
       background-color: white !important;
       border-color: #00a69f;
       box-shadow: 0 0 0 5px transparent !important;
       outline: 2px solid transparent !important; }
 
-#search button {
+#search-bar-on-page button, #search button {
     color: white;
      background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
      background-color: transparent !important;
@@ -348,7 +350,7 @@ body {
 
 }
 
-#search button:hover{
+#search-bar-on-page button:hover, #search button:hover{
  box-shadow: none !important; 
    // border: 2px solid transparent !important; 
     background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
