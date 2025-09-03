@@ -2910,7 +2910,9 @@ body {
   border-width: 10px 0px 10px 10px;
   border: 1.25px solid #d3d3d3;
   background-color: #e9e9e9;
-  border-radius: 20px 0px 0px 20px; }
+  border-radius: 20px 0px 0px 20px;
+  font-size: 1rem !important;
+  padding-left: 3%; }
 
 #search-bar-on-page input:focus, #search input:focus {
   background-color: white !important;
