@@ -2898,7 +2898,8 @@ body {
   height: auto;
   width: auto;
   right: auto;
-  line-height: auto; }
+  line-height: auto;
+  font-size: 1rem !important; }
 
 #search-bar-on-page .input-group, #search .input-group {
   margin-top: 20px;
