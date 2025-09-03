@@ -2891,12 +2891,15 @@ body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px; }
 
-#search-bar-on-page button, #search button {
+#search-bar-on-page .input-group button, #search button {
   color: white;
   background-color: #00a69f;
   border: 1.25px solid #00a69f;
   border-radius: 0;
-  height: auto; }
+  height: auto;
+  width: auto;
+  right: auto;
+  line-height: 0; }
 
 #search-bar-on-page .input-group, #search .input-group {
   margin-top: 20px;
