@@ -3061,3 +3061,6 @@ body.contrast-high #search button {
 .statuses .status-inner {
   display: flex;
   justify-content: center; }
+
+.header-toggles d-flex a {
+  visibility: hidden; }
