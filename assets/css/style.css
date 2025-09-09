@@ -2809,7 +2809,9 @@ h1 {
     flex-direction: column; }
 
   .map-indicator-buttons {
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 5%;
+    width: 100%; }
 
   .map-indicator-buttons button {
     width: 100%; } }
