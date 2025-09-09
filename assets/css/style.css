@@ -2803,7 +2803,7 @@ h1 {
 
 @media only screen and (max-width: 1200px) {
   .embedded-maps {
-    padding: 100px 20px 20px 20px; }
+    padding-top: 5%; }
 
   .maps-container {
     flex-direction: column; }
@@ -2815,6 +2815,12 @@ h1 {
 
   .map-indicator-buttons button {
     width: 100%; } }
+@media only screen and (max-width: 992px) {
+  .embedded-maps {
+    padding-top: 10%; } }
+@media only screen and (max-width: 600px) {
+  .embedded-maps {
+    padding-top: 15%; } }
 .map-header {
   display: flex;
   align-self: center;
