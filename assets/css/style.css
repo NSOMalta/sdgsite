@@ -2801,7 +2801,7 @@ h1 {
   margin-top: 1%;
   width: 100%; }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .embedded-maps {
     padding: 100px 20px 20px 20px; }
 
