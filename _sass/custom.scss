@@ -215,7 +215,12 @@ h1 {
     .embedded-maps{
         padding: 100px 20px 20px 20px;
     }
-
+    .maps-container{
+        flex-direction: column;
+    }
+    .map-indicator-buttons{
+        flex-direction: row;
+    }
 }
 
 .map-header{
