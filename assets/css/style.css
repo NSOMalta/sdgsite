@@ -2810,7 +2810,13 @@ h1 {
 
 @media only screen and (max-width: 992px) {
   .embedded-maps {
-    padding: 100px 20px 20px 20px; } }
+    padding: 100px 20px 20px 20px; }
+
+  .maps-container {
+    flex-direction: column; }
+
+  .map-indicator-buttons {
+    flex-direction: row; } }
 .map-header {
   display: flex;
   align-self: center;
