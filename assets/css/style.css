@@ -2823,7 +2823,7 @@ h1 {
     padding-top: 30%; }
 
   .map-header {
-    padding: 20px; } }
+    padding: 20px !important; } }
 .map-header {
   display: flex;
   align-self: center;
