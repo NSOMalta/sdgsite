@@ -2820,7 +2820,10 @@ h1 {
     padding-top: 15%; } }
 @media only screen and (max-width: 600px) {
   .embedded-maps {
-    padding-top: 30%; } }
+    padding-top: 30%; }
+
+  .map-header {
+    padding: 20px; } }
 .map-header {
   display: flex;
   align-self: center;
