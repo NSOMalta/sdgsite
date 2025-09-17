@@ -566,3 +566,12 @@ body.contrast-high #search button {
 .header-toggles.d-flex a{
     visibility: hidden;
 }
+
+
+[href]:focus {
+  color: none !important;
+  outline: none !important;
+  background-color: none !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important; }
