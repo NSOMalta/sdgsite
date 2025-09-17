@@ -569,10 +569,10 @@ body.contrast-high #search button {
 }
 
 
-.main-content:focus, [href]:focus {
+[href]:focus {
   color: none !important;
   outline: none !important;
-  background-color: none !important;
+  background-color: transparent !important;
   outline-offset: 0 !important;
   box-shadow: none !important;
   text-decoration: none !important; }
