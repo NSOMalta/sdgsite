@@ -3078,7 +3078,7 @@ body.contrast-high #search button {
 .header-toggles.d-flex a {
   visibility: hidden; }
 
-.main-contentLfocus, [href]:focus {
+.main-content:focus, [href]:focus {
   color: none !important;
   outline: none !important;
   background-color: none !important;
