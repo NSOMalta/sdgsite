@@ -2693,7 +2693,7 @@ a {
   color: #008080;
   text-decoration: none !important; }
 
-.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover, #main-content a:hover {
+.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover {
   color: #264f65 !important;
   font-weight: bold;
   text-decoration: none !important; }
@@ -2768,6 +2768,7 @@ h1 {
 
 .btn-primary:hover, .btn-primary:focus {
   box-shadow: none !important;
+  text-decoration: none !important;
   border: 2px solid transparent !important;
   background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
   background-color: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
