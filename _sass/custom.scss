@@ -73,17 +73,17 @@ a {
     color: #008080;
     text-decoration: none;
 }
-.indicator-name a, #footerLinks a, .col.col-xs-12 a {
+.indicator-name a, #footerLinks a, .title{
   color: #008080;
   text-decoration: none !important;
 }
-.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, #search-results a:hover {
+.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover {
   color: #264f65 !important;
   font-weight: bold;
   text-decoration: none !important;
   }
 
-.indicator-name a:focus, .indicator-name a:active, .indicator-name a:visited, #footerLinks a:focus, #footerLinks a:active, #footerLinks a:visited, .col.col-xs-12 a:active, .col.col-xs-12 a:visited, .col.col-xs-12 a:focus, .lead-copy a:focus, .lead-copy a:active, .lead-copy a:visited{
+.indicator-name a:focus, .indicator-name a:active, .indicator-name a:visited, #footerLinks a:focus, #footerLinks a:active, #footerLinks a:visited, .title a:active, .title a:visited, .title a:focus, .lead-copy a:focus, .lead-copy a:active, .lead-copy a:visited{
     color: #008080 !important;
     text-decoration: none !important;
 }
