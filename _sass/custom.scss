@@ -73,24 +73,29 @@ a {
     color: #008080;
     text-decoration: none;
 }
-.indicator-name a, #footerLinks a {
+.indicator-name a, #footerLinks a, .title{
   color: #008080;
-  text-decoration: none;
+  text-decoration: none !important;
 }
-.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover {
+
+.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover{
   color: #264f65 !important;
   font-weight: bold;
-  text-decoration: none;
-  }
-
-.indicator-name a:focus, .indicator-name a:active, .indicator-name a:visited #footerLinks a:focus, #footerLinks a:active, #footerLinks a:visited, .lead-copy a:focus, .lead-copy a:active, .lead-copy a:visited{
-    color: #008080;
-    text-decoration: none;
+  text-decoration: none !important; 
 }
+
+.indicator-name a:visited, #footerLinks a:visited, .title a:visited, .lead-copy a:visited, #main-content a:visited{
+  color: #008080;
+  text-decoration: none !important; }
+
+// .indicator-name a:focus, .indicator-name a:active, .indicator-name a:visited, #footerLinks a:focus, #footerLinks a:active, #footerLinks a:visited, .title a:active, .title a:visited, .title a:focus, .lead-copy a:focus, .lead-copy a:active, .lead-copy a:visited{
+//     color: #008080 !important;
+//     text-decoration: none !important;
+// }
 
 .card-text a{
     text-decoration: none;
-    color: #32BCAD;
+    //color: #32BCAD;
     transition: transform 2s ease-in;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -164,6 +169,7 @@ h1 {
 }
 .btn-primary:hover, .btn-primary:focus  {
     box-shadow: none !important; 
+    text-decoration: none !important;
     border: 2px solid transparent !important; 
     background: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
     background-color: linear-gradient(to right, #264f65, #00a69f, #264f65) !important;
@@ -561,3 +567,12 @@ body.contrast-high #search button {
 .header-toggles.d-flex a{
     visibility: hidden;
 }
+
+
+[href]:focus {
+  color: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important; }
