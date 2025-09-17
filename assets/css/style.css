@@ -2699,7 +2699,7 @@ a {
   text-decoration: none !important; }
 
 .indicator-name a:visited, #footerLinks a:visited, .title a:visited, .lead-copy a:visited {
-  color: #008080 !important;
+  color: #008080;
   text-decoration: none !important; }
 
 .card-text a {
