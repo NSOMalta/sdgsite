@@ -575,4 +575,14 @@ body.contrast-high #search button {
   background-color: transparent !important;
   outline-offset: 0 !important;
   box-shadow: none !important;
-  text-decoration: none !important; }
+  text-decoration: none !important; 
+}
+
+#skiplink{
+    background: #eea337 !important;
+    border: none !important;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white !important;
+    font-weight: bold;
+}
