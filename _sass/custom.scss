@@ -78,13 +78,13 @@ a {
   text-decoration: none !important;
 }
 
-.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover{
+.indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover, a[href="#top"]:hover, .post-title a:hover, #main-content p > a:hover,  #main-content ul > li > a:hover{
   color: #264f65 !important;
   font-weight: bold;
   text-decoration: none !important; 
 }
 
-.indicator-name a:visited, #footerLinks a:visited, .title a:visited, .lead-copy a:visited, #main-content a:visited{
+.indicator-name a:visited, #footerLinks a:visited, .title a:visited, .lead-copy a:visited, #main-content a:visited, a[href="#top"]:visited, .post-title a:visited, #main-content p > a:visited,  #main-content ul > li > a:visited{
   color: #008080;
   text-decoration: none !important; }
 
@@ -104,7 +104,7 @@ a {
 .card-text a:hover{
     font-weight: bold;
     text-decoration: none;
-    color: #32BCAD !important;
+    color: #264f65 !important;
 
 }
 
@@ -569,10 +569,20 @@ body.contrast-high #search button {
 }
 
 
-[href]:focus {
+#search-results .search-result a:focus .title, [href]:focus {
   color: none !important;
   outline: none !important;
   background-color: transparent !important;
   outline-offset: 0 !important;
   box-shadow: none !important;
-  text-decoration: none !important; }
+  text-decoration: none !important; 
+}
+
+#skiplink{
+    background: #eea337 !important;
+    border: none !important;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white !important;
+    font-weight: bold;
+}
