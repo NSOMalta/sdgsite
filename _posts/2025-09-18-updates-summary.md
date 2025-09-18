@@ -47,5 +47,10 @@ categories:
       <td style="border: 1px solid black; padding: 8px;">8.1.1</td>
       <td style="border: 1px solid black; padding: 8px;">Revised 2020-2024 data</td>
     </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">18/09/2025</td>
+      <td style="border: 1px solid black; padding: 8px;">8.2.1</td>
+      <td style="border: 1px solid black; padding: 8px;">Revised 2020-2024 data</td>
+    </tr>
   </tbody>
 </table>
