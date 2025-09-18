@@ -569,7 +569,7 @@ body.contrast-high #search button {
 }
 
 
-[href]:focus {
+#search-results .search-result a:focus .title, [href]:focus {
   color: none !important;
   outline: none !important;
   background-color: transparent !important;
