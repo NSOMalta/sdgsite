@@ -601,3 +601,12 @@ body.contrast-high #search button {
 body.contrast-high .footer_box{
   background-color: #181818;
 }
+body.contrast-high a {
+color: #eea337 !important; 
+}
+
+body.contrast-high .indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover, a[href="#top"]:hover, .post-title a:hover, #main-content p > a:hover, #main-content ul > li > a:hover {
+  color: #c05306 !important;
+  font-weight: bold;
+  text-decoration: none !important; 
+}
