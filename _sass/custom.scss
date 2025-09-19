@@ -568,7 +568,11 @@ body.contrast-high #search button {
 //     visibility: hidden;
 // }
 
-
+.header-toggles.d-flex a:focus {
+    box-shadow: none !important;
+    color: #FFDD00 !important;
+    background-color: black !important;
+    outline: 4px solid #FFDD00 !important; }
 
 #search-results .search-result a:focus .title, [href]:focus {
   color: none !important;
