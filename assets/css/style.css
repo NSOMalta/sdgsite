@@ -3096,3 +3096,9 @@ body.contrast-high #search button {
   border-bottom-right-radius: 20px;
   color: white !important;
   font-weight: bold; }
+
+body.contrast-high i {
+  color: white !important; }
+
+body.contrast-high .footer_box {
+  background-color: black; }
