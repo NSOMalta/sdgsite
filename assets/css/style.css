@@ -3075,6 +3075,9 @@ body.contrast-high #search button {
   display: flex;
   justify-content: center; }
 
+.header-toggles.d-flex a {
+  visibility: hidden; }
+
 .header-toggles.d-flex a:focus {
   box-shadow: none !important;
   color: #FFDD00 !important;
