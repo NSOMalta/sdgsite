@@ -334,6 +334,10 @@ body {
   padding-top: 40px;
 }
 
+body.contrast-high {
+  background: black url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
+  padding-top: 40px;
+}
 
 #search-bar-on-page .input-group button, #search button {
     color: white;
@@ -605,8 +609,13 @@ body.contrast-high a {
 color: #eea337 !important; 
 }
 
-body.contrast-high .indicator-name a:hover, #footerLinks a:hover, .lead-copy a:hover, .title:hover, a[href="#top"]:hover, .post-title a:hover, #main-content p > a:hover, #main-content ul > li > a:hover {
+body.contrast-high .indicator-name a:hover, 
+body.contrast-high #footerLinks a:hover, .lead-copy a:hover, 
+body.contrast-high .title:hover, a[href="#top"]:hover, 
+body.contrast-high .post-title a:hover, 
+body.contrast-high #main-content p > a:hover, 
+body.contrast-high #main-content ul > li > a:hover {
   color: #c05306 !important;
   font-weight: bold;
-  text-decoration: none !important; 
+  text-decoration: none ; 
 }
