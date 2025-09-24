@@ -334,10 +334,7 @@ body {
   padding-top: 40px;
 }
 
-body.contrast-high {
-  background: black url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
-  padding-top: 40px;
-}
+
 
 #search-bar-on-page .input-group button, #search button {
     color: white;
@@ -568,9 +565,9 @@ body.contrast-high #search button {
 }
 
 
-.header-toggles.d-flex a{
-    visibility: hidden;
-}
+// .header-toggles.d-flex a{
+//     visibility: hidden;
+// }
 
 .header-toggles.d-flex a:focus {
     box-shadow: none !important;
@@ -598,7 +595,10 @@ body.contrast-high #search button {
 
 
 //High-Contrast
-
+body.contrast-high {
+  background: black url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
+  padding-top: 40px;
+}
  body.contrast-high i{
     color: white !important; 
 }
@@ -618,4 +618,37 @@ body.contrast-high #main-content ul > li > a:hover {
   color: #c05306 !important;
   font-weight: bold;
   text-decoration: none ; 
+}
+
+body.contrast-high #search-bar-on-page button, body.contrast-high #search button {
+  color: white;
+  background: linear-gradient(to right, #c05306, #eea337, #c05306) !important;
+  background-color: transparent !important;
+  background-size: 200% auto !important;
+  color: white !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  border-radius: 0px 20px 20px 0px;
+  border: 1.25px solid #d3d3d3; }
+
+body.contrast-high #search-bar-on-page button:hover, body.contrast-high #search button:hover {
+  box-shadow: none !important;
+  background: linear-gradient(to right, #c05306, #eea337, #c05306) !important;
+  background-color: linear-gradient(to right, #c05306, #eea337, #c05306) !important;
+  background-size: 200% auto !important;
+  background-position: right center !important;
+  color: #fff !important; }
+
+body.contrast-high .navbar .navbar-nav > .nav-item > .nav-link {
+    color: white !important;
+}
+
+body.contrast-high .navbar .navbar-nav > .nav-item.active > .nav-link {
+    border-bottom: 3px solid #c05306;
+    background: transparent;
+    color: white !important;
+}
+
+body.contrast-high .navbar .navbar-nav > .nav-item > .nav-link:hover {
+    border-bottom: 3px solid #eea337; 
+    color: white !important;
 }
