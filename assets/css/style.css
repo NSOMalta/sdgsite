@@ -2908,10 +2908,6 @@ body {
   background: white url(https://NSOMalta.github.io/sdgsite/assets/img/border.png) top left repeat-x;
   padding-top: 40px; }
 
-body.contrast-high {
-  background: black url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
-  padding-top: 40px; }
-
 #search-bar-on-page .input-group button, #search button {
   color: white;
   background-color: #00a69f;
@@ -3100,6 +3096,10 @@ body.contrast-high #search button {
   border-bottom-right-radius: 20px;
   color: white !important;
   font-weight: bold; }
+
+body.contrast-high {
+  background: #181818 url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
+  padding-top: 40px; }
 
 body.contrast-high i {
   color: white !important; }
