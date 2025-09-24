@@ -637,3 +637,14 @@ body.contrast-high #search-bar-on-page button:hover, body.contrast-high #search 
   background-size: 200% auto !important;
   background-position: right center !important;
   color: #fff !important; }
+
+body.contrast-high .navbar .navbar-nav > .nav-item.active > .nav-link {
+    border-bottom: 3px solid #c05306;
+    background: transparent;
+    color: white !important;
+}
+
+body.contrast-high .navbar .navbar-nav > .nav-item > .nav-link:hover {
+    border-bottom: 3px solid #eea337; 
+    color: white !important;
+}
