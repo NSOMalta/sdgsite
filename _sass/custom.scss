@@ -628,7 +628,7 @@ body.contrast-high #search-bar-on-page button, body.contrast-high #search button
   color: white !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
   border-radius: 0px 20px 20px 0px;
-  border-color: transparent; }
+  border: 1.25px solid #d3d3d3; }
 
 body.contrast-high #search-bar-on-page button:hover, body.contrast-high #search button:hover {
   box-shadow: none !important;
