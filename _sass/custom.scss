@@ -594,7 +594,38 @@ body.contrast-high #search button {
 }
 
 
+.header-toggles.d-flex a{
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+
+.header-toggles.d-flex a:focus {
+    box-shadow: none !important;
+    color: white !important;
+    background-color: #000000 !important;
+}
+.fa-moon{
+    align-self: center;
+}
+
+#contrast-label{
+    font-size: medium;
+    align-self: center;
+    margin-top: revert;
+    color: white;
+}
+
 //High-Contrast
+body.contrast-high .header-toggles.d-flex a:focus {
+    box-shadow: none !important;
+    color: black !important;
+    background-color: #eeeeee !important;
+    
+}
 body.contrast-high {
   background: black url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
   padding-top: 40px;
@@ -652,3 +683,20 @@ body.contrast-high .navbar .navbar-nav > .nav-item > .nav-link:hover {
     border-bottom: 3px solid #eea337; 
     color: white !important;
 }
+body.contrast-high #contrast-label{
+    color: black;
+}
+body.contrast-high .fa-moon {
+    --fa: "\f185";
+    
+}
+
+body.contrast-high .header-toggles.d-flex a{
+    background: #eeeeee;
+}
+
+body.contrast-high .header-toggles.d-flex a > i{
+     color: #c05306 !important;
+}
+
+
