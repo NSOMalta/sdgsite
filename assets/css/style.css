@@ -3105,6 +3105,11 @@ body.contrast-high #search button {
   align-content: center;
   gap: 10px; }
 
+.header-toggles.d-flex a:focus {
+  box-shadow: none !important;
+  color: black !important;
+  background-color: #eeeeee !important; }
+
 .fa-moon {
   align-self: center; }
 
@@ -3113,6 +3118,11 @@ body.contrast-high #search button {
   align-self: center;
   margin-top: revert;
   color: white; }
+
+body.contrast-high .header-toggles.d-flex a:focus {
+  box-shadow: none !important;
+  color: white !important;
+  background-color: #000000 !important; }
 
 body.contrast-high {
   background: black url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
