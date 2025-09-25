@@ -1,14 +1,14 @@
 var accessibilitySwitcher = function () {
     document.addEventListener("DOMContentLoaded", (event) => {
-         const contrast = $('body').hasClass('contrast-high') ? 'high' : 'default';
+         var contrast = getActiveContrast();
          if (contrast === 'high') {
             document.getElementById('contrast-label').innerHTML = "Light Mode";
         }
         else {
             document.getElementById('contrast-label').innerHTML = "Dark Mode";
         }
-        return contrast;    
     });
+    
     function getActiveContrast() {
         return $('body').hasClass('contrast-high') ? 'high' : 'default';       
     }
