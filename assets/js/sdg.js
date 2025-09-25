@@ -1082,7 +1082,8 @@ event.prototype = {
 };
 var accessibilitySwitcher = function () {
     document.addEventListener("DOMContentLoaded", (event) => {
-         var contrast = getActiveContrast();
+        const contrast = $('body').hasClass('contrast-high') ? 'high' : 'default';       
+
          if (contrast === 'high') {
             document.getElementById('contrast-label').innerHTML = "Light Mode";
         }
@@ -1225,8 +1226,6 @@ $(document).ready(function() {
         $('.navbar-toggler').attr('aria-label', translations.header.show_menu);
     });
 });
-
-in open sdg, when in high contrast mode, with every click you can see glimses of the default (light mode)
 opensdg.chartColors = function(indicatorId) {
   var colorSet = "custom";
   var numberOfColors = 15;
