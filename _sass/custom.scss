@@ -652,3 +652,7 @@ body.contrast-high .navbar .navbar-nav > .nav-item > .nav-link:hover {
     border-bottom: 3px solid #eea337; 
     color: white !important;
 }
+
+body.contrast-high .fa-moon {
+    --fa: "\f185";
+}
