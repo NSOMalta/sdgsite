@@ -1083,7 +1083,10 @@ event.prototype = {
 var accessibilitySwitcher = function () {
 
     function getActiveContrast() {
-        return $('body').hasClass('contrast-high') ? 'high' : 'default';
+        const contrast = $('body').hasClass('contrast-high') ? 'high' : 'default';
+        document.getElementById('contrast-label').innerHTML = 
+            contrast === high ? "Dark Mode : Light Mode";
+        return contrast;
     }
 
     function setHighContrast() {
