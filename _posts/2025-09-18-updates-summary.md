@@ -4,7 +4,7 @@ title: Data Updates Summary
 author: NSO
 excerpt: Recent updates to the SDG indicators data
 language: en
-permalink: /data-summary-07-08-25/
+permalink: /data-summary-18-09-25/
 categories:
   - National
 ---
