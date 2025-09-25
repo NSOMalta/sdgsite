@@ -1126,10 +1126,12 @@ var accessibilitySwitcher = function () {
             return;
         }
         if (newContrast === 'high') {
+            document.getElementById('contrast-label').innerHTML = "Dark Mode";
             setHighContrast();
             broadcastContrastChange('high', this);
         }
         else {
+            document.getElementById('contrast-label').innerHTML = "Light Mode";
             setDefaultContrast();
             broadcastContrastChange('default', this);
         }
