@@ -1081,17 +1081,18 @@ event.prototype = {
   }
 };
 var accessibilitySwitcher = function () {
-
-    function getActiveContrast() {
-        const contrast = $('body').hasClass('contrast-high') ? 'high' : 'default';
+    document.addEventListener("DOMContentLoaded", (event) => {
+         const contrast = $('body').hasClass('contrast-high') ? 'high' : 'default';
          if (contrast === 'high') {
             document.getElementById('contrast-label').innerHTML = "Light Mode";
         }
         else {
             document.getElementById('contrast-label').innerHTML = "Dark Mode";
         }
-        return contrast;
-        
+        return contrast;    
+    });
+    function getActiveContrast() {
+        return $('body').hasClass('contrast-high') ? 'high' : 'default';       
     }
 
     function setHighContrast() {
