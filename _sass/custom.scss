@@ -594,6 +594,27 @@ body.contrast-high #search button {
 }
 
 
+.header-toggles d-flex a{
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+
+
+.fa-moon{
+    align-self: center;
+}
+
+#contrast-label{
+    font-size: medium;
+    align-self: center;
+    margin-top: revert;
+    color: white;
+}
+
 //High-Contrast
 body.contrast-high {
   background: black url(https://NSOMalta.github.io/sdgsite/assets/img/high-contrast/border.png) top left repeat-x;
