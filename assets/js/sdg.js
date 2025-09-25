@@ -1085,7 +1085,7 @@ var accessibilitySwitcher = function () {
     function getActiveContrast() {
         const contrast = $('body').hasClass('contrast-high') ? 'high' : 'default';
         document.getElementById('contrast-label').innerHTML = 
-            contrast === high ? "Dark Mode : Light Mode";
+            contrast === 'high' ? "Dark Mode" : "Light Mode";
         return contrast;
     }
 
