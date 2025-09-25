@@ -656,3 +656,13 @@ body.contrast-high .navbar .navbar-nav > .nav-item > .nav-link:hover {
 body.contrast-high .fa-moon {
     --fa: "\f185";
 }
+
+body.contrast-high header-toggles d-flex a{
+    background: #eeeeee;
+}
+
+body.contrast-high header-toggles d-flex a > i{
+     color: #c05306 !important;
+}
+
+
