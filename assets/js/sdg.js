@@ -1084,9 +1084,14 @@ var accessibilitySwitcher = function () {
 
     function getActiveContrast() {
         const contrast = $('body').hasClass('contrast-high') ? 'high' : 'default';
-        document.getElementById('contrast-label').innerHTML = 
-            contrast === 'high' ? "Dark Mode" : "Light Mode";
+         if (contrast === 'high') {
+            document.getElementById('contrast-label').innerHTML = "Light Mode";
+        }
+        else {
+            document.getElementById('contrast-label').innerHTML = "Dark Mode";
+        }
         return contrast;
+        
     }
 
     function setHighContrast() {
