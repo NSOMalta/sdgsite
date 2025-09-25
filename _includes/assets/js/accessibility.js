@@ -44,12 +44,12 @@ var accessibilitySwitcher = function () {
             return;
         }
         if (newContrast === 'high') {
-            document.getElementById('contrast-label').innerHTML = "Dark Mode";
+            document.getElementById('contrast-label').innerHTML = "Light Mode";
             setHighContrast();
             broadcastContrastChange('high', this);
         }
         else {
-            document.getElementById('contrast-label').innerHTML = "Light Mode";
+            document.getElementById('contrast-label').innerHTML = "Dark Mode";
             setDefaultContrast();
             broadcastContrastChange('default', this);
         }
