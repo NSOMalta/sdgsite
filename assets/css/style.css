@@ -2658,6 +2658,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   margin: 0 auto;
   border: 0; }
 
+.embedded-map h2 {
+  margin-left: 1%; }
+
 .map-indicator-buttons {
   display: flex;
   flex-direction: row;
