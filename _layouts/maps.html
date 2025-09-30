@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function loadMap(key) {
   const config = mapsConfig[key];
   if (!config) return;
-
   updateMap.innerHTML = `
     <iframe src="${config.src}" 
             frameborder="0" 
@@ -74,24 +73,23 @@ function loadMap(key) {
             allowfullscreen>
       iFrames are not supported on this page.
     </iframe>`;
-
   updateHeader.innerHTML = `
     <img src="${config.img}" alt="sdg icon">
     <h3>${config.title}</h3>`;
   updateHeader.style.backgroundColor = config.color;
-
   document.querySelectorAll('.map-button').forEach(btn => {
     if (btn.dataset.map === key) {
       btn.classList.add("active");
-      btn.style.backgroundColor = btn.dataset.color; // background
-      btn.style.color = "white"; // text color
+      btn.style.setProperty('--active-bg', btn.dataset.color);
+      btn.style.backgroundColor = btn.dataset.color;
+      btn.style.color = "white";
     } else {
       btn.classList.remove("active");
-      btn.style.backgroundColor = "white"; // unselected background
-      btn.style.color = btn.dataset.color; // text color
+      btn.style.setProperty('--hover-bg', btn.dataset.color);
+      btn.style.backgroundColor = "white";
+      btn.style.color = btn.dataset.color;
     }
   });
-
   sessionStorage.setItem("currentMap", key);
 }
 
