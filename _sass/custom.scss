@@ -329,7 +329,12 @@ h1 {
 //   color: white !important;
 // }
 
-
+.map-indicator-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 10px;
+}
 
 .map-button {
   box-shadow: none !important;
@@ -341,6 +346,7 @@ h1 {
   font-weight: bold;
   padding: 10px;
   border: 2px solid currentColor;
+  color: inherit; /* will be set via JS */
   cursor: pointer;
 }
 
@@ -353,10 +359,12 @@ h1 {
 
 .map-button.active {
   background-color: currentColor !important;
-  color: white !important;
+  color: white;        
+  border-color: currentColor; 
   pointer-events: none;
   cursor: default;
 }
+
 
 
 body {
