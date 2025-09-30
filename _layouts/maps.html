@@ -31,179 +31,95 @@ title: Interactive Maps
     </div>
 </div>
 <script>
-
-
 document.addEventListener('DOMContentLoaded', () => {        
 
-  const button121 = document.getElementById('map-1-2-1');
-  const button122 = document.getElementById('map-1-2-2');
-  const button4 = document.getElementById('map-4');
-  const button8 = document.getElementById('map-8');
   const updateMap = document.getElementById('updateMap');
   const updateHeader = document.getElementById('updateHeader');
-  /*
-   window.addEventListener('DOMContentLoaded', (event) => {
-    const map4 = document.getElementById('map-4');
-    if (map4) {
-      map4.focus();
-    }
-  });
-  */
-  function load121(){
-    updateMap.innerHTML =  `
-      <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11" 
+
+  // Configuration object for all maps
+  const mapsConfig = {
+    "121": {
+      src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7f02693599a647ed994124ce6c8137ef&level=11",
+      color: "#EB1C2D",
+      img: "https://NSOMalta.github.io/sdgsite/assets/img/sdg1 icon.svg",
+      title: "1.2.1 - At risk of poverty (ARP) rate",
+      buttonId: "map-1-2-1",
+    },
+    "122": {
+      src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7745ebbac78c4a5e9b0149d378014b23&level=11",
+      color: "#EB1C2D",
+      img: "https://NSOMalta.github.io/sdgsite/assets/img/sdg1 icon.svg",
+      title: "1.2.2 - At risk of poverty or social exclusion (AROPE) rate",
+      buttonId: "map-1-2-2",
+    },
+    "4": {
+      src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=752d577fddc946e3876d21dbb6e73ff4&level=11",
+      color: "#C31F33",
+      img: "https://NSOMalta.github.io/sdgsite/assets/img/sdg4 icon.svg",
+      title: "4.3.1 - Tertiary education attainment rate",
+      buttonId: "map-4",
+    },
+    "8": {
+      src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=567a7e5073ca486fa6979dc7e9f27022&level=11",
+      color: "#8F1838",
+      img: "https://NSOMalta.github.io/sdgsite/assets/img/sdg8 icon.svg",
+      title: "8.5.2 - Employment Rate",
+      buttonId: "map-8",
+    },
+  };
+
+ 
+  function loadMap(key) {
+    const config = mapsConfig[key];
+    if (!config) return;
+
+    // Update iframe
+    updateMap.innerHTML = `
+      <iframe src="${config.src}" 
               frameborder="0" 
               style="border:0; width:100%; height:600px;" 
               allowfullscreen>
         iFrames are not supported on this page.
       </iframe>`;
+
+    // Update header
     updateHeader.innerHTML = `
-      <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg1 icon.svg" alt="sdg 1 icon">
-      <h3>1.2.1 - At risk of poverty (ARP) rate</h3>`;
-    updateHeader.style.backgroundColor = "#EB1C2D";
-       button121.style.backgroundColor="#EB1C2D"; 
-      button121.style.color="white";
-      button121.style.pointerEvents = "none";  
-      button121.style.cursor = "default";      
-    button122.style.pointerEvents = "auto";  
-      button122.style.cursor = "pointer";  
-    button4.style.pointerEvents = "auto";  
-      button8.style.cursor = "pointer";  
-    button8.style.pointerEvents = "auto";  
-      button8.style.cursor = "pointer";  
-      button122.style.backgroundColor="white"; 
-      button4.style.backgroundColor="white"; 
-      button8.style.backgroundColor="white"; 
-      button122.style.color= "#EB1C2D";
-      button122.style.border = "2px solid #EB1C2D";
-      button4.style.color= "#C31F33";
-      button4.style.border = "2px solid #C31F33";
-      button8.style.color= "#8F1838";
-      button8.style.border = "2px solid #8F1838";
-      sessionStorage.setItem("currentMap","121");
+      <img src="${config.img}" alt="sdg icon">
+      <h3>${config.title}</h3>`;
+    updateHeader.style.backgroundColor = config.color;
+
+    // Update button states
+    Object.values(mapsConfig).forEach(cfg => {
+      const btn = document.getElementById(cfg.buttonId);
+      if (cfg === config) {
+        btn.style.backgroundColor = config.color;
+        btn.style.color = "white";
+        btn.style.pointerEvents = "none";
+        btn.style.cursor = "default";
+      } else {
+        btn.style.backgroundColor = "white";
+        btn.style.color = cfg.color;
+        btn.style.border = `2px solid ${cfg.color}`;
+        btn.style.pointerEvents = "auto";
+        btn.style.cursor = "pointer";
+      }
+    });
+
+    // Save state
+    sessionStorage.setItem("currentMap", key);
   }
-  
-  function load122() {
-    updateMap.innerHTML =  `
-      <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=7745ebbac78c4a5e9b0149d378014b23&level=11" 
-              frameborder="0" 
-              style="border:0; width:100%; height:600px;" 
-              allowfullscreen>
-        iFrames are not supported on this page.
-      </iframe>`;
-     updateHeader.innerHTML = `
-      <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg1 icon.svg" alt="sdg icon">
-      <h3>1.2.2 - At risk of poverty or social exclusion (AROPE) rate</h3>`;
-     updateHeader.style.backgroundColor = "#EB1C2D";
-      button122.style.backgroundColor="#EB1C2D"; 
-      button122.style.color="white";
-        button122.style.pointerEvents = "none";  
-      button122.style.cursor = "default";      
-    button121.style.pointerEvents = "auto";  
-      button121.style.cursor = "pointer";  
-    button4.style.pointerEvents = "auto";  
-      button8.style.cursor = "pointer";  
-    button8.style.pointerEvents = "auto";  
-      button8.style.cursor = "pointer";  
-      button121.style.backgroundColor="white"; 
-      button4.style.backgroundColor="white"; 
-      button8.style.backgroundColor="white"; 
-      button121.style.color= "#EB1C2D";
-      button121.style.border = "2px solid #EB1C2D";
-      button4.style.color= "#C31F33";
-      button4.style.border = "2px solid #C31F33";
-      button8.style.color= "#8F1838";
-      button8.style.border = "2px solid #8F1838";
-          sessionStorage.setItem("currentMap","122");
 
-  };
-  
-  function load4() {
-    updateMap.innerHTML =  `
-      <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=752d577fddc946e3876d21dbb6e73ff4&level=11" 
-              frameborder="0" 
-              style="border:0; width:100%; height:600px;" 
-              allowfullscreen>
-        iFrames are not supported on this page.
-      </iframe>`;
-      updateHeader.innerHTML = `
-      <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg4 icon.svg" alt="sdg 4 icon">
-      <h3>4.3.1 - Tertiary education attainment rate</h3>`;
-       updateHeader.style.backgroundColor = "#C31F33";
-       button4.style.backgroundColor="#C31F33"; 
-      button4.style.color="white";
-        button4.style.pointerEvents = "none";  
-      button4.style.cursor = "default";      
-    button121.style.pointerEvents = "auto";  
-      button121.style.cursor = "pointer";  
-    button122.style.pointerEvents = "auto";  
-      button122.style.cursor = "pointer";  
-    button8.style.pointerEvents = "auto";  
-      button8.style.cursor = "pointer";  
-      button121.style.backgroundColor="white"; 
-      button122.style.backgroundColor="white"; 
-      button8.style.backgroundColor="white"; 
-      button121.style.color= "#EB1C2D";
-      button121.style.border = "2px solid #EB1C2D";
-      button122.style.color= "#EB1C2D";
-      button122.style.border = "2px solid #EB1C2D";
-      button8.style.color= "#8F1838";
-      button8.style.border = "2px solid #8F1838";
-          sessionStorage.setItem("currentMap","4");
+  // Add event listeners dynamically
+  Object.entries(mapsConfig).forEach(([key, cfg]) => {
+    document.getElementById(cfg.buttonId).addEventListener("click", () => loadMap(key));
+  });
 
-  };
-  function load8() {
-    updateMap.innerHTML =  `
-      <iframe src="https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=567a7e5073ca486fa6979dc7e9f27022&level=11" 
-              frameborder="0" 
-              style="border:0; width:100%; height:600px;" 
-              allowfullscreen>
-        iFrames are not supported on this page.
-      </iframe>`;
-       updateHeader.innerHTML = `
-      <img src="https://NSOMalta.github.io/sdgsite/assets/img/sdg8 icon.svg" alt="sdg 8 icon">
-      <h3>8.5.2 - Employment Rate</h3>`;
-      updateHeader.style.backgroundColor = "#8F1838";
-        button8.style.pointerEvents = "none";  
-      button8.style.cursor = "default";      
-    button121.style.pointerEvents = "auto";  
-      button121.style.cursor = "pointer";  
-    button122.style.pointerEvents = "auto";  
-      button122.style.cursor = "pointer";  
-    button4.style.pointerEvents = "auto";  
-      button4.style.cursor = "pointer";  
-       button8.style.backgroundColor="#8F1838"; 
-      button8.style.color="white";
-      button121.style.backgroundColor="white"; 
-      button4.style.backgroundColor="white"; 
-      button122.style.backgroundColor="white"; 
-      button121.style.color= "#EB1C2D";
-      button121.style.border = "2px solid #EB1C2D";
-      button122.style.color= "#EB1C2D";
-      button122.style.border = "2px solid #EB1C2D";
-      button4.style.color= "#C31F33";
-      button4.style.border = "2px solid #C31F33";
-        sessionStorage.setItem("currentMap","8");
+  // Restore last viewed map or load default
+  const mapToLoad = sessionStorage.getItem("currentMap") || "121";
+  loadMap(mapToLoad);
 
-  };
-
-
-    button121.addEventListener('click', load121);
-    button122.addEventListener('click', load122);
-    button4.addEventListener('click', load4);
-    button8.addEventListener('click', load8);
-
-    const mapToLoad = sessionStorage.getItem("currentMap");
-    if(mapToLoad === "122") load122();
-    else if(mapToLoad === "4") load4();
-    else if(mapToLoad === "8") load8();
-   else load121();
-
+  // Show container after setup
   document.querySelector('.maps-container').style.visibility = 'visible';
 
 });
-
-
-  
-
 </script>
