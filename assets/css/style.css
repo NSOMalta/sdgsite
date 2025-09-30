@@ -2858,27 +2858,25 @@ h1 {
 
 .map-button {
   box-shadow: none !important;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s, color 0.2s;
   background-color: white;
   text-decoration: none;
   border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
-  border: 2px solid currentColor;
-  color: inherit;
+  border: 2px solid var(--button-color, currentColor);
+  color: var(--button-color, inherit);
   cursor: pointer; }
 
 .map-button:hover,
 .map-button:focus {
   transform: scale(1.05);
-  background-color: var(--hover-bg);
-  /* use CSS variable */
+  background-color: var(--button-color) !important;
   color: white !important; }
 
 .map-button.active {
-  background-color: var(--active-bg);
-  /* set via JS */
+  background-color: var(--button-color);
   color: white;
   pointer-events: none;
   cursor: default; }
