@@ -63,38 +63,38 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Load a map
-  function loadMap(key) {
-    const config = mapsConfig[key];
-    if (!config) return;
+function loadMap(key) {
+  const config = mapsConfig[key];
+  if (!config) return;
 
-    // Update iframe
-    updateMap.innerHTML = `
-      <iframe src="${config.src}" 
-              frameborder="0" 
-              style="border:0; width:100%; height:600px;" 
-              allowfullscreen>
-        iFrames are not supported on this page.
-      </iframe>`;
+  updateMap.innerHTML = `
+    <iframe src="${config.src}" 
+            frameborder="0" 
+            style="border:0; width:100%; height:600px;" 
+            allowfullscreen>
+      iFrames are not supported on this page.
+    </iframe>`;
 
-    // Update header
-    updateHeader.innerHTML = `
-      <img src="${config.img}" alt="sdg icon">
-      <h3>${config.title}</h3>`;
-    updateHeader.style.backgroundColor = config.color;
+  updateHeader.innerHTML = `
+    <img src="${config.img}" alt="sdg icon">
+    <h3>${config.title}</h3>`;
+  updateHeader.style.backgroundColor = config.color;
 
-    // Update button styles
-    document.querySelectorAll('.map-button').forEach(btn => {
-      if (btn.dataset.map === key) {
-        btn.classList.add("active");
-        btn.style.setProperty("color", config.color); 
-      } else {
-        btn.classList.remove("active");
-        btn.style.setProperty("color", btn.dataset.color); 
-      }
-    });
+  document.querySelectorAll('.map-button').forEach(btn => {
+    if (btn.dataset.map === key) {
+      btn.classList.add("active");
+      btn.style.backgroundColor = btn.dataset.color; // background
+      btn.style.color = "white"; // text color
+    } else {
+      btn.classList.remove("active");
+      btn.style.backgroundColor = "white"; // unselected background
+      btn.style.color = btn.dataset.color; // text color
+    }
+  });
 
-    sessionStorage.setItem("currentMap", key);
-  }
+  sessionStorage.setItem("currentMap", key);
+}
+
 
   document.querySelectorAll(".map-button").forEach(btn => {
     btn.style.color = btn.dataset.color;
