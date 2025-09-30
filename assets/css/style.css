@@ -2872,13 +2872,14 @@ h1 {
 .map-button:hover,
 .map-button:focus {
   transform: scale(1.05);
-  background-color: currentColor !important;
+  background-color: var(--hover-bg);
+  /* use CSS variable */
   color: white !important; }
 
 .map-button.active {
-  background-color: currentColor !important;
+  background-color: var(--active-bg);
+  /* set via JS */
   color: white;
-  border-color: currentColor;
   pointer-events: none;
   cursor: default; }
 

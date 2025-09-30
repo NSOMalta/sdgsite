@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250930094715">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20250930095720">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -302,7 +302,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function loadMap(key) {
   const config = mapsConfig[key];
   if (!config) return;
-
   updateMap.innerHTML = `
     <iframe src="${config.src}" 
             frameborder="0" 
@@ -310,24 +309,23 @@ function loadMap(key) {
             allowfullscreen>
       iFrames are not supported on this page.
     </iframe>`;
-
   updateHeader.innerHTML = `
     <img src="${config.img}" alt="sdg icon">
     <h3>${config.title}</h3>`;
   updateHeader.style.backgroundColor = config.color;
-
   document.querySelectorAll('.map-button').forEach(btn => {
     if (btn.dataset.map === key) {
       btn.classList.add("active");
-      btn.style.backgroundColor = btn.dataset.color; // background
-      btn.style.color = "white"; // text color
+      btn.style.setProperty('--active-bg', btn.dataset.color);
+      btn.style.backgroundColor = btn.dataset.color;
+      btn.style.color = "white";
     } else {
       btn.classList.remove("active");
-      btn.style.backgroundColor = "white"; // unselected background
-      btn.style.color = btn.dataset.color; // text color
+      btn.style.setProperty('--hover-bg', btn.dataset.color);
+      btn.style.backgroundColor = "white";
+      btn.style.color = btn.dataset.color;
     }
   });
-
   sessionStorage.setItem("currentMap", key);
 }
 
@@ -438,12 +436,12 @@ function loadMap(key) {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20250930094715'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20250930095720'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20250930094715"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20250930095720"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
