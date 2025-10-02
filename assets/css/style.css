@@ -2662,7 +2662,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   border: 0; }
 
 .embedded-map iframe {
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin-bottom: 1%; }
 
 .embedded-map h2 {
   margin-left: 1%; }
