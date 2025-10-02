@@ -23,6 +23,10 @@
     max-width: 100%;
 }
 
+.embedded-maps{
+    background: white;
+}
+
 .embedded-map iframe, .embedded-maps iframe {
     width: 100%;
     //max-width: 1000px;
@@ -31,6 +35,11 @@
     display: block;
     margin: 0 auto;
     border: 0;
+}
+
+.embedded-map iframe {
+   border-radius: 20px;
+    margin-bottom: 1%;
 }
 
 .embedded-map h2{
