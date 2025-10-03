@@ -3140,7 +3140,7 @@ body.contrast-high #main-content p > a:hover,
 body.contrast-high #main-content ul > li > a:hover {
   color: #c05306 !important;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 body.contrast-high #search-bar-on-page button, body.contrast-high #search button {
   color: white;
