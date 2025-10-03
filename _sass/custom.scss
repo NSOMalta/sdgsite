@@ -617,9 +617,16 @@ body.contrast-high #search button {
 }
 
 
-// .header-toggles.d-flex a{
-//     visibility: hidden;
-// }
+.header-toggles.d-flex a{
+    text-decoration: none;
+}
+
+.header-toggles.d-flex a:hover {
+  background-color: #313131 !important; 
+}
+body.contrast-high .header-toggles.d-flex a:hover {
+  background-color: #ffffff !important; 
+}
 
 .header-toggles.d-flex a:focus {
     box-shadow: none !important;
