@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20251030113610">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20251030144736">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -251,9 +251,12 @@ layout-maps
       <div class="map-indicator-buttons">
           <button type="button" class="map-button" data-map="121" data-color="#EB1C2D">1.2.1</button>
           <button type="button" class="map-button" data-map="122" data-color="#EB1C2D">1.2.2</button>
-          <button type="button" class="map-button" data-map="431" data-color="#C31F33">4.3.1</button>
-          <button type="button" class="map-button" data-map="852" data-color="#8F1838">8.5.2</button>
           <button type="button" class="map-button" data-map="361" data-color="#4C9F38">3.6.1</button>
+          <button type="button" class="map-button" data-map="431" data-color="#C31F33">4.3.1</button>
+          <button type="button" class="map-button" data-map="811" data-color="#8F1838">8.1.1</button>
+          <button type="button" class="map-button" data-map="852" data-color="#8F1838">8.5.2</button>
+          <button type="button" class="map-button" data-map="1171" data-color="#FD9D24">11.7.1</button>
+          
       </div>
 
       <div class="embedded-maps">
@@ -295,13 +298,25 @@ document.addEventListener('DOMContentLoaded', () => {
       src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=567a7e5073ca486fa6979dc7e9f27022&level=11",
       color: "#8F1838",
       img: "https://NSOMalta.github.io/sdgsite/assets/img/SDG8.svg",
-      title: "8.5.2 - Employment Rate",
+      title: "8.5.2 - Employment rate",
     },
     "361": {
       src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=29fa256e320e4b3aaaf0c81677b847c3",
       color: "#4C9F38",
       img: "https://NSOMalta.github.io/sdgsite/assets/img/SDG3.svg",
-      title: "3.6.1 - Road Traffic Accidents",
+      title: "3.6.1 - Road traffic accidents",
+    },
+    "811": {
+      src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=c284560b45704546a7c4acd19c30d1a4",
+      color: "#8F1838",
+      img: "https://NSOMalta.github.io/sdgsite/assets/img/SDG8.svg",
+      title: "8.1.1 - GDP at market prices",
+    },
+    "1171": {
+      src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=48196a5d14b9404e9ab6cb38749d4ba9",
+      color: "#FD9D24",
+      img: "https://NSOMalta.github.io/sdgsite/assets/img/SDG11.svg",
+      title: "11.7.1 - Urban area that is open space for public use",
     },
   };
 
@@ -447,12 +462,12 @@ document.querySelectorAll(".map-button").forEach(btn => {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20251030113610'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20251030144736'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20251030113610"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20251030144736"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
