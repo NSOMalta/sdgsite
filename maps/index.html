@@ -141,7 +141,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20251212143614">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20251216140443">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -256,6 +256,7 @@ layout-maps
           <button type="button" class="map-button" data-map="811" data-color="#8F1838">8.1.1</button>
           <button type="button" class="map-button" data-map="852" data-color="#8F1838">8.5.2</button>
           <button type="button" class="map-button" data-map="1171" data-color="#FD9D24">11.7.1</button>
+          <button type="button" class="map-button" data-map="1251" data-color="#BF8B2E">12.5.1</button>
           
       </div>
 
@@ -317,6 +318,12 @@ document.addEventListener('DOMContentLoaded', () => {
       color: "#FD9D24",
       img: "https://NSOMalta.github.io/sdgsite/assets/img/SDG11.svg",
       title: "11.7.1 - Urban area that is open space for public use",
+    },
+    "1251": {
+      src: "https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=152bf248fd874ac794ec5c66a3947d29",
+      color: "#BF8B2E",
+      img: "https://NSOMalta.github.io/sdgsite/assets/img/SDG12.svg",
+      title: "12.5.1 - Separated dry recyclables collected",
     },
   };
 
@@ -462,12 +469,12 @@ document.querySelectorAll(".map-button").forEach(btn => {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20251212143614'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20251216140443'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20251212143614"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20251216140443"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
