@@ -9,7 +9,15 @@ categories:
   - National
 ---
 <table style="border-collapse: collapse; width: 100%;">
-  <tr>
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000; padding: 4px; text-align: left;">Data updated on</th>
+      <th style="border: 1px solid #000; padding: 4px; text-align: left;">Indicator</th>
+      <th style="border: 1px solid #000; padding: 4px; text-align: left;">Updated/revised</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
     <td style="border: 1px solid #000; padding: 4px;">05/12/2025</td>
     <td style="border: 1px solid #000; padding: 4px;">7.2.1</td>
     <td style="border: 1px solid #000; padding: 4px;">Revised data for 2023 (series 1)</td>
