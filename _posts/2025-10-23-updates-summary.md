@@ -12,7 +12,7 @@ categories:
   <tr>
     <th style="border: 1px solid black; padding: 8px;">Date</th>
     <th style="border: 1px solid black; padding: 8px;">Indicator</th>
-    <th style="border: 1px solid black; padding: 8px;">Notes</th>
+    <th style="border: 1px solid black; padding: 8px;">Update Details</th>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px;">23/10/2025</td>
