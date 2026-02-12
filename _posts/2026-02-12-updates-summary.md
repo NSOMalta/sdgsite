@@ -17,7 +17,7 @@ categories:
   <tr>
     <td style="border: 1px solid black; padding: 8px;">11/02/2026</td>
     <td style="border: 1px solid black; padding: 8px;">10.4.2</td>
-    <td style="border: 1px solid black; padding: 8px;">New Indicator</td>
+    <td style="border: 1px solid black; padding: 8px;">Added new data</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px;">12/02/2026</td>
@@ -27,6 +27,6 @@ categories:
   <tr>
     <td style="border: 1px solid black; padding: 8px;">12/02/2026</td>
     <td style="border: 1px solid black; padding: 8px;">1.a.1</td>
-    <td style="border: 1px solid black; padding: 8px;">New Indicator</td>
+    <td style="border: 1px solid black; padding: 8px;">Added new data</td>
   </tr>
 </table>
