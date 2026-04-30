@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260427165214">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260430152355">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -426,7 +426,7 @@ layout-indicator
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;All Ages&quot;,&quot;&lt;18Y&quot;,&quot;18-64&quot;,&quot;65+&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Age&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;&lt;18Y&quot;,&quot;18-64&quot;,&quot;65+&quot;,&quot;All Ages&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Age&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -601,9 +601,15 @@ data-event-label="Change to embedded item tab"
         
         <dd><p>Notes:</p>
 <ol>
-  <li>This indicator is produced using data from the European Union Statistics on Income and Living Conditions (EU-SILC).</li>
-  <li>Data for the years 2010 to 2015 was produced using an older methodology, which included a deprivation indicator based on 9 items collected at household level.</li>
-  <li>Following a break in time series in 2016, figures from this year onwards were produced using the new methodology, which includes the Material and Social Deprivation (MSD) and the Severe Material and Social Deprivation (SMSD) indicators. These include 7 items collected at household level and another 6 collected at personal level, for a total of 13 items used for the new ‘at-risk-of-poverty or social exclusion’ (AROPE) indicator — which is the indicator used by EU countries for SDG 1.2.2.</li>
+  <li>Multidimensional poverty is measured through the At-risk-of-poverty or social exclusion (AROPE) indicator, produced using data from the European Union Statistics on Income and Living Conditions (EU-SILC).</li>
+  <li>The AROPE indicator refers to the share of persons who are either at risk of poverty, severely materially and socially deprived, or living in a household with very low work intensity.</li>
+  <li>In 2021, the AROPE indicator was revised in line with the new EU 2030 target through the following changes:
+    <ul>
+      <li>Revision of the severe material deprivation component, introducing a new severe material and social deprivation rate, defined as the share of the total population lacking at least seven out of thirteen material and social deprivation items; and</li>
+      <li>Redefinition of the (quasi) jobless household indicator, covering persons aged 0–64 living in households where adults aged 18–64 (excluding students aged 18–24, retirees as defined by self‑reported economic status or receipt of a pension other than a survivors’ pension, and inactive persons aged 60–64 living in pension‑main‑income households) worked 20% or less of their total combined work‑time potential during the previous year.</li>
+    </ul>
+  </li>
+  <li>Data for the years 2010 to 2014 were produced using the older methodology, whereas those for 2015 onwards were produced using the updated methodology.</li>
 </ol>
 
 <p>Source: National Statistics Office (NSO) Malta</p>
@@ -678,9 +684,15 @@ data-event-label="Change to embedded item tab"
         
         <dd><p>Notes:</p>
 <ol>
-  <li>This indicator is produced using data from the European Union Statistics on Income and Living Conditions (EU-SILC).</li>
-  <li>Data for the years 2010 to 2015 was produced using an older methodology, which included a deprivation indicator based on 9 items collected at household level.</li>
-  <li>Following a break in time series in 2016, figures from this year onwards were produced using the new methodology, which includes the Material and Social Deprivation (MSD) and the Severe Material and Social Deprivation (SMSD) indicators. These include 7 items collected at household level and another 6 collected at personal level, for a total of 13 items used for the new ‘at-risk-of-poverty or social exclusion’ (AROPE) indicator — which is the indicator used by EU countries for SDG 1.2.2.</li>
+  <li>Multidimensional poverty is measured through the At-risk-of-poverty or social exclusion (AROPE) indicator, produced using data from the European Union Statistics on Income and Living Conditions (EU-SILC).</li>
+  <li>The AROPE indicator refers to the share of persons who are either at risk of poverty, severely materially and socially deprived, or living in a household with very low work intensity.</li>
+  <li>In 2021, the AROPE indicator was revised in line with the new EU 2030 target through the following changes:
+    <ul>
+      <li>Revision of the severe material deprivation component, introducing a new severe material and social deprivation rate, defined as the share of the total population lacking at least seven out of thirteen material and social deprivation items; and</li>
+      <li>Redefinition of the (quasi) jobless household indicator, covering persons aged 0–64 living in households where adults aged 18–64 (excluding students aged 18–24, retirees as defined by self‑reported economic status or receipt of a pension other than a survivors’ pension, and inactive persons aged 60–64 living in pension‑main‑income households) worked 20% or less of their total combined work‑time potential during the previous year.</li>
+    </ul>
+  </li>
+  <li>Data for the years 2010 to 2014 were produced using the older methodology, whereas those for 2015 onwards were produced using the updated methodology.</li>
 </ol>
 
 <p>Source: National Statistics Office (NSO) Malta</p>
@@ -1395,12 +1407,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20260427165214'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20260430152355'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20260427165214"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20260430152355"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
