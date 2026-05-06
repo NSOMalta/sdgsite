@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260505153637">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260506142737">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -420,7 +420,7 @@ layout-indicator
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[]"
-  data-graphlimits="[]"
+  data-graphlimits="[{&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:30,&quot;stepSize&quot;:3}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
@@ -691,9 +691,11 @@ layout-indicator
     <p>Unit of Measurement: Percentage (%)</p>
     
     
-    <p>Footnote: Note: This indicator conveys the contribution of manufacturing to total employment. It measures the ability of the manufacturing sector to absorb surplus labour from agricultural and other traditional sectors. However, in developed countries, an opposite trend is expected where emphasis has shifted to reduction in labour in manufacturing as part of cost-cutting measures, to promote more capital-intensive industries.
+    <p>Footnote: Notes:
+1. This indicator conveys the contribution of manufacturing to total employment. It measures the ability of the manufacturing sector to absorb surplus labour from agricultural and other traditional sectors. However, in developed countries, an opposite trend is expected where emphasis has shifted to reduction in labour in manufacturing as part of cost-cutting measures, to promote more capital-intensive industries.
+2. This indicator is computed using data from the Labour Force Survey (LFS).
 
-Source: National Statistics Office (NSO) Malta. [Labour Force Survey (LFS)]
+Source: National Statistics Office (NSO) Malta
 </p>
     
   </div>
@@ -803,9 +805,13 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Note: This indicator conveys the contribution of manufacturing to total employment. It measures the ability of the manufacturing sector to absorb surplus labour from agricultural and other traditional sectors. However, in developed countries, an opposite trend is expected where emphasis has shifted to reduction in labour in manufacturing as part of cost-cutting measures, to promote more capital-intensive industries.</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>This indicator conveys the contribution of manufacturing to total employment. It measures the ability of the manufacturing sector to absorb surplus labour from agricultural and other traditional sectors. However, in developed countries, an opposite trend is expected where emphasis has shifted to reduction in labour in manufacturing as part of cost-cutting measures, to promote more capital-intensive industries.</li>
+  <li>This indicator is computed using data from the Labour Force Survey (LFS).</li>
+</ol>
 
-<p>Source: National Statistics Office (NSO) Malta. [Labour Force Survey (LFS)]</p>
+<p>Source: National Statistics Office (NSO) Malta</p>
 </dd>
         
 
@@ -875,9 +881,13 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Note: This indicator conveys the contribution of manufacturing to total employment. It measures the ability of the manufacturing sector to absorb surplus labour from agricultural and other traditional sectors. However, in developed countries, an opposite trend is expected where emphasis has shifted to reduction in labour in manufacturing as part of cost-cutting measures, to promote more capital-intensive industries.</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>This indicator conveys the contribution of manufacturing to total employment. It measures the ability of the manufacturing sector to absorb surplus labour from agricultural and other traditional sectors. However, in developed countries, an opposite trend is expected where emphasis has shifted to reduction in labour in manufacturing as part of cost-cutting measures, to promote more capital-intensive industries.</li>
+  <li>This indicator is computed using data from the Labour Force Survey (LFS).</li>
+</ol>
 
-<p>Source: National Statistics Office (NSO) Malta. [Labour Force Survey (LFS)]</p>
+<p>Source: National Statistics Office (NSO) Malta</p>
 </dd>
         
 
@@ -1572,12 +1582,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20260505153637'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20260506142737'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20260505153637"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20260506142737"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
