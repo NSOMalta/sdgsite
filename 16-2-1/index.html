@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260522111356">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260522144303">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -423,12 +423,12 @@ layout-indicator
   data-id="16-2-1"
   data-country="Malta"
   data-charttitle="Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month"
-  data-charttitles="[{&quot;series&quot;:&quot;Total number of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;,&quot;title&quot;:&quot;Total number of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;},{&quot;series&quot;:&quot;Rate of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population aged 0-14&quot;,&quot;title&quot;:&quot;Rate of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population aged 0-14&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;Number of cases referred to the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;,&quot;title&quot;:&quot;Number of cases referred to the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;},{&quot;series&quot;:&quot;Rate of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population aged 0-14&quot;,&quot;title&quot;:&quot;Rate of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population aged 0-14&quot;}]"
   data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
-  data-graphtypes="null"
+  data-graphtypes="[{&quot;series&quot;:&quot;Number of cases referred to the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;,&quot;type&quot;:&quot;bar&quot;},{&quot;series&quot;:&quot;Rate of referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population aged 0-14&quot;,&quot;type&quot;:&quot;line&quot;}]"
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[]"
@@ -438,7 +438,7 @@ layout-indicator
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Total number of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;,&quot;Rate of active and new referrals received by the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population aged 0-14&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Number of referrals&quot;,&quot;Per 1,000 population aged 0-14&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Number of cases referred to the Child Protection Services concerning service users aged &lt;1 to 14 years&quot;,&quot;Rate of referrals to the Child Protection Services concerning service users aged &lt;1 to 14 years, per 1,000 population aged 0-14&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Number of cases&quot;,&quot;Per 1,000 population aged 0-14&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy="proxy"
@@ -513,11 +513,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -533,11 +533,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -553,11 +553,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -573,11 +573,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -593,11 +593,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -613,11 +613,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -633,11 +633,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -653,11 +653,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -673,11 +673,11 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -693,11 +693,31 @@ layout-indicator
           
           
           
-          <td>Number of referrals</td>
+          <td>Number of cases</td>
           
           
           
-          <td class="table-value">Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years</td>
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
+          
+          
+        </tr>
+        
+        <tr>
+          
+          
+          <td>2025</td>
+          
+          
+          
+          <td>1343.0</td>
+          
+          
+          
+          <td>Number of cases</td>
+          
+          
+          
+          <td class="table-value">Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years</td>
           
           
         </tr>
@@ -717,7 +737,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -737,7 +757,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -757,7 +777,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -777,7 +797,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -797,7 +817,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -817,7 +837,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -837,7 +857,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -857,7 +877,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -877,7 +897,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -897,7 +917,7 @@ layout-indicator
           
           
           
-          <td class="table-value">Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
+          <td class="table-value">Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14</td>
           
           
         </tr>
@@ -1005,7 +1025,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years
+            Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1034,19 +1054,34 @@ data-event-label="Change to Table tab"
         <br>
         
         <dt
-          data-for-series="Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years"
+          data-for-series="Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years"
         <dd
-          data-for-series="Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years"
+          data-for-series="Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years"
           data-for-unit=""
-        ><p>Source: The Foundation for Social Welfare Services (FSWS)</p>
+        ><p>Notes:</p>
+<ol>
+  <li>A case is recorded every time a service user contacts the Child Protection Services, and may remain active across several reporting years (carried over from one year to another).</li>
+  <li>Persons and types of abuse may be counted more than once, since service users may be referred to the service more than once during the same reporting year.</li>
+  <li>Since 2020, referrals data include all intake cases as well as cases that were still pending an outcome by the end of the reporting year. <strong>More information on the changes effected in 2020/2021 can be found in the Proxy Metadata tab below.</strong></li>
+</ol>
+
+<p>Source: The Foundation for Social Welfare Services (FSWS)</p>
 </dd>
         
         <dt
-          data-for-series="Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
+          data-for-series="Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
         <dd
-          data-for-series="Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
+          data-for-series="Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
           data-for-unit=""
-        ><p>Sources:</p>
+        ><p>Notes:</p>
+<ol>
+  <li>A case is recorded every time a service user contacts the Child Protection Services, and may remain active across several reporting years (carried over from one year to another).</li>
+  <li>Persons and types of abuse may be counted more than once, since service users may be referred to the service more than once during the same reporting year.</li>
+  <li>Since 2020, referrals data include all intake cases as well as cases that were still pending an outcome by the end of the reporting year. <strong>More information on the changes effected in 2020/2021 can be found in the Proxy Metadata tab below.</strong></li>
+  <li>The rate of referrals is based on the mid-year population of children aged 0-14.</li>
+</ol>
+
+<p>Sources:</p>
 <ul>
   <li>The Foundation for Social Welfare Services (FSWS)</li>
   <li>National Statistics Office (NSO) Malta</li>
@@ -1124,19 +1159,34 @@ data-event-label="Change to Table tab"
         <br>
         
         <dt
-          data-for-series="Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years"
+          data-for-series="Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years"
         <dd
-          data-for-series="Total number of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years"
+          data-for-series="Number of cases referred to the Child Protection Services concerning service users aged <1 to 14 years"
           data-for-unit=""
-        ><p>Source: The Foundation for Social Welfare Services (FSWS)</p>
+        ><p>Notes:</p>
+<ol>
+  <li>A case is recorded every time a service user contacts the Child Protection Services, and may remain active across several reporting years (carried over from one year to another).</li>
+  <li>Persons and types of abuse may be counted more than once, since service users may be referred to the service more than once during the same reporting year.</li>
+  <li>Since 2020, referrals data include all intake cases as well as cases that were still pending an outcome by the end of the reporting year. <strong>More information on the changes effected in 2020/2021 can be found in the Proxy Metadata tab below.</strong></li>
+</ol>
+
+<p>Source: The Foundation for Social Welfare Services (FSWS)</p>
 </dd>
         
         <dt
-          data-for-series="Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
+          data-for-series="Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
         <dd
-          data-for-series="Rate of active and new referrals received by the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
+          data-for-series="Rate of referrals to the Child Protection Services concerning service users aged <1 to 14 years, per 1,000 population aged 0-14"
           data-for-unit=""
-        ><p>Sources:</p>
+        ><p>Notes:</p>
+<ol>
+  <li>A case is recorded every time a service user contacts the Child Protection Services, and may remain active across several reporting years (carried over from one year to another).</li>
+  <li>Persons and types of abuse may be counted more than once, since service users may be referred to the service more than once during the same reporting year.</li>
+  <li>Since 2020, referrals data include all intake cases as well as cases that were still pending an outcome by the end of the reporting year. <strong>More information on the changes effected in 2020/2021 can be found in the Proxy Metadata tab below.</strong></li>
+  <li>The rate of referrals is based on the mid-year population of children aged 0-14.</li>
+</ol>
+
+<p>Sources:</p>
 <ul>
   <li>The Foundation for Social Welfare Services (FSWS)</li>
   <li>National Statistics Office (NSO) Malta</li>
@@ -1667,16 +1717,11 @@ data-event-label="Change to Sources tab"
         <th scope="row">Method of computation </th>
         <td>
           
-            <p>Notes:</p>
-<ol>
-  <li>All alleged abuse types that apply are selected at referral; therefore, the total number of referrals is not computed using the totals of the different types of abuse.</li>
-  <li>A case is recorded every time a service user contacts the Child Protection Service.</li>
-  <li>Persons and types of abuse may be counted more than once since service users may be referred to the service more than once during the same reporting year.</li>
-  <li>A case may remain active across the reporting years (carried over from one year to another).</li>
-  <li>Since 2020, referrals data include all intake cases as well as cases that were still pending an outcome by the end of the reporting year.</li>
-  <li>Increases observed are also due to a mandatory reporting provision introduced in 2021. Furthermore, the increase observed in 2020 is attributed to a change in data collection method and the type of data collected. The FSWS developed an online case management system and the Child Protection Service fully migrated into the online system in 2020.</li>
-  <li>The rate of referrals is based on the mid-year population of children aged 0-14.</li>
-</ol>
+            <p>Since 2020, referrals data include all intake cases as well as cases that were still pending an outcome by the end of the reporting year.</p>
+
+<p>The increase observed in 2020 is also attributed to a change in data collection method and the type of data collected. The FSWS developed an online case management system and the Child Protection Services fully migrated into the online system in 2020.</p>
+
+<p>Furthermore, a mandatory reporting provision was introduced in 2021, which also caused an increase in numbers.</p>
 
           
         </td>
@@ -1732,7 +1777,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Data last updated </th>
         <td>
           
-            Nov 09, 2025
+            May 21, 2026
           
         </td>
         </tr>
@@ -1747,7 +1792,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Metadata last updated </th>
         <td>
           
-            Mar 31, 2025
+            May 21, 2026
           
         </td>
         </tr>
@@ -2452,12 +2497,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20260522111356'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20260522144303'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20260522111356"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20260522144303"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
