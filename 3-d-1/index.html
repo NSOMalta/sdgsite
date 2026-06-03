@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260601153823">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260603150337">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -419,14 +419,14 @@ layout-indicator
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;IHR Capacity&quot;,&quot;value&quot;:&quot;Chemical events&quot;}]"
+  data-startvalues="[{&quot;field&quot;:&quot;IHR Capacity&quot;,&quot;value&quot;:&quot;Overall score&quot;}]"
   data-graphlimits="[{&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:100,&quot;stepSize&quot;:10}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;IHR Capacity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Chemical events&quot;,&quot;Financing&quot;,&quot;Food safety&quot;,&quot;Health emergency management&quot;,&quot;Health services provision&quot;,&quot;Human resources&quot;,&quot;IHR Coordination, National IHR Focal Point functions and advocacy&quot;,&quot;Infection prevention and control (IPC)&quot;,&quot;Laboratory&quot;,&quot;Points of entry (PoEs) and border health&quot;,&quot;Policy, Legal and normative Instruments to implement IHR&quot;,&quot;Radiation emergencies&quot;,&quot;Risk communication and community engagement (RCCE)&quot;,&quot;Surveillance&quot;,&quot;Zoonotic diseases&quot;,&quot;&quot;]},&quot;title&quot;:&quot;IHR Capacity&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;IHR Capacity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Overall score&quot;,&quot;C01: Policy, legal and normative instruments to implement IHR&quot;,&quot;C02: IHR coordination, national IHR Focal Point functions and advocacy&quot;,&quot;C03: Financing&quot;,&quot;C04: Laboratory&quot;,&quot;C05: Surveillance&quot;,&quot;C06: Human resources&quot;,&quot;C07: Health emergency management&quot;,&quot;C08: Health services provision&quot;,&quot;C09: Infection prevention and control&quot;,&quot;C10: Risk communication and community engagement&quot;,&quot;C11: Points of entry (PoEs) and border health&quot;,&quot;C12: Zoonotic diseases&quot;,&quot;C13: Food safety&quot;,&quot;C14: Chemical events&quot;,&quot;C15: Radiation emergencies&quot;,&quot;&quot;]},&quot;title&quot;:&quot;IHR Capacity&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -574,7 +574,15 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Source: World Health Organization (WHO). [International Health Regulations (IHR) State Party Self-assessment Annual Reports]</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>This indicator uses data from the International Health Regulations (IHR) State Party Self-assessment Annual Reports, which are submitted by countries that are States Parties of the International Health Regulations (IHR2005). These reports are received by WHO and recorded in the WHO e-SPAR Platform.</li>
+  <li>The IHR States Parties Self-assessment Annual Reporting (SPAR) Tool is used to assess countries’ progress in implementing the IHR and provides an interpretation of the national capacities required under the IHR for self-assessment and monitoring purposes.</li>
+  <li>In 2021, the SPAR tool was revised and further improved, taking account of the initial experience of countries with the COVID-19 pandemic. The second edition of SPAR (2021) contains 15 capacities and 35 indicators.</li>
+  <li>The first edition of SPAR contained 13 capacities and 24 indicators so it is not directly comparable, and is not being included in this time series.</li>
+</ol>
+
+<p>Source: World Health Organization (WHO)</p>
 </dd>
         
 
@@ -644,7 +652,15 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Source: World Health Organization (WHO). [International Health Regulations (IHR) State Party Self-assessment Annual Reports]</p>
+        <dd><p>Notes:</p>
+<ol>
+  <li>This indicator uses data from the International Health Regulations (IHR) State Party Self-assessment Annual Reports, which are submitted by countries that are States Parties of the International Health Regulations (IHR2005). These reports are received by WHO and recorded in the WHO e-SPAR Platform.</li>
+  <li>The IHR States Parties Self-assessment Annual Reporting (SPAR) Tool is used to assess countries’ progress in implementing the IHR and provides an interpretation of the national capacities required under the IHR for self-assessment and monitoring purposes.</li>
+  <li>In 2021, the SPAR tool was revised and further improved, taking account of the initial experience of countries with the COVID-19 pandemic. The second edition of SPAR (2021) contains 15 capacities and 35 indicators.</li>
+  <li>The first edition of SPAR contained 13 capacities and 24 indicators so it is not directly comparable, and is not being included in this time series.</li>
+</ol>
+
+<p>Source: World Health Organization (WHO)</p>
 </dd>
         
 
@@ -1327,12 +1343,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20260601153823'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20260603150337'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20260601153823"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20260603150337"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
