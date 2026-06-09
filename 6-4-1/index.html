@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260604144723">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260609130954">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -395,6 +395,18 @@ layout-indicator
   
 
   
+<div class="row proxy-banner my-4 mx-1 px-2 gx-2">
+  <div class="col col-auto align-self-center">
+    <span aria-describedby="proxy-description" class="proxy-pill">Proxy</span>
+  </div>
+  <div class="col col-auto align-self-center">
+    =
+  </div>
+  <div id="proxy-description" class="col">
+    This indicator contains some alternative data to those specified by the United Nations (UN). This indicator is the most suitable match currently available.
+  </div>
+</div>
+
 
   
 
@@ -410,9 +422,9 @@ layout-indicator
   data-indicatorid='indicator_6-4-1'
   data-id="6-4-1"
   data-country="Malta"
-  data-charttitle="Water Use Efficiency, by activity"
-  data-charttitles="[]"
-  data-measurementunit="USD per cubic meter"
+  data-charttitle=""
+  data-charttitles="[{&quot;series&quot;:&quot;1. Water Use Efficiency (US dollars per cubic metre)&quot;,&quot;title&quot;:&quot;Water Use Efficiency (US dollars per cubic metre), by activity&quot;},{&quot;series&quot;:&quot;2. Water Use Efficiency (Euros per cubic metre)&quot;,&quot;title&quot;:&quot;Water Use Efficiency (Euros per cubic metre), by activity&quot;}]"
+  data-measurementunit=""
   data-xaxislabel=""
   data-showdata="true"
   data-graphtype="line"
@@ -426,11 +438,11 @@ layout-indicator
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Industries&quot;,&quot;Agriculture&quot;,&quot;Services&quot;,&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activity&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;1. Water Use Efficiency (US dollars per cubic metre)&quot;,&quot;2. Water Use Efficiency (Euros per cubic metre)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Activity&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Industries&quot;,&quot;Agriculture&quot;,&quot;Services&quot;,&quot;Total&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Activity&quot;},{&quot;name&quot;:&quot;Units&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;US dollars per cubic metre&quot;,&quot;Euros per cubic metre&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Units&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
-  data-proxy=""
-  data-proxyseries="null"
+  data-proxy="both"
+  data-proxyseries="[&quot;2. Water Use Efficiency (Euros per cubic metre)&quot;]"
 >
   
   <span role="status" class="visually-hidden" id="indicator-data-view-status"></span>
@@ -551,7 +563,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Water Use Efficiency, by activity
+            Water Use Efficiency (US dollars per cubic metre), by activity
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -574,11 +586,33 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
+
+
+        
+        <br>
+        
+        <dt
+          data-for-series="1. Water Use Efficiency (US dollars per cubic metre)"
+        <dd
+          data-for-series="1. Water Use Efficiency (US dollars per cubic metre)"
+          data-for-unit=""
+        ><p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
 </dd>
         
+        <dt
+          data-for-series="2. Water Use Efficiency (Euros per cubic metre)"
+        <dd
+          data-for-series="2. Water Use Efficiency (Euros per cubic metre)"
+          data-for-unit=""
+        ><p>Notes:</p>
+<ol>
+  <li>The Gross Value Added (GVA) figures used for the computation of this time series is in Chain-linked-volumes.</li>
+  <li>This indicator is produced using data from the NSO, the Energy and Water Agency (EWA), and the Water Services Corporation (WSC).</li>
+</ol>
 
-
+<p>Source: National Statistics Office (NSO) Malta</p>
+</dd>
+        
         
 
         
@@ -644,11 +678,33 @@ data-event-label="Change to Table tab"
         
 
         
-        <dd><p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
+
+
+        
+        <br>
+        
+        <dt
+          data-for-series="1. Water Use Efficiency (US dollars per cubic metre)"
+        <dd
+          data-for-series="1. Water Use Efficiency (US dollars per cubic metre)"
+          data-for-unit=""
+        ><p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
 </dd>
         
+        <dt
+          data-for-series="2. Water Use Efficiency (Euros per cubic metre)"
+        <dd
+          data-for-series="2. Water Use Efficiency (Euros per cubic metre)"
+          data-for-unit=""
+        ><p>Notes:</p>
+<ol>
+  <li>The Gross Value Added (GVA) figures used for the computation of this time series is in Chain-linked-volumes.</li>
+  <li>This indicator is produced using data from the NSO, the Energy and Water Agency (EWA), and the Water Services Corporation (WSC).</li>
+</ol>
 
-
+<p>Source: National Statistics Office (NSO) Malta</p>
+</dd>
+        
         
 
         
@@ -703,6 +759,14 @@ data-event-label="Change to Global Metadata tab"
 >Global Metadata</button>
   </li>
 
+
+  <li role="presentation" class="nav-item">
+    <button type="button" class="nav-link" data-bs-toggle="tab" id="tab-national" data-bs-target="#national" aria-controls="national" role="tab" data-on="click"
+data-event-category="Tab change"
+data-event-action="Change metadata view"
+data-event-label="Change to National Metadata tab"
+>Proxy Metadata</button>
+  </li>
 
 
 <li role="presentation" class="nav-item">
@@ -983,6 +1047,337 @@ data-event-label="Change to Sources tab"
     </div>
 </div>
 
+<div role="tabpanel" class="tab-pane active" id="national">
+    <!-- National Metadata -->
+    <div>
+        <article>
+            <p>
+                
+                
+                This table provides metadata for the proxy data used (closest to the UN SDG indicator) to report on the progress towards achieving the SDG Target. Please note that even when data for the actual UN SDG indicator is fully available, this table should still be consulted for any additional specific metadata information.
+            </p>
+            <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+        </article>
+    </div>
+</div>
+
 
 <div role="tabpanel" class="tab-pane" id="sources">
     <!-- Count the non-empty sources (up to 5) -->
@@ -995,6 +1390,8 @@ data-event-label="Change to Sources tab"
     
     
     <div class="col-md-6">
+      
+        <h4>Source 1</h4>
       
       <table class="table metadata-content">
   <tbody>
@@ -1124,20 +1521,259 @@ data-event-label="Change to Sources tab"
       
       
       
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>1</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+    </div>
+    
+    
+    
+    <div class="col-md-6">
+      
+        <h4>Source 2</h4>
+      
+      <table class="table metadata-content">
+  <tbody>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Organisation </th>
+        <td>
+          
+            <p>National Statistics Office (NSO) Malta</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+      
+      
         
           
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
+      
+      
+      <tr>
+        <th scope="row">Relevant Series </th>
+        <td>
+          
+            <p>2</p>
+
+          
+        </td>
+        </tr>
+        
+      
   
   
   
@@ -1339,12 +1975,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20260604144723'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20260609130954'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20260604144723"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20260609130954"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
