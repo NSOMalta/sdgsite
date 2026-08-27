@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260827083522">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260827114659">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -419,14 +419,14 @@ layout-indicator
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Females (15+)&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Males (15+)&quot;}]"
-  data-graphlimits="[{&quot;series&quot;:&quot;Prevalence of moderate or severe food insecurity&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:15,&quot;stepSize&quot;:3},{&quot;series&quot;:&quot;Prevalence of severe food insecurity&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:5,&quot;stepSize&quot;:0.5}]"
+  data-startvalues="[{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Females&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Males&quot;}]"
+  data-graphlimits="[{&quot;series&quot;:&quot;Prevalence of moderate or severe food insecurity&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:15,&quot;stepSize&quot;:3},{&quot;series&quot;:&quot;Prevalence of severe food insecurity&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:5,&quot;stepSize&quot;:1}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
   data-graphseriesbreaks="null"
   data-indicatordownloads="null"
-  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Prevalence of moderate or severe food insecurity&quot;,&quot;Prevalence of severe food insecurity&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females (15+)&quot;,&quot;Males (15+)&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
+  data-dataschema="{&quot;fields&quot;:[{&quot;name&quot;:&quot;Year&quot;,&quot;type&quot;:&quot;integer&quot;,&quot;title&quot;:&quot;Year&quot;},{&quot;name&quot;:&quot;Series&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Prevalence of moderate or severe food insecurity&quot;,&quot;Prevalence of severe food insecurity&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Series&quot;},{&quot;name&quot;:&quot;Sex&quot;,&quot;type&quot;:&quot;string&quot;,&quot;constraints&quot;:{&quot;enum&quot;:[&quot;Both Sexes&quot;,&quot;Females&quot;,&quot;Males&quot;,&quot;&quot;]},&quot;title&quot;:&quot;Sex&quot;},{&quot;name&quot;:&quot;Value&quot;,&quot;type&quot;:&quot;number&quot;,&quot;title&quot;:&quot;Value&quot;}]}"
   data-compositebreakdownlabel=""
   data-precision="[]"
   data-proxy=""
@@ -584,7 +584,12 @@ data-event-label="Change to Table tab"
         <dd
           data-for-series="Prevalence of moderate or severe food insecurity"
           data-for-unit=""
-        ><p>Note: The above figures are calculated using 3-year averages.</p>
+        ><p>Notes:</p>
+<ol>
+  <li>The above figures are calculated using 3-year averages.</li>
+  <li>The total figures (for both sexes) correspond to the whole population.</li>
+  <li>The figures disaggregated by sex (for females and males) refer to the population aged 15 years and above.</li>
+</ol>
 
 <p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
 </dd>
@@ -597,7 +602,9 @@ data-event-label="Change to Table tab"
         ><p>Notes:</p>
 <ol>
   <li>The above figures are calculated using 3-year averages.</li>
-  <li>The data point for Males for 2018 (showing a value of 0.5) represents an unspecified value which is actually smaller than the stated figure, i.e. &lt;0.5.</li>
+  <li>The total figures (for both sexes) correspond to the whole population.</li>
+  <li>The figures disaggregated by sex (for females and males) refer to the population aged 15 years and above.</li>
+  <li>The data point for males for 2018 (showing a value of 0.5) represents an unspecified value which is actually smaller than the stated figure, i.e. &lt;0.5.</li>
 </ol>
 
 <p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
@@ -678,7 +685,12 @@ data-event-label="Change to Table tab"
         <dd
           data-for-series="Prevalence of moderate or severe food insecurity"
           data-for-unit=""
-        ><p>Note: The above figures are calculated using 3-year averages.</p>
+        ><p>Notes:</p>
+<ol>
+  <li>The above figures are calculated using 3-year averages.</li>
+  <li>The total figures (for both sexes) correspond to the whole population.</li>
+  <li>The figures disaggregated by sex (for females and males) refer to the population aged 15 years and above.</li>
+</ol>
 
 <p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
 </dd>
@@ -691,7 +703,9 @@ data-event-label="Change to Table tab"
         ><p>Notes:</p>
 <ol>
   <li>The above figures are calculated using 3-year averages.</li>
-  <li>The data point for Males for 2018 (showing a value of 0.5) represents an unspecified value which is actually smaller than the stated figure, i.e. &lt;0.5.</li>
+  <li>The total figures (for both sexes) correspond to the whole population.</li>
+  <li>The figures disaggregated by sex (for females and males) refer to the population aged 15 years and above.</li>
+  <li>The data point for males for 2018 (showing a value of 0.5) represents an unspecified value which is actually smaller than the stated figure, i.e. &lt;0.5.</li>
 </ol>
 
 <p>Source: Food and Agriculture Organization of the United Nations (FAO)</p>
@@ -1388,12 +1402,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20260827083522'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20260827114659'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20260827083522"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20260827114659"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
