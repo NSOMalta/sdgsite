@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260831182652">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20260902115818">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -411,7 +411,7 @@ layout-indicator
   data-id="10-3-1"
   data-country="Malta"
   data-charttitle="Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law"
-  data-charttitles="[{&quot;series&quot;:&quot;1. Proportion of population (18+) experiencing discrimination or harassment&quot;,&quot;title&quot;:&quot;Proportion of population experiencing discrimination or harassment, by reference period, sex, and age&quot;},{&quot;series&quot;:&quot;2. Proportion of population reporting having felt discriminated against&quot;,&quot;title&quot;:&quot;Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months, by sex'&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Proportion of population (18+) experiencing discrimination or harassment&quot;,&quot;title&quot;:&quot;Proportion of population experiencing discrimination or harassment, by sex, age and reference period&quot;},{&quot;series&quot;:&quot;2. Proportion of population reporting having felt discriminated against&quot;,&quot;title&quot;:&quot;Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months, by sex&quot;}]"
   data-measurementunit="Percentage (%)"
   data-xaxislabel=""
   data-showdata="true"
@@ -419,8 +419,8 @@ layout-indicator
   data-graphtypes="null"
   data-geocoderegex=""
   data-showmap="false"
-  data-startvalues="[{&quot;field&quot;:&quot;Reference period&quot;,&quot;value&quot;:&quot;In the last 12 months&quot;},{&quot;field&quot;:&quot;Reference period&quot;,&quot;value&quot;:&quot;In the last 5 years&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Females&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Males&quot;},{&quot;field&quot;:&quot;Age&quot;,&quot;value&quot;:&quot;All Ages&quot;}]"
-  data-graphlimits="[]"
+  data-startvalues="[{&quot;field&quot;:&quot;Reference period&quot;,&quot;value&quot;:&quot;In the last 12 months&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Females&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Males&quot;},{&quot;field&quot;:&quot;Age&quot;,&quot;value&quot;:&quot;All Ages&quot;}]"
+  data-graphlimits="[{&quot;series&quot;:&quot;1. Proportion of population (18+) experiencing discrimination or harassment&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:50,&quot;stepSize&quot;:5},{&quot;series&quot;:&quot;2. Proportion of population reporting having felt discriminated against&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:50,&quot;stepSize&quot;:5}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
@@ -551,7 +551,7 @@ data-event-label="Change to Table tab"
       <figure role="group">
         <div id="chart-canvas">
           <h4 id="chart-heading" class="chart-title">
-            Proportion of population experiencing discrimination or harassment, by reference period, sex, and age
+            Proportion of population experiencing discrimination or harassment, by sex, age and reference period
           </h4>
           <div id="chart" class="plot-container">
             <canvas
@@ -1622,12 +1622,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20260831182652'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20260902115818'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20260831182652"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20260902115818"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
