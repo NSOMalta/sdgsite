@@ -54,4 +54,9 @@ categories:
     <td style="border: 1px solid black; padding: 10px 14px;">17.13.1</td>
     <td style="border: 1px solid black; padding: 10px 14px;">New indicators</td>
   </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 10px 14px;">03/09/2026</td>
+    <td style="border: 1px solid black; padding: 10px 14px;">16.1.4</td>
+    <td style="border: 1px solid black; padding: 10px 14px;">Added new data series</td>
+  </tr>
 </table>
