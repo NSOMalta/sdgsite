@@ -146,7 +146,7 @@ var translations = {
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20261006080426">
+        <link rel="stylesheet" href="/sdgsite/assets/css/style.css?v=20261006143342">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -423,7 +423,7 @@ layout-indicator
   data-id="16-1-4"
   data-country="Malta"
   data-charttitle="Proportion of population that feel safe walking alone around the area they live"
-  data-charttitles="[{&quot;series&quot;:&quot;1. Proportion of population that feel safe walking alone in the neighbourhood after dark&quot;,&quot;title&quot;:&quot;Proportion of population that feel safe walking alone in the neighbourhood after dark, by sex, age, and district of residence&quot;},{&quot;series&quot;:&quot;2. Proportion of households reporting crime, violence, or vandalism in the area they live&quot;,&quot;title&quot;:&quot;Households reporting crime, violence, or vandalism in the area they live&quot;}]"
+  data-charttitles="[{&quot;series&quot;:&quot;1. Proportion of population that feel safe walking alone in the neighbourhood after dark&quot;,&quot;title&quot;:&quot;Proportion of population that feel safe walking alone in the neighbourhood after dark, by sex, age, and district of residence&quot;},{&quot;series&quot;:&quot;2. Proportion of households reporting crime, violence, or vandalism in the area they live&quot;,&quot;title&quot;:&quot;Proportion of households reporting crime, violence, or vandalism in the area they live&quot;}]"
   data-measurementunit="Percentage (%)"
   data-xaxislabel=""
   data-showdata="true"
@@ -432,7 +432,7 @@ layout-indicator
   data-geocoderegex=""
   data-showmap="false"
   data-startvalues="[{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Both Sexes&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Females&quot;},{&quot;field&quot;:&quot;Sex&quot;,&quot;value&quot;:&quot;Males&quot;},{&quot;field&quot;:&quot;Age&quot;,&quot;value&quot;:&quot;All Ages&quot;},{&quot;field&quot;:&quot;District of Residence&quot;,&quot;value&quot;:&quot;All Areas&quot;}]"
-  data-graphlimits="[]"
+  data-graphlimits="[{&quot;series&quot;:&quot;1. Proportion of population that feel safe walking alone in the neighbourhood after dark&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:100,&quot;stepSize&quot;:10},{&quot;series&quot;:&quot;2. Proportion of households reporting crime, violence, or vandalism in the area they live&quot;,&quot;unit&quot;:&quot;Percentage (%)&quot;,&quot;minimum&quot;:0,&quot;maximum&quot;:50,&quot;stepSize&quot;:5}]"
   data-stackeddisaggregation=""
   data-graphannotations="[]"
   data-graphtargetlines="null"
@@ -839,6 +839,31 @@ data-event-label="Change to Table tab"
       >Table</button>
     </li>
     
+    <li role="presentation"
+      class="
+        nav-item
+        
+        embedded-map
+      ">
+      <button
+        class="nav-link "
+        data-bs-toggle="tab"
+        role="tab"
+        type="button"
+        
+          id="tab-embeddedmapview"
+          data-bs-target="#embeddedmapview"
+          aria-controls="embeddedmapview"
+          data-no-disagg="true"
+          data-on="click"
+data-event-category="Tab change"
+data-event-action="Change data view"
+data-event-label="Change to embedded item tab"
+
+        
+      >Map</button>
+    </li>
+    
   </ul>
   
     <div class="tab-content data-view">
@@ -890,7 +915,11 @@ data-event-label="Change to Table tab"
         <dd
           data-for-series="1. Proportion of population that feel safe walking alone in the neighbourhood after dark"
           data-for-unit=""
-        ><p>Note: This indicator is produced using data from the NSO Omnibus Survey, carried out in September 2025 among individuals aged 18 years and over.</p>
+        ><p>Notes:</p>
+<ol>
+  <li>This indicator is produced using data from the NSO Omnibus Survey, carried out in September 2025 among individuals aged 18 years and over.</li>
+  <li>More information on Malta’s districts classification is available <a href="https://nso.gov.mt/district-classification/">here.</a></li>
+</ol>
 
 <p>Source: National Statistics Office (NSO) Malta</p>
 </dd>
@@ -984,7 +1013,11 @@ data-event-label="Change to Table tab"
         <dd
           data-for-series="1. Proportion of population that feel safe walking alone in the neighbourhood after dark"
           data-for-unit=""
-        ><p>Note: This indicator is produced using data from the NSO Omnibus Survey, carried out in September 2025 among individuals aged 18 years and over.</p>
+        ><p>Notes:</p>
+<ol>
+  <li>This indicator is produced using data from the NSO Omnibus Survey, carried out in September 2025 among individuals aged 18 years and over.</li>
+  <li>More information on Malta’s districts classification is available <a href="https://nso.gov.mt/district-classification/">here.</a></li>
+</ol>
 
 <p>Source: National Statistics Office (NSO) Malta</p>
 </dd>
@@ -1033,6 +1066,24 @@ data-event-label="Change to Table tab"
 </div>
 
 <div id="tableSelectionDownload" class="clearfix"></div>
+
+        </div>
+      
+    
+      
+        <div role="tabpanel" class="tab-pane " id="embeddedmapview" class="embedded-map">
+          <div class="row">
+  <div class="col-xs-12">
+    
+    
+    
+      <div class="embedded-map" id="embeddedmapframe">
+         <h2>Proportion of population that feel safe walking alone in the neighbourhood after dark, by district (LAU 1)</h2><iframe src=https://msa-mt.maps.arcgis.com/apps/instant/basic/index.html?appid=57aa0bb576554fb29a9a10b52e3d524c width="400" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe><p>Malta's districts classification can be found <a href="https://nso.gov.mt/district-classification/">here</a></p>
+      </div>
+    
+    
+  </div>
+</div>
 
         </div>
       
@@ -2064,12 +2115,12 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdgsite/assets/js/sdg.js?v=20261006080426'></script>
+<script src='/sdgsite/assets/js/sdg.js?v=20261006143342'></script>
 
 
     
     
-    <script src="/sdgsite/assets/js/custom.js?v=20261006080426"></script><script>
+    <script src="/sdgsite/assets/js/custom.js?v=20261006143342"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
